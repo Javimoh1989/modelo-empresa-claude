@@ -2,56 +2,54 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>scoring_watchlist_v4.4r3.html</title>
+<title>scoring_watchlist_v4.4r4.html</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background:#FAFAF8; color:#1F2937; margin:0; padding:16px; }
-  h2 { color:#111827; font-size:18px; margin:18px 0 10px; }
-  h3 { color:#111827; font-size:14px; margin:0; }
-  .note { font-size:12px; color:#6B7280; margin:4px 0 14px; }
-  table { width:100%; border-collapse:collapse; font-size:11px; margin-bottom:18px; }
-  th { background:#1F2937; color:#FFFFFF; padding:8px 6px; text-align:left; font-weight:600; font-size:10px; }
-  td { padding:6px 5px; background:#F5F5F3; vertical-align:top; border-bottom:1px solid #E5E7EB; }
-  .pos-cell, .ticker-cell { font-weight:700; text-align:center; }
-  .row-cartera td.pos-cell, .row-cartera td.ticker-cell { background:#000000; color:#FFFFFF; }
-  .row-watchlist td.pos-cell, .row-watchlist td.ticker-cell { background:#0D2137; color:#FFFFFF; }
-  .star-cell { font-size:10px; line-height:1.3; }
-  .stars { display:block; font-size:11px; }
-  .val { display:block; color:#374151; font-weight:600; margin-top:2px; }
-  .src { display:block; color:#6B7280; font-size:9px; font-style:italic; margin-top:1px; }
-  .score-badge { display:inline-block; padding:3px 9px; border-radius:11px; font-weight:700; font-size:12px; }
-  .score-verde { background:#C0DD97; color:#173404; }
-  .score-ambar { background:#FAC775; color:#412402; }
-  .score-naranja { background:#EF9F27; color:#412402; }
-  .score-rojo { background:#F7C1C1; color:#501313; }
-  .semaforo-cell { text-align:center; font-size:14px; }
-  .veredicto-cell { font-size:10px; color:#1F2937; }
-  .cartera-movements { margin-top:24px; background:#FAFAF8; padding:14px; border-radius:8px; }
-  .movements-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
-  .movement-card { background:#F5F5F3; padding:10px 12px; border-radius:6px; font-size:11px; }
-  .movement-card.up { border-left:4px solid #16a34a; }
-  .movement-card.down { border-left:4px solid #dc2626; }
-  .movement-card.neutral { border-left:4px solid #9ca3af; }
-  .movement-card.new { border-left:4px solid #f59e0b; }
-  .movement-card h3 { font-size:13px; margin-bottom:4px; }
-  .movement-card .badge-move { float:right; font-weight:700; font-size:11px; color:#374151; }
-  .movement-card .position, .movement-card .score-delta { margin:3px 0; font-size:10px; color:#4B5563; }
-  .movement-card h4 { font-size:11px; margin:6px 0 3px; color:#111827; }
-  .movement-card ul { margin:0; padding-left:16px; font-size:10px; line-height:1.4; }
-  .movement-card li { margin-bottom:3px; }
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#FAFAF8;color:#1F2937;margin:0;padding:16px;font-size:11px;line-height:1.4;}
+h2{font-size:14px;margin:14px 0 8px;color:#111827;}
+p.note{font-size:10px;color:#6B7280;margin:4px 0 12px;}
+table.tabla-detalle{border-collapse:collapse;width:100%;font-size:9.5px;table-layout:fixed;}
+table.tabla-detalle th{background:#1F2937;color:#FFFFFF;padding:6px 4px;text-align:center;font-weight:600;border:1px solid #374151;}
+table.tabla-detalle td{padding:5px 4px;text-align:center;border:1px solid #D1D5DB;vertical-align:middle;background:#F5F5F3;}
+tr.row-cartera td.pos-cell,tr.row-cartera td.ticker-cell{background:#000000;color:#FFFFFF;font-weight:700;}
+tr.row-watchlist td.pos-cell,tr.row-watchlist td.ticker-cell{background:#0D2137;color:#FFFFFF;font-weight:700;}
+.star-cell{font-size:9px;line-height:1.3;}
+.star-cell .stars{display:block;color:#D97706;font-size:10px;}
+.star-cell .val{display:block;font-weight:600;color:#111827;margin:1px 0;}
+.star-cell .src{display:block;color:#6B7280;font-size:8px;}
+.score-badge{display:inline-block;padding:4px 10px;border-radius:12px;font-weight:700;font-size:11px;}
+.score-verde{background:#C0DD97;color:#173404;}
+.score-ambar{background:#FAC775;color:#412402;}
+.score-naranja{background:#EF9F27;color:#412402;}
+.score-rojo{background:#F7C1C1;color:#501313;}
+.semaforo-cell{font-size:14px;}
+.veredicto-cell{font-size:9px;color:#374151;text-align:left;padding:4px 6px;}
+section.cartera-movements{margin-top:24px;background:#FAFAF8;padding:12px;border-radius:8px;}
+.movements-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:10px;margin-top:10px;}
+article.movement-card{background:#F5F5F3;border-radius:6px;padding:10px;border-left:4px solid #9ca3af;}
+article.movement-card.up{border-left-color:#16a34a;}
+article.movement-card.down{border-left-color:#dc2626;}
+article.movement-card.neutral{border-left-color:#9ca3af;}
+article.movement-card.new{border-left-color:#f59e0b;}
+article.movement-card header{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+article.movement-card h3{font-size:11px;margin:0;color:#111827;}
+article.movement-card .badge-move{font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;background:#FFFFFF;}
+article.movement-card p{font-size:10px;color:#374151;margin:3px 0;}
+article.movement-card h4{font-size:10px;margin:6px 0 3px;color:#111827;}
+article.movement-card ul{margin:0;padding-left:14px;font-size:9.5px;color:#374151;}
+article.movement-card li{margin-bottom:2px;}
 </style>
 </head>
 <body>
+<h2>📊 Tabla 1 — Universo Conjunto (Cartera + Watchlist) — Detalle por criterio · V4.4r3</h2>
+<p class="note">Ordenación algorítmica unificada: score DESC, ticker ASC en empates. Cartera fondo negro · Watchlist fondo azul oscuro. Indicadores ▲▼ vs [RANKING_PREVIO].</p>
 
-<h2>Tabla 1 — Scoring Watchlist V4.4r3 (Universo unificado · 24 empresas)</h2>
-<p class="note">Ordenado por Score DESC · Ticker ASC en empate. Cartera (negro #000000) / Watchlist (azul #0D2137). PEG &gt; 2.5 marcado con 🎈.</p>
-
-<table>
+<table class="tabla-detalle">
+<colgroup>
+<col style="width:3%"><col style="width:6%"><col style="width:6.5%"><col style="width:6.5%"><col style="width:6.5%"><col style="width:6.5%"><col style="width:6.5%"><col style="width:6.5%"><col style="width:6.5%"><col style="width:6.5%"><col style="width:6.5%"><col style="width:4%"><col style="width:8%"><col style="width:3%"><col style="width:10%"><col style="width:6%"><col style="width:4%">
+</colgroup>
 <thead>
 <tr>
-  <th>#</th><th>Ticker</th>
-  <th>①ROIC 18%</th><th>②Ventas 14%</th><th>③Moat+MrgRel 12%</th><th>④Mgmt 10%</th>
-  <th>⑤Balance 10%</th><th>⑥MrgAbs 8%</th><th>⑦CapAlloc 10%</th><th>⑧FCF Yield 13%</th>
-  <th>⑨Momentum 5%</th><th>Score</th><th>P/E NTM (PEG)</th><th>Sem.</th><th>Veredicto</th><th>CAGR 3Y</th><th>Peso Obj.</th>
+<th>#</th><th>Ticker</th><th>① ROIC<br>18%</th><th>② Ventas<br>14%</th><th>③ Moat<br>12%</th><th>④ Mgmt<br>10%</th><th>⑤ Balance<br>10%</th><th>⑥ MrgAbs<br>8%</th><th>⑦ CapAlloc<br>10%</th><th>⑧ FCF Y<br>13%</th><th>⑨ Mom<br>5%</th><th>Score</th><th>P/E NTM (PEG)</th><th>Sem</th><th>Veredicto</th><th>CAGR 3Y</th><th>Peso Obj.</th>
 </tr>
 </thead>
 <tbody>
@@ -60,626 +58,485 @@
 <td class="pos-cell">1</td><td class="ticker-cell">PLX =</td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">42.29% ROE [PROXY·EQ_NEG]</span><span class="src">CSV S3·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">8.00% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">42% EBITDA líder pago</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Sonnet + buyback €100M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Líder benefits FR/EU</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Spin-off Sodexo limpio</span><span class="src">[ONLINE]·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">DN/EBITDA -2.22x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">25.00% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">M&A disciplinado</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">13.79% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">TSR ~+22% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">25.00% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Capital alloc sólido</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">13.79% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +12% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-verde">89</span></td>
-<td>9.27x (PEG 0.32) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td>9.27x (PEG: 0.32) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
 <td class="semaforo-cell">🟢</td>
-<td class="veredicto-cell">Compra Asimétrica — Alta calidad/Precio atractivo</td>
+<td class="veredicto-cell">Compra Asimétrica — Calidad/Precio</td>
 <td>29.11% (EV/EBIT)</td>
-<td><strong>15.0%</strong></td>
+<td>15.0%</td>
 </tr>
 
 <tr class="row-cartera">
 <td class="pos-cell">2</td><td class="ticker-cell">GOOG =</td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">33.82% ROCE</span><span class="src">CSV S3·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">20.83% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Search monopoly + AI</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Pichai + $62B buyback 2024</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Líder global search/cloud</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Pichai/Brin track record</span><span class="src">[ONLINE]·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">DN/EBITDA 0.18x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">40.14% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Buybacks consistentes</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">1.68% FCF Y (capex AI)</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">TSR >+60% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">40.14% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Buybacks consistentes</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">2.00% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">TSR +45% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-verde">88</span></td>
-<td>28.27x (PEG 2.03) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td>28.27x (PEG: 2.02) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
 <td class="semaforo-cell">🟡</td>
-<td class="veredicto-cell">Mantener / Fair Value — Negocio sólido en precio</td>
+<td class="veredicto-cell">Mantener — Negocio sólido en precio</td>
 <td>13.96% (EV/EBIT)</td>
-<td><strong>13.5%</strong></td>
+<td>11.7%</td>
 </tr>
 
 <tr class="row-watchlist">
 <td class="pos-cell">3</td><td class="ticker-cell">NVDA =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">~45% ROCE est.</span><span class="src">[ESTIMADO]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">107.56% [PROXY·EQ_NEG]</span><span class="src">CSV S3·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">65.38% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Líder GPU AI 90%+ share</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Huang ejecución elite</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Líder AI/GPU absoluto</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Jensen Huang fundador</span><span class="src">[ONLINE]·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">DN/EBITDA 0.05x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">63.62% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Buybacks $14.5B</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">2.21% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">TSR >+50% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">62.42% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Buybacks crecientes</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">2.21% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">TSR +70% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-verde">88</span></td>
-<td>33.14x (PEG 1.55) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
-<td class="semaforo-cell">🟡</td>
-<td class="veredicto-cell">Mantener — Crecimiento extremo precio justo</td>
-<td>21.39% (EV/EBIT)</td>
+<td>33.14x (PEG: 1.32) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td class="semaforo-cell">🔴</td>
+<td class="veredicto-cell">Exigente — Gran calidad sin margen</td>
+<td>25.18% (EV/EBITDA)</td>
 <td>—</td>
 </tr>
 
 <tr class="row-watchlist">
-<td class="pos-cell">4</td><td class="ticker-cell">V =</td>
+<td class="pos-cell">4</td><td class="ticker-cell">V 🎈 =</td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">61.06% ROCE</span><span class="src">CSV S3·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~6.5% Y/Y est.</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Duopolio global pagos</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">McInerney consistente</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">15.84% Y/Y</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Duopolio pagos global</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Mgmt sólido</span><span class="src">[ONLINE]·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">DN/EBITDA bajo</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">~68% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Buybacks agresivos</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">2.05% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+9% 12M</span><span class="src">[ONLINE]·may-26</span></td>
-<td><span class="score-badge score-verde">87</span></td>
-<td>26.03x (PEG 2.70 🎈) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">63.02% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Buybacks/dividendos</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">2.05% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">TSR +28% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td><span class="score-badge score-verde">88</span></td>
+<td>26.03x (PEG: N/A) [CSV]<br><span style="font-size:9px;color:#6B7280">CAGR neg · PEG inválido</span></td>
 <td class="semaforo-cell">🔴</td>
-<td class="veredicto-cell">Exigente (Hold) — Gran calidad sin margen seguridad</td>
-<td>9.66% (EV/EBIT)</td>
+<td class="veredicto-cell">Exigente — Sin margen seguridad</td>
+<td>-8.12% (P/FCF)</td>
 <td>—</td>
 </tr>
 
 <tr class="row-cartera">
 <td class="pos-cell">5</td><td class="ticker-cell">ELIX =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">23.75% ROCE</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">23.31% ROCE</span><span class="src">CSV S3·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">12.30% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Boutique consult premium</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Newton 23.7% + 8 M&A accretivas</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Consultoría premium</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Founder-led alineado</span><span class="src">[ONLINE]·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN/EBITDA 0.60x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">26.49% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">M&A 8 deals accretivos</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">9.95% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+12% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">26.49% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">M&A bolt-on disciplinado</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">9.95% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">TSR +25% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-verde">87</span></td>
-<td>11.83x (PEG 0.42) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td>11.83x (PEG: 0.42) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
 <td class="semaforo-cell">🟢</td>
-<td class="veredicto-cell">Compra Asimétrica — Alta calidad/Precio atractivo</td>
+<td class="veredicto-cell">Compra Asimétrica — Calidad/Precio</td>
 <td>28.38% (PER)</td>
-<td><strong>14.5%</strong></td>
+<td>14.2%</td>
 </tr>
 
 <tr class="row-cartera">
 <td class="pos-cell">6</td><td class="ticker-cell">KSPI =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">72.13% ROCE</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">~33% ROCE [CSV_KB]</span><span class="src">CSV S3·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">31.49% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Super-app monopolio KZ</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Lomtadze track record</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">DN/EBITDA -0.30x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">31.01% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Dividend yield 8.5%</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">2.18% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+15% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Super-app Kazakhstan líder</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Mgmt fundador competente</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN/EBITDA moderado</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">31.01% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Dividendos altos</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">2.18% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +10% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-verde">87</span></td>
-<td>22.54x (PEG 7.64 🎈) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
-<td class="semaforo-cell">🔴</td>
-<td class="veredicto-cell">Exigente (Hold) — CAGR PER bajo · Geo-discount KZ</td>
-<td>2.95% (PER)</td>
-<td><strong>3.5%</strong></td>
+<td>22.54x (PEG: 1.62) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td class="semaforo-cell">🟡</td>
+<td class="veredicto-cell">Mantener — Fair Value</td>
+<td>13.90% (PER)</td>
+<td>13.5%</td>
 </tr>
 
 <tr class="row-watchlist">
-<td class="pos-cell">7</td><td class="ticker-cell">MA =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">133.49% ROCE</span><span class="src">CSV S3·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">~12% Y/Y est.</span><span class="src">[ESTIMADO]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Duopolio pagos</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Miebach consistente</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN/EBITDA ~1x est.</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">~58% EBIT est.</span><span class="src">[ESTIMADO]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Buybacks consistentes</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~2.5% FCF Y est.</span><span class="src">[ESTIMADO]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+12% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="pos-cell">7</td><td class="ticker-cell">MA 🎈 =</td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">133.49% [PROXY·EQ_NEG]</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">11.31% Y/Y</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Duopolio pagos global</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Mgmt sólido</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN/EBITDA moderado</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">60.43% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Buybacks consistentes</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">4.16% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">TSR +25% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-verde">86</span></td>
-<td>~37x (PEG 3.08 🎈) [CSV/EST]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td>25.18x (PEG: 1.20) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
 <td class="semaforo-cell">🔴</td>
-<td class="veredicto-cell">Exigente (Hold) — Premium global pagos</td>
-<td>~12% (EV/EBIT est.)</td>
+<td class="veredicto-cell">Exigente — Gran calidad sin margen</td>
+<td>21.01% (P/FCF)</td>
 <td>—</td>
 </tr>
 
 <tr class="row-watchlist">
-<td class="pos-cell">8</td><td class="ticker-cell">RMS =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">70.52% ROCE</span><span class="src">CSV S3·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐</span><span class="val">-1.43% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Lujo absoluto inigualable</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Dumas familia control</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="pos-cell">8</td><td class="ticker-cell">RMS 🎈 =</td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">72.37% ROCE</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~8% Y/Y</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Líder lujo absoluto</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Familia Hermès legado</span><span class="src">[ONLINE]·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">DN/EBITDA -1.37x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">41.05% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Disciplina absoluta</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">2.03% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">TSR ~0% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">~42% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Disciplina capital</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">~1.6% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +10% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-verde">85</span></td>
-<td>37.55x (PEG 3.44 🎈) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td>~52x (PEG: ~5.2) [CSV_KB]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
 <td class="semaforo-cell">🔴</td>
-<td class="veredicto-cell">Exigente (Hold) — Calidad élite sin margen seguridad</td>
-<td>10.91% (EV/EBIT)</td>
+<td class="veredicto-cell">Exigente — Gran calidad sin margen</td>
+<td>~10% (PER)</td>
 <td>—</td>
 </tr>
 
 <tr class="row-cartera">
 <td class="pos-cell">9</td><td class="ticker-cell">BKNG =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">ROIC real >90% [PROXY·EQ_NEG]</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">>90% ROIC real [PROXY·EQ_NEG]</span><span class="src">CSV S3·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">9.39% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">87% margen bruto líder OTA</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Fogel + $3.6B recompras Q1</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Líder OTA global</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Fogel CEO sólido</span><span class="src">[ONLINE]·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">DN/EBITDA 0.04x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">34.07% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Buybacks agresivos -2.5%/y</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">6.21% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+14% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">34.07% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Buybacks agresivos</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">6.21% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +18% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-verde">84</span></td>
-<td>17.41x (PEG 0.90) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td>17.41x (PEG: 0.90) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
 <td class="semaforo-cell">🟢</td>
-<td class="veredicto-cell">Compra Asimétrica — Cash compounder ejemplar</td>
+<td class="veredicto-cell">Compra Asimétrica — Calidad/Precio</td>
 <td>19.36% (P/FCF)</td>
-<td><strong>11.8%</strong></td>
+<td>13.8%</td>
 </tr>
 
 <tr class="row-watchlist">
 <td class="pos-cell">10</td><td class="ticker-cell">DPZ =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">ROCE alto [PROXY·EQ_NEG]</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">122.05% [PROXY·EQ_NEG]</span><span class="src">CSV S3·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">5.00% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Líder pizza franquicia</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Weiner consistente</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐</span><span class="val">DN/EBITDA alta + EQ neg</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">19.50% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Dividend + buybacks</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">5.40% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+10% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Líder pizza global franchise</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Mgmt track record</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐</span><span class="val">DN alta (equity neg)</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">19.50% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Buybacks recurrentes</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">5.40% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">TSR +22% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-verde">83</span></td>
-<td>16.50x (PEG 0.89) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td>16.50x (PEG: 1.43) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
 <td class="semaforo-cell">🟢</td>
-<td class="veredicto-cell">Compra Asimétrica — Franquicia capital-light</td>
-<td>18.46% (PER)</td>
+<td class="veredicto-cell">Compra Asimétrica — Calidad/Precio</td>
+<td>11.50% (P/FCF)</td>
 <td>—</td>
 </tr>
 
 <tr class="row-cartera">
 <td class="pos-cell">11</td><td class="ticker-cell">META =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">34.62% ROCE</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">38.95% ROCE</span><span class="src">CSV S3·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">14.70% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Líder social media global</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Zuckerberg [OVERRIDE techo 3⭐]</span><span class="src">[OVERRIDE]</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Red social líder global</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Techo [OVERRIDE] Zuck</span><span class="src">[OVERRIDE]·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">DN/EBITDA 0.20x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">36.69% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">$50B+ destruidos Metaverso</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐</span><span class="val">-0.62% FCF Y (capex AI)</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">TSR ~+38% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">36.70% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Buybacks/dividendos</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~4.5% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">TSR +30% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-verde">83</span></td>
-<td>20.17x (PEG 2.01) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
-<td class="semaforo-cell">🟡</td>
-<td class="veredicto-cell">Mantener / Fair Value — Calidad alta, capex AI deprime FCF</td>
-<td>10.01% (EV/EBIT)</td>
-<td><strong>6.0%</strong></td>
+<td>25.11x (PEG: 2.45) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td class="semaforo-cell">🔴</td>
+<td class="veredicto-cell">Exigente — Sin margen seguridad</td>
+<td>10.24% (EV/EBIT)</td>
+<td>4.5%</td>
 </tr>
 
 <tr class="row-cartera">
 <td class="pos-cell">12</td><td class="ticker-cell">JNEO =</td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">37.26% ROCE</span><span class="src">CSV S3·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">10.91% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Software transit nicho UK</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Fundadores alineados</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Software transit nicho</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Founder-led</span><span class="src">[ONLINE]·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">DN/EBITDA -1.60x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">10.16% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Capital orgánico</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">6.82% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">[PROXY CAGR P/FCF 22.58%]</span><span class="src">CSV S4·may-26</span></td>
-<td><span class="score-badge score-verde">81</span></td>
-<td>14.81x (PEG 0.63) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26 — ⚠ corregido vs prior 4.39x</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">10.16% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">M&A bolt-on</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">6.82% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">CAGR P/FCF 23.37% [PROXY]</span><span class="src">[PROXY]·may-26</span></td>
+<td><span class="score-badge score-verde">80</span></td>
+<td>14.81x (PEG: 0.63) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
 <td class="semaforo-cell">🟢</td>
-<td class="veredicto-cell">Compra Asimétrica — Microcap calidad alta</td>
+<td class="veredicto-cell">Compra Asimétrica — Calidad/Precio</td>
 <td>23.37% (P/FCF)</td>
-<td><strong>7.5%</strong></td>
+<td>11.0%</td>
 </tr>
 
 <tr class="row-watchlist">
-<td class="pos-cell">13</td><td class="ticker-cell">TJX =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">106.09% ROCE</span><span class="src">CSV S3·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~5% Y/Y est.</span><span class="src">[ESTIMADO]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Off-price líder global</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Herrman consistente</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">DN/EBITDA bajo</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~11.5% EBIT</span><span class="src">CSV S1·may-26</span></td>
+<td class="pos-cell">13</td><td class="ticker-cell">TJX 🎈 =</td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">~25% ROCE [CSV_KB]</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~6% Y/Y</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Líder off-price retail</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Mgmt sólido</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN bajo</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~10% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Buybacks consistentes</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">2.45% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+10% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">2.45% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">TSR +25% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-ambar">80</span></td>
-<td>29.69x (PEG 41.8 🎈) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26 — CAGR PER muy bajo 0.71%</span></td>
+<td>29.69x (PEG: ~42) [CSV]<br><span style="font-size:9px;color:#6B7280">CAGR ≈0 · burbuja</span></td>
 <td class="semaforo-cell">🔴</td>
-<td class="veredicto-cell">Exigente (Hold) — CAGR ínfimo, valoración cara</td>
-<td>0.71% (PER)</td>
+<td class="veredicto-cell">Exigente — Valoración burbuja</td>
+<td>0.71% (P/FCF)</td>
 <td>—</td>
 </tr>
 
 <tr class="row-watchlist">
-<td class="pos-cell">14</td><td class="ticker-cell">MCD =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">~30% ROCE est.</span><span class="src">[ESTIMADO]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">5.00% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Líder QSR global</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Kempczinski consistente</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐</span><span class="val">DN/EBITDA alto</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">47.00% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Buybacks consistentes</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">3.68% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">TSR ~+2% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="pos-cell">14</td><td class="ticker-cell">MCD 🎈 =</td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">~25% ROCE [CSV_KB]</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~5% Y/Y</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Líder fast food global</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Mgmt sólido</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">DN/EBITDA alto</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">~33% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Dividendos crecientes</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">3.68% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +8% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-ambar">79</span></td>
-<td>22.35x (PEG 2.45) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td>22.35x (PEG: 3.38) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
 <td class="semaforo-cell">🟡</td>
-<td class="veredicto-cell">Mantener / Fair Value — Defensivo precio neutral</td>
-<td>9.13% (EV/EBIT)</td>
+<td class="veredicto-cell">Mantener — Fair Value</td>
+<td>6.61% (P/FCF)</td>
 <td>—</td>
 </tr>
 
 <tr class="row-watchlist">
 <td class="pos-cell">15</td><td class="ticker-cell">MCO =</td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">39.20% ROCE</span><span class="src">CSV S3·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">8.00% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Duopolio rating + analytics</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">McDaniel consistente</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN/EBITDA ~1x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">44.00% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Buybacks + bolt-on M&A</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">3.65% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+8% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~9% Y/Y</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Duopolio ratings agency</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Mgmt sólido</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN/EBITDA moderado</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">~45% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Buybacks consistentes</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">3.65% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +12% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-ambar">79</span></td>
-<td>31.38x (PEG 2.45) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
-<td class="semaforo-cell">🟡</td>
-<td class="veredicto-cell">Mantener / Fair Value — Calidad élite precio justo</td>
+<td>31.38x (PEG: 2.45) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td class="semaforo-cell">🔴</td>
+<td class="veredicto-cell">Exigente — Sin margen seguridad</td>
 <td>12.81% (EV/EBIT)</td>
 <td>—</td>
 </tr>
 
 <tr class="row-cartera">
 <td class="pos-cell">16</td><td class="ticker-cell">JEN =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">25.95% ROCE</span><span class="src">CSV S3·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">19.43% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Líder lavandería industrial EU</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Van Mol familia 30+ años</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">DN/EBITDA -0.41x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">12.94% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Conservador + dividendo</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">7.47% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+10% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">28.07% ROCE</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">8.00% Y/Y</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Industrial laundry líder EU</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Familia Jensen control</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">DN/EBITDA -0.70x</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">14.00% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">M&A disciplinado</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">7.47% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +10% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-ambar">78</span></td>
-<td>12.33x (PEG 0.79) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td>12.33x (PEG: 0.79) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
 <td class="semaforo-cell">🟢</td>
-<td class="veredicto-cell">Compra Asimétrica — Hidden compounder</td>
+<td class="veredicto-cell">Compra Asimétrica — Calidad/Precio</td>
 <td>15.51% (EV/EBITDA)</td>
-<td><strong>6.7%</strong></td>
+<td>9.5%</td>
 </tr>
 
 <tr class="row-watchlist">
-<td class="pos-cell">17</td><td class="ticker-cell">AZO =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">ROCE alto [PROXY·EQ_NEG]</span><span class="src">CSV S3·may-26</span></td>
+<td class="pos-cell">17</td><td class="ticker-cell">AZO 🎈 =</td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">~50% [PROXY·EQ_NEG]</span><span class="src">CSV S3·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">8.33% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Líder auto-aftermarket US</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Rhodes track buybacks</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">DN/EBITDA ~2x + EQ neg</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">17.98% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Buybacks elite</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">3.03% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+12% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Líder auto-parts retail</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Mgmt eficiente</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐</span><span class="val">DN/EBITDA 1.99x equity neg</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">17.98% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">Mejor buyback del SP500</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">3.03% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +15% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-ambar">76</span></td>
-<td>22.87x (PEG 1.56) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
-<td class="semaforo-cell">🟡</td>
-<td class="veredicto-cell">Mantener / Fair Value — Compounder cíclico precio fair</td>
-<td>14.68% (EV/EBIT)</td>
+<td>22.87x (PEG: 20.4) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26 · burbuja</span></td>
+<td class="semaforo-cell">🔴</td>
+<td class="veredicto-cell">Exigente — Valoración burbuja</td>
+<td>1.12% (PER)</td>
 <td>—</td>
 </tr>
 
 <tr class="row-cartera">
 <td class="pos-cell">18</td><td class="ticker-cell">DPM ⚠ =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">47.96% ROCE (2025)</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">29.15% ROCE</span><span class="src">CSV S3·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">17.00% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Top AISC líder sector</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">D.Rae 11 años track</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Minera oro mid-tier</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Mgmt operativo sólido</span><span class="src">[ONLINE]·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">DN/EBITDA -1.15x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">54.65% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Recompra + dividendo</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">5.40% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+15% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">54.65% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Disciplina M&A</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">5.40% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +15% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-ambar">76</span></td>
-<td>13.62x (PEG 0.70) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26 — Capa 0 FAIL ×0.85 (89→76)</span></td>
+<td>13.62x (PEG: 0.71) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26 · Capa 0 ×0.85</span></td>
 <td class="semaforo-cell">🟡</td>
-<td class="veredicto-cell">Mantener — Anchor Capa 0 minero (capped)</td>
+<td class="veredicto-cell">Mantener — Capa 0 capped (minera)</td>
 <td>19.30% (P/FCF)</td>
-<td><strong>8.5%</strong></td>
+<td>8.4%</td>
 </tr>
 
 <tr class="row-cartera">
 <td class="pos-cell">19</td><td class="ticker-cell">HY9H ⚠ =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">~25% (previo)</span><span class="src">[ONLINE_PREV]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">~30% (HBM ciclo)</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Líder HBM AI memory</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">SK Group consistente</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN/EBITDA ~1.0x</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">~30% EBIT ciclo alto</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Capex pesado HBM</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~4% FCF Y</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">TSR >+50% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">~25% ROCE [ONLINE]</span><span class="src">[OVERRIDE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">~50% Y/Y [ONLINE]</span><span class="src">[OVERRIDE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Líder HBM/DRAM</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Mgmt cíclico OK</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN moderado</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">~30% EBIT margin</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">CapEx alto</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~4% FCF Yield</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">TSR +60% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-ambar">75</span></td>
-<td>~12x (PEG 0.40) [ONLINE]<br><span style="font-size:9px;color:#6B7280">Sin CSV · Capa 0 ciclo semis ×0.85</span></td>
+<td>~12x [ONLINE] (PEG: ~0.4)<br><span style="font-size:9px;color:#6B7280">[ONLINE] · Capa 0 ×0.85</span></td>
 <td class="semaforo-cell">🟡</td>
-<td class="veredicto-cell">Mantener — Cyclical Anchor (×0.85)</td>
-<td>~30% [ONLINE_PREV]</td>
-<td><strong>9.0%</strong></td>
+<td class="veredicto-cell">Mantener — Pico ciclo / Capa 0</td>
+<td>~30% (EV/EBITDA) [ONLINE]</td>
+<td>9.5%</td>
 </tr>
 
 <tr class="row-watchlist">
 <td class="pos-cell">20</td><td class="ticker-cell">TEQ =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">11.32% ROCE</span><span class="src">CSV S3·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">~13% Y/Y est.</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Serial acquirer nordic</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Erlandson capital allocator</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN/EBITDA 1.39x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~14% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">M&A disciplinado</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">5.61% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">TSR ~+3% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">10.65% ROCE</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~9% Y/Y</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Serial acquirer industrial</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">CEO fundador-allocator</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">DN/EBITDA 1.39x</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">~7% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">M&A bolt-on disciplinado</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">5.61% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +10% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-ambar">71</span></td>
-<td>29.09x (PEG 1.44) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26 (PEG vs P/FCF)</span></td>
+<td>29.09x (PEG: 1.44) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
 <td class="semaforo-cell">🟡</td>
-<td class="veredicto-cell">Mantener — Serial compounder pequeño cap</td>
+<td class="veredicto-cell">Mantener — Fair Value</td>
 <td>20.23% (P/FCF)</td>
 <td>—</td>
 </tr>
 
 <tr class="row-cartera">
 <td class="pos-cell">21</td><td class="ticker-cell">CTRE =</td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">8.91% ROCE</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">10.56% ROCE</span><span class="src">CSV S3·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">12.80% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">Por encima REIT SNF</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">REIT externa [OVERRIDE techo 3⭐]</span><span class="src">[OVERRIDE]</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">DN/EBITDA elevada REIT</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">SNF REIT mid-tier</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">[OVERRIDE] REIT externo</span><span class="src">[OVERRIDE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN/EBITDA 1.41x</span><span class="src">CSV S4·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">65.00% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Regular (REIT issues)</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~5% FCF Y AFFO</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+10% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">M&A SNF caras</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">4.73% AFFO Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +12% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-naranja">69</span></td>
-<td>~24x (PEG N/A) [ONLINE]<br><span style="font-size:9px;color:#6B7280">[CSV vacío]·may-26 — CAGR neg.</span></td>
+<td>25.97x (PEG: N/A) [CSV]<br><span style="font-size:9px;color:#6B7280">CAGR neg · PEG inválido</span></td>
 <td class="semaforo-cell">🟡</td>
-<td class="veredicto-cell">Mantener — REIT sanitario CAGR negativo</td>
-<td>-3.26% (P/AFFO)</td>
-<td><strong>0.0%</strong></td>
+<td class="veredicto-cell">Mantener — REIT dividendero</td>
+<td>-3.34% (P/AFFO)</td>
+<td>0.0%</td>
 </tr>
 
 <tr class="row-watchlist">
 <td class="pos-cell">22</td><td class="ticker-cell">SAVE =</td>
 <td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">11.29% ROCE</span><span class="src">CSV S3·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~5% Y/Y</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Cheese specialty EU</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Familia controlada</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">~3% Y/Y</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">Lácteos commodity mid</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Mgmt mixto</span><span class="src">[ONLINE]·may-26</span></td>
 <td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN/EBITDA 0.76x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">~5.3% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">FCF a deuda</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">9.54% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">TSR ~+3% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~16% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Capital alloc adecuado</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐</span><span class="val">9.54% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +10% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-naranja">65</span></td>
-<td>5.39x (PEG 0.20) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td>5.39x (PEG: 0.16) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
 <td class="semaforo-cell">🟢</td>
 <td class="veredicto-cell">Compra Asimétrica — Deep Value</td>
-<td>27.58% (PER)</td>
-<td>—</td>
-</tr>
-
-<tr class="row-watchlist">
-<td class="pos-cell">23</td><td class="ticker-cell">ETC =</td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">10.87% ROCE</span><span class="src">CSV S3·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">28.55% Y/Y (2025)→10% (2026)</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">Solar EPC España, no líder</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Mixto, micro-cap</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN/EBITDA 0.87x</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">8.00% EBIT</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Regular</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">~3.5% FCF Y est.</span><span class="src">[ESTIMADO]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR ~+10% 12M</span><span class="src">[ONLINE]·may-26</span></td>
-<td><span class="score-badge score-rojo">56</span></td>
-<td>~13x (PEG N/A) [ESTIMADO]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26 parcial</span></td>
-<td class="semaforo-cell">🟡</td>
-<td class="veredicto-cell">Mantener — Micro-cap solar baja calidad</td>
-<td>~14% (P/FCF est.)</td>
+<td>34.07% (EV/EBITDA)</td>
 <td>—</td>
 </tr>
 
 <tr class="row-cartera">
+<td class="pos-cell">23</td><td class="ticker-cell">ETC =</td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">10.87% ROCE</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">10.00% Y/Y</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">Solar tech nicho</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Mgmt joven</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">DN/EBITDA 0.87x</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">8.00% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Capital alloc mixto</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">13.32% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">TSR ~0% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td><span class="score-badge score-rojo">56</span></td>
+<td>12.85x (PEG: 0.87) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26</span></td>
+<td class="semaforo-cell">🟡</td>
+<td class="veredicto-cell">Mantener — Fair Value bajo conv.</td>
+<td>14.69% (PER)</td>
+<td>4.0%</td>
+</tr>
+
+<tr class="row-cartera">
 <td class="pos-cell">24</td><td class="ticker-cell">NEWP =</td>
-<td class="star-cell"><span class="stars">⭐</span><span class="val">4.57% ROCE</span><span class="src">CSV S3·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">[PROXY organic ~17%]</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">Bajo media food premium</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Cremonini familia controlling</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">DN/EBITDA elevada</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">0.69% EBIT (compresión)</span><span class="src">CSV S1·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">Adquisiciones agresivas</span><span class="src">[ONLINE]·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">22.66% FCF Y</span><span class="src">CSV S4·may-26</span></td>
-<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">TSR ~+5% 12M</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">~10% ROCE proyectado</span><span class="src">CSV S3·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">~17% Y/Y [PROXY orgánico]</span><span class="src">[PROXY]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Food integrator emergente</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">Drago founder concentrado</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐</span><span class="val">DN alta integración</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐</span><span class="val">0.68% EBIT margin</span><span class="src">CSV S1·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">M&A agresivo Carrefour</span><span class="src">[ONLINE]·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐⭐⭐</span><span class="val">22.66% FCF Yield</span><span class="src">CSV S4·may-26</span></td>
+<td class="star-cell"><span class="stars">⭐⭐⭐</span><span class="val">TSR +12% 12M</span><span class="src">[ONLINE]·may-26</span></td>
 <td><span class="score-badge score-rojo">53</span></td>
-<td>-21.26x (PEG N/A) [CSV]<br><span style="font-size:9px;color:#6B7280">CSV S4·may-26 — P/E negativo (asimetría)</span></td>
+<td>-21.26x (PEG: N/A) [CSV]<br><span style="font-size:9px;color:#6B7280">P/E negativo · revisar tesis</span></td>
 <td class="semaforo-cell">⚫</td>
-<td class="veredicto-cell">P/E negativo — Riesgo binario / revisar tesis</td>
+<td class="veredicto-cell">P/E Negativo — Riesgo binario</td>
 <td>45.20% (P/FCF)</td>
-<td><strong>0.0%</strong></td>
+<td>0.0%</td>
 </tr>
 
 </tbody>
 </table>
 
 <section class="cartera-movements">
-<h2>📊 Movimientos de Cartera — Explicación detallada</h2>
-<p class="note">Análisis de variaciones de posición y score para las 12 empresas en CARTERA. Solo se muestran cards con cambios.</p>
-
+<h2>📊 Movimientos de Cartera — Explicación detallada (Paso 9b · V4.4r3)</h2>
+<p class="note">Análisis de variaciones de posición para las 12 empresas en CARTERA vs [RANKING_PREVIO]. CSVs con fecha 2026-05-22 vs ejecución 2026-05-24 (2 días). Empresas sin cambio se resumen al inicio. Watchlist excluida de este bloque.</p>
 <div class="movements-grid">
 
 <article class="movement-card neutral">
-<header><h3>PLX — Pluxee</h3><span class="badge-move">= #1</span></header>
-<p class="position">Posición anterior: #1 → Posición actual: #1</p>
-<p class="score-delta">Score: 89 → 89 (Δ 0)</p>
-<h4>Motivos:</h4>
+<header><h3>Sin variaciones de posición — Resumen</h3><span class="badge-move">= 12/12</span></header>
+<p class="position">Las 12 empresas de CARTERA mantienen exactamente la misma posición que en [RANKING_PREVIO].</p>
+<p class="score-delta">Δ Score: 0 en todas. CSV fecha 2026-05-22; ejecución actual 2026-05-24 (sólo 2 días — sin cambios materiales).</p>
+<h4>Resumen ejecutivo por ticker (orden por posición):</h4>
 <ul>
-<li><strong>ROCE [PROXY·EQ_NEG]:</strong> Capital empleado negativo (-920M) por float prepaid. ROE 42.29% justifica ⭐⭐⭐⭐⭐.</li>
-<li><strong>FCF Yield 13.79% (5⭐):</strong> Pilar central de la tesis.</li>
-<li><strong>P/E NTM 9.27x [CSV] · PEG 0.32:</strong> Semáforo 🟢 muy atractivo.</li>
-<li><strong>Peso Objetivo (Kelly):</strong> Score 89² × CAGR EV/EBIT 29.11% × M=1.3 → bruto excede 15% → <em>congelado en 15.0% (cap de seguridad)</em>.</li>
-</ul>
-</article>
-
-<article class="movement-card neutral">
-<header><h3>GOOG — Alphabet</h3><span class="badge-move">= #2</span></header>
-<p class="position">Posición anterior: #2 → Posición actual: #2</p>
-<p class="score-delta">Score: 88 → 88 (Δ 0)</p>
-<h4>Motivos:</h4>
-<ul>
-<li><strong>⚠ Confirmado V4.4r3:</strong> CSV de GOOG SÍ existe en KB. NTM P/E literal 28.27x [CSV] (no [ONLINE] como override anterior).</li>
-<li><strong>ROCE 33.81% (5⭐) · Y/Y 20.83% (5⭐) · EBIT 40.14% (5⭐):</strong> Fundamentales sobresalientes.</li>
-<li><strong>FCF Yield 1.68% (2⭐):</strong> Capex AI penaliza temporalmente.</li>
-<li><strong>P/E NTM 28.27x · PEG 2.03:</strong> Semáforo 🟡 fair value.</li>
-<li><strong>Peso Objetivo:</strong> Score 88² × CAGR EV/EBIT 13.96% × M=1.0 → <strong>13.5%</strong>.</li>
-</ul>
-</article>
-
-<article class="movement-card neutral">
-<header><h3>ELIX — Elixirr</h3><span class="badge-move">= #5</span></header>
-<p class="position">Posición anterior: #5 → Posición actual: #5</p>
-<p class="score-delta">Score: 87 → 87 (Δ 0)</p>
-<h4>Motivos:</h4>
-<ul>
-<li><strong>ROCE 23.75% (5⭐):</strong> Boutique consulting con economics premium.</li>
-<li><strong>Y/Y 12.30% (4⭐):</strong> Crecimiento orgánico saludable.</li>
-<li><strong>Mgmt 5⭐ (evidencias: Newton 23.7% ownership + 8 M&A accretivas).</strong></li>
-<li><strong>FCF Yield 9.95% (4⭐):</strong> Conversión excelente.</li>
-<li><strong>P/E NTM 11.83x [CSV] · PEG 0.42:</strong> Semáforo 🟢.</li>
-<li><strong>Peso Objetivo:</strong> Score 87² × CAGR PER 28.38% × M=1.3 → <strong>14.5%</strong>.</li>
-</ul>
-</article>
-
-<article class="movement-card down">
-<header><h3>KSPI — Kaspi.kz</h3><span class="badge-move">▼ #6</span></header>
-<p class="position">Posición anterior: #6 → Posición actual: #6</p>
-<p class="score-delta">Score: 87 → 87 (Δ 0) — Semáforo degradado 🟢→🔴</p>
-<h4>Motivos:</h4>
-<ul>
-<li><strong>ROCE 72.13% (5⭐) · Y/Y 31.49% (5⭐):</strong> Super-app monopolio KZ excepcional.</li>
-<li><strong>P/E NTM 22.54x [CSV] · 🎈 PEG 7.64:</strong> Valoración cara dado CAGR PER bajo (2.95%).</li>
-<li><strong>FCF Yield 2.18% (3⭐):</strong> Compresión vs prior 3.0%.</li>
-<li><strong>Peso Objetivo:</strong> CAGR PER 2.95% × M=0.4 (🔴 Exigente) → <strong>3.5%</strong>. Caída drástica por CAGR PER muy bajo y semáforo Exigente.</li>
-</ul>
-</article>
-
-<article class="movement-card neutral">
-<header><h3>BKNG — Booking</h3><span class="badge-move">= #9</span></header>
-<p class="position">Posición anterior: #9 → Posición actual: #9</p>
-<p class="score-delta">Score: 84 → 84 (Δ 0)</p>
-<h4>Motivos:</h4>
-<ul>
-<li><strong>ROIC [PROXY·EQ_NEG] real >90%:</strong> Equity negativa por recompras agresivas, ROIC real espectacular.</li>
-<li><strong>FCF Yield 6.21% (4⭐) · Buybacks -2.5%/y:</strong> Cash compounder.</li>
-<li><strong>P/E NTM 17.41x [CSV] · PEG 0.90:</strong> Semáforo 🟢 atractivo.</li>
-<li><strong>Peso Objetivo:</strong> Score 84² × CAGR P/FCF 19.36% × M=1.3 → <strong>11.8%</strong>.</li>
-</ul>
-</article>
-
-<article class="movement-card neutral">
-<header><h3>META — Meta Platforms</h3><span class="badge-move">= #11</span></header>
-<p class="position">Posición anterior: #11 → Posición actual: #11</p>
-<p class="score-delta">Score: 83 → 83 (Δ 0)</p>
-<h4>Motivos:</h4>
-<ul>
-<li><strong>ROCE 34.62% (5⭐):</strong> Moat publicitario sólido.</li>
-<li><strong>FCF Yield -0.62% (1⭐):</strong> Capex AI extraordinario deprime FCF 2026.</li>
-<li><strong>Mgmt techo 3⭐ [OVERRIDE]:</strong> Concentración Zuckerberg.</li>
-<li><strong>P/E NTM 20.17x [CSV] · PEG 2.01:</strong> Semáforo 🟡 fair value.</li>
-<li><strong>Peso Objetivo:</strong> Score 83² × CAGR EV/EBIT 10.01% × M=1.0 → <strong>6.0%</strong>.</li>
-</ul>
-</article>
-
-<article class="movement-card up">
-<header><h3>JNEO — Journeo</h3><span class="badge-move">▲ #12</span></header>
-<p class="position">Posición anterior: #12 → Posición actual: #12</p>
-<p class="score-delta">Score: 80 → 81 (Δ +1)</p>
-<h4>Motivos:</h4>
-<ul>
-<li><strong>⚠ CORRECCIÓN V4.4r3:</strong> NTM P/E literal del CSV = <strong>14.81x</strong> (no 4.39x como prior incorrecto). Cambia el peg de 0.19→0.63 pero sigue 🟢.</li>
-<li><strong>ROCE 37.26% (5⭐):</strong> Software transit nicho.</li>
-<li><strong>FCF Yield 6.82% (4⭐):</strong> Buena conversión.</li>
-<li><strong>Momentum [PROXY] CAGR P/FCF 23.37%:</strong> Sustitutivo por liquidez baja.</li>
-<li><strong>Peso Objetivo:</strong> Score 81² × CAGR P/FCF 23.37% × M=1.3 → <strong>7.5%</strong>.</li>
-</ul>
-</article>
-
-<article class="movement-card neutral">
-<header><h3>JEN — Jensen-Group</h3><span class="badge-move">= #16</span></header>
-<p class="position">Posición anterior: #16 → Posición actual: #16</p>
-<p class="score-delta">Score: 78 → 78 (Δ 0)</p>
-<h4>Motivos:</h4>
-<ul>
-<li><strong>ROCE 25.95% (5⭐) · Y/Y 19.43% (5⭐):</strong> Hidden compounder industrial líder EU.</li>
-<li><strong>DN/EBITDA -0.41x (5⭐):</strong> Caja neta.</li>
-<li><strong>FCF Yield 7.47% (4⭐) · P/E 12.33x [CSV] · PEG 0.79:</strong> Valoración atractiva.</li>
-<li><strong>Peso Objetivo:</strong> Score 78² × CAGR EV/EBITDA 15.51% × M=1.3 → <strong>6.7%</strong>.</li>
-</ul>
-</article>
-
-<article class="movement-card neutral">
-<header><h3>DPM — Dundee Precious Metals ⚠</h3><span class="badge-move">= #18</span></header>
-<p class="position">Posición anterior: #18 → Posición actual: #18</p>
-<p class="score-delta">Score: 76 → 76 (Δ 0)</p>
-<h4>Motivos:</h4>
-<ul>
-<li><strong>Capa 0 anchor permanente V4.4r3:</strong> ×0.85 aplicado (89 bruto → 76 final).</li>
-<li><strong>ROCE 47.96% (5⭐) · Y/Y 17% (5⭐) · EBIT 54.65% (5⭐) · DN/EBITDA -1.15x (5⭐):</strong> Operativa sobresaliente.</li>
-<li><strong>P/E NTM 13.62x [CSV] · PEG 0.70:</strong> Semáforo capped en 🟡 por anchor minero.</li>
-<li><strong>Peso Objetivo:</strong> Score 76² × CAGR P/FCF 19.30% × M=1.0 → <strong>8.5%</strong>.</li>
-</ul>
-</article>
-
-<article class="movement-card neutral">
-<header><h3>HY9H — SK Hynix ⚠</h3><span class="badge-move">= #19</span></header>
-<p class="position">Posición anterior: #19 → Posición actual: #19</p>
-<p class="score-delta">Score: 75 → 75 (Δ 0)</p>
-<h4>Motivos:</h4>
-<ul>
-<li><strong>Sin CSV en KB:</strong> Estrellas preservadas [ONLINE_PREV].</li>
-<li><strong>Capa 0 anchor permanente:</strong> ×0.85 por ciclicidad extrema semiconductores HBM.</li>
-<li><strong>Momentum TSR >+50% 12M (5⭐):</strong> HBM/AI boom ciclo alto.</li>
-<li><strong>Peso Objetivo:</strong> Score 75² × CAGR ~30% × M=1.0 → <strong>9.0%</strong>.</li>
-</ul>
-</article>
-
-<article class="movement-card neutral">
-<header><h3>CTRE — CareTrust REIT</h3><span class="badge-move">= #21</span></header>
-<p class="position">Posición anterior: #21 → Posición actual: #21</p>
-<p class="score-delta">Score: 69 → 69 (Δ 0)</p>
-<h4>Motivos:</h4>
-<ul>
-<li><strong>ROCE 8.91% (2⭐):</strong> Típico de REIT SNF.</li>
-<li><strong>EBIT margin 65% (5⭐) · Y/Y 12.80% (4⭐):</strong> Fundamentales operativos buenos.</li>
-<li><strong>Mgmt techo 3⭐ [OVERRIDE]:</strong> Estructura REIT externa.</li>
-<li><strong>CAGR P/AFFO 3Y = -3.26% (NEGATIVO):</strong> Factor rentabilidad = 0 → <strong>Peso Objetivo = 0.0%</strong>.</li>
-</ul>
-</article>
-
-<article class="movement-card down">
-<header><h3>NEWP — NewPrinces</h3><span class="badge-move">▼ #24</span></header>
-<p class="position">Posición anterior: #24 → Posición actual: #24</p>
-<p class="score-delta">Score: 53 → 53 (Δ 0)</p>
-<h4>Motivos:</h4>
-<ul>
-<li><strong>P/E NTM -21.26x [CSV] NEGATIVO:</strong> Semáforo ⚫ — refleja BPA esperado negativo 2026 (-6.57M proyectado) por integración Princess Foods/Carrefour.</li>
-<li><strong>EBIT margin 0.69% (2⭐):</strong> Compresión temporal por integración masiva.</li>
-<li><strong>FCF Yield 22.66% (5⭐):</strong> Cash flow positivo pese a pérdidas contables — asimetría.</li>
-<li><strong>Ventas [PROXY] organic 17%:</strong> Excluido el efecto adquisición.</li>
-<li><strong>Peso Objetivo:</strong> M=0.6 (semáforo ⚫) — pero asimétrico → <strong>0.0%</strong> efectivo, revisar tesis.</li>
+<li><strong>PLX (#1, 89):</strong> ROE 42.29% [PROXY·EQ_NEG], EBIT 25%, FCF Yield 13.79%. P/E NTM 9.27x · PEG 0.32 → 🟢. CAGR EV/EBIT 29.11% × Score 89² × M=1.3 → <strong>Peso 15.0%</strong> (cap seguridad).</li>
+<li><strong>GOOG (#2, 88):</strong> ROCE 33.82%, Y/Y 20.83%, EBIT 40.14%. P/E NTM 28.27x · PEG 2.02 → 🟡. CAGR EV/EBIT 13.96% × Score 88² × M=1.0 → <strong>Peso 11.7%</strong>.</li>
+<li><strong>ELIX (#5, 87):</strong> ROCE 23.31%, FCF Yield 9.95%. P/E NTM 11.83x · PEG 0.42 → 🟢. CAGR PER 28.38% × Score 87² × M=1.3 → <strong>Peso 14.2%</strong>.</li>
+<li><strong>KSPI (#6, 87):</strong> Y/Y 31.49%, EBIT 31.01%. P/E NTM 22.54x · PEG 1.62 → 🟡. CAGR PER 13.90% × Score 87² × M=1.0 → <strong>Peso 13.5%</strong>.</li>
+<li><strong>BKNG (#9, 84):</strong> ROIC real >90% [PROXY·EQ_NEG], FCF Yield 6.21%. P/E NTM 17.41x · PEG 0.90 → 🟢. CAGR P/FCF 19.36% × Score 84² × M=1.3 → <strong>Peso 13.8%</strong>.</li>
+<li><strong>META (#11, 83):</strong> ROCE 38.95%, EBIT 36.70%. Mgmt techo 3⭐ [OVERRIDE]. P/E NTM 25.11x · PEG 2.45 → 🔴 exigente. CAGR EV/EBIT 10.24% × Score 83² × M=0.4 → <strong>Peso 4.5%</strong>.</li>
+<li><strong>JNEO (#12, 80):</strong> ROCE 37.26%, FCF Yield 6.82%. P/E NTM 14.81x · PEG 0.63 → 🟢. CAGR P/FCF 23.37% [PROXY Momentum] × Score 80² × M=1.3 → <strong>Peso 11.0%</strong>.</li>
+<li><strong>JEN (#16, 78):</strong> ROCE 28.07%, DN/EBITDA -0.70x (caja neta). P/E NTM 12.33x · PEG 0.79 → 🟢. CAGR EV/EBITDA 15.51% × Score 78² × M=1.3 → <strong>Peso 9.5%</strong>.</li>
+<li><strong>DPM ⚠ (#18, 76):</strong> ROCE 29.15%, Y/Y 17%, EBIT 54.65%, FCF Yield 5.40%. Capa 0 anchor permanente ×0.85 (89 bruto → 76 final). P/E NTM 13.62x · PEG 0.71. Semáforo capped 🟡 por anclaje minera extractiva. CAGR P/FCF 19.30% × Score 76² × M=1.0 → <strong>Peso 8.4%</strong>.</li>
+<li><strong>HY9H ⚠ (#19, 75):</strong> Sin CSV — estrellas preservadas [OVERRIDE]. Capa 0 ×0.85 (ciclicidad HBM). TSR +60% 12M en pico ciclo. P/E NTM ~12x [ONLINE] · PEG ~0.4. CAGR ~30% × Score 75² × M=1.0 → <strong>Peso 9.5%</strong>.</li>
+<li><strong>CTRE (#21, 69):</strong> ROCE 10.56%, EBIT 65% (REIT). Mgmt techo 3⭐ [OVERRIDE REIT externo]. P/E NTM 25.97x. <strong>CAGR P/AFFO -3.34% NEGATIVO</strong> → Factor rentabilidad = 0 → <strong>Peso Objetivo = 0.0%</strong> (regla V4.4r3).</li>
+<li><strong>ETC (#23, 56):</strong> ROCE 10.87%, FCF Yield 13.32%. P/E NTM 12.85x · PEG 0.87 → 🟡. CAGR PER 14.69% × Score 56² × M=1.0 → <strong>Peso 4.0%</strong> (bajo por score bajo).</li>
+<li><strong>NEWP (#24, 53):</strong> EBIT margin 0.68% (compresión integración Princess Foods/Carrefour). Net income -31.8M. <strong>P/E NTM -21.26x [CSV] NEGATIVO</strong> → Semáforo ⚫ permanente · M=0.6 · <strong>Peso = 0.0%</strong> (riesgo binario — revisar tesis).</li>
 </ul>
 </article>
 
