@@ -1160,7 +1160,7 @@ MÉTRICAS CAGR ASIGNADAS POR TICKER (CARTERA):
   GOOG → Leer fila: "CAGR  by EV/EBIT"
   JEN  → Leer fila: "CAGR by EV/EBITDA"
   NWL→ Leer fila: "CAGR  by  P/FCF"
-  CTRE → Leer fila: "CAGR by P/FCF" (Proxy para AFFO)
+  CTRE → Leer fila: "CAGR  by  P/AFFO" 
   META → Leer fila: "CAGR  by EV/EBIT"
   KSPI → Leer fila: "CAGR by PER"
 
