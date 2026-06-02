@@ -776,16 +776,12 @@ Está prohibido asignar estrellas en criterios CSV sin haber transcrito
 el valor literal del campo. Si el valor no ha sido leído del CSV en
 esta ejecución, no puede aparecer "CSV" como fuente.
 
-PROCESAMIENTO ESCALONADO (si empresas totales > 12):
-  → Ejecutar CARTERA completa (Paso 5 + Paso 6) primero.
-  → Solo después ejecutar WATCHLIST (Paso 5 + Paso 6).
-  → Prohibido calcular scores de un bloque si el Paso 5 del bloque
-    anterior contiene campos sin transcribir.
-  → Reportar en checksum si se ha aplicado procesamiento escalonado.
-  → IMPORTANTE: el procesamiento escalonado afecta ÚNICAMENTE al
-    orden de cálculo interno. NUNCA afecta al orden de presentación
-    final. La tabla siempre muestran el ranking global unificado
-    independientemente del orden en que se procesaron los bloques.
+PROCESAMIENTO ESCALONADO AUTÓNOMO (ANTI-COLAPSO):
+Si el volumen total de empresas supera la capacidad de procesamiento de una sola respuesta (timeout o límite de contexto):
+→ Ejecutarás de forma COMPLETA y AUTÓNOMA la CARTERA (Pasos 5 a 10).
+→ Generarás el HTML de la Cartera sin preguntar.
+→ Al final del manifiesto, añadirás una nota: "WATCHLIST PENDIENTE: Escribe 'Continuar Watchlist' para procesar el resto de activos."
+→ ESTÁ PROHIBIDO preguntar "¿Qué opción prefieres?" antes de generar la Cartera. Debes entregar el trabajo de la Cartera inmediatamente.
 
 PASO 5b — VERIFICACIÓN ANTI-BORDE (interna, nunca imprimir):
   "[criterio]: [valor literal] → rango [X–Y] → [N]⭐"
@@ -1079,7 +1075,7 @@ autoregresivo en la extracción.
 
 CONDICIÓN DE CLASIFICACIÓN [Vaca Lechera] (línea única editable):
 
-  >>> Vaca Lechera = (① == 5⭐)  Y  (② <= 3⭐)  <
+  >>> Vaca Lechera = (① == 5⭐)  Y  (② <= 2⭐)  <
 
   · Si se cumple → tag [Vaca Lechera] + multiplicar score total × 0.95.
   · Si NO se cumple → sin tag, sin penalización.
