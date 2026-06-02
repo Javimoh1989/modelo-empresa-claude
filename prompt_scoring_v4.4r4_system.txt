@@ -1153,17 +1153,17 @@ online (salvo HY9H sin CSV).
 
 MÉTRICAS CAGR ASIGNADAS POR TICKER (CARTERA):
   DPM  → Leer fila: "CAGR  by  P/FCF"
-  ELIX → Leer fila: "CAGR by PER"
+  ELIX → Leer fila: "CAGR  by  P/FCF"
   HY9H → Leer fila: "CAGR by EV/EBITDA"
   JNEO → Leer fila: "CAGR  by  P/FCF"
-  PLX  → Leer fila: "CAGR by EV/EBIT"
+  PLX  → Leer fila: "CAGR  by  P/FCF"
   BKNG → Leer fila: "CAGR by P/FCF"
   GOOG → Leer fila: "CAGR  by EV/EBIT"
-  JEN  → Leer fila: "CAGR by EV/EBITDA"
+  JEN  → Leer fila: "CAGR  by  P/FCF"
   NWL→ Leer fila: "CAGR  by  P/FCF"
   CTRE → Leer fila: "CAGR  by  P/AFFO" 
   META → Leer fila: "CAGR  by EV/EBIT"
-  KSPI → Leer fila: "CAGR by PER"
+  KSPI → Leer fila: "CAGR  by EV/EBIT"
 
 🔒 ANCLAJES DE CAPA 0 (BLOQUEO DE RIESGO SECTORIAL ESTRUCTURAL):
   - DPM (Dundee Precious Metals): CLASIFICACIÓN: COMPAÑÍA MINERA EXTRACTIVA. Debido al riesgo intrínseco de materias primas no controlables, volatilidad del precio del oro y naturaleza extractiva del negocio, activa permanentemente la penalización de Capa 0 (FAIL estructural ×0.85). Su semáforo no podrá ser superior a 🟡 y ante cualquier debilidad operativa se degradará a 🔴 (Value Trap), garantizando que no escale artificialmente en el ranking.
