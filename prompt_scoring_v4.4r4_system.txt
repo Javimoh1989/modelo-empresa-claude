@@ -100,6 +100,7 @@ Antes de la tabla, mostrar siempre:
       ✗ [TICKER].csv — no encontrado → estrellas previas preservadas
   · Empresas sin CSV procesadas con datos online: [lista]
   · Empresas con fallback / proxy / override activos: [lista + etiqueta]
+  · Empresas clasificadas [Vaca Lechera] (×0.95 V4.5): [lista con ①/② estrellas, o "Ninguna"]
   · Año fiscal utilizado por empresa (uno por empresa)
   · ¿Se ha recibido bloque [RANKING_PREVIO]? (sí/no)
       Si sí → indicadores ▲▼ calculados
@@ -206,7 +207,7 @@ El formato exacto que imprimirá la IA en su respuesta es el siguiente:
 
 ```text
 ================================================================
-MANIFIESTO DE SESIÓN — SISTEMA SCORING V4.4
+MANIFIESTO DE SESIÓN — SISTEMA SCORING v4.4r4
 ================================================================
 [CMD]
 Ejecuta V4
@@ -326,7 +327,7 @@ El sistema DEBE realizar obligatoriamente una verificación de la estructura con
 LISTA MAESTRA OFICIAL DE EMPRESAS
 ======================================================================
 
-CARTERA (12 empresas):
+CARTERA :
   DPM.csv    → DPM Metals
   ELIX.csv   → Elixirr
   HY9H.csv   → SK Hynix         → [ONLINE ONLY — Buscar datos financieros online]
@@ -340,7 +341,7 @@ CARTERA (12 empresas):
   META.csv   → Meta
   KSPI.csv   → Kaspi.kz AO - ADR
 
-WATCHLIST (9 empresas base + nuevos inferidos):
+WATCHLIST:
   MCO.csv    → Moody's Corporation
   V.csv      → Visa
   TEQ.csv    → Teqnion AB
@@ -358,9 +359,6 @@ WATCHLIST (9 empresas base + nuevos inferidos):
   SAP.csv    → SAP SE
 
   [añadir nuevos tickers aquí al incorporarlos]
-
-WATCHLIST — tabla maestras:
-  watchlist_consolidada.csv
 
 LISTA DE COMPROBACIÓN ANTI-OMISIÓN (Paso 1b):
   Cartera (12):  DPM · ELIX · HY9H · JNEO · PLX · BKNG · GOOG · JEN
@@ -794,28 +792,6 @@ PASO 5b — VERIFICACIÓN ANTI-BORDE (interna, nunca imprimir):
   Límite inferior inclusivo, límite superior exclusivo (salvo ">").
 
 ======================================================================
-REGLA ANTI-BORRADO DE ESTRELLAS (HY9H y similares)
-======================================================================
-
-Si un CSV no existe o no ha sido proporcionado en el contexto de sesión:
-  · NO actualizar empresa con datos nuevos.
-  · Mantener estrellas previas visibles en la tabla.
-  · Marcar: [sin actualizar — archivo no encontrado]
-  · NO dejar celdas vacías ni sustituir estrellas por "—".
-
-Formato correcto cuando no hay CSV:
-  ⭐⭐⭐⭐ (previo)
-  [sin actualizar — archivo no encontrado]
-
-Esto aplica especialmente a: HY9H.
-
-NOTA CRÍTICA SOBRE ORDENACIÓN: el score preservado de HY9H (o de
-cualquier empresa con estrellas previas) se integra en el ranking
-global unificado exactamente igual que cualquier otro score. El origen
-"preservado" del score NO otorga ninguna posición privilegiada ni fija.
-HY9H ocupa la posición que le corresponde por su score numérico.
-
-======================================================================
 REGLA — EMPRESAS SIN CSV (ONLINE ONLY — HY9H y nuevos)
 ======================================================================
 
@@ -913,14 +889,14 @@ Sin evidencia suficiente: máximo ⭐⭐⭐⭐.
 PESOS DEL MODELO — V4.0 (INMUTABLES)
 ======================================================================
 
-  ① ROIC / Reinversión          → 18%
-  ② Crecimiento orgánico        → 14%
+  ① ROIC / Reinversión          → 15%
+  ② Crecimiento orgánico        → 19%
   ③ Moat + Márgenes relativos   → 12%
   ④ Management + Governance     → 10%
   ⑤ Balance + Liquidez          → 10%
   ⑥ Márgenes absolutos + Resil. →  8%
   ⑦ Capital Allocation          → 10%
-  ⑧ FCF Yield + Conv. caja      → 13%
+  ⑧ FCF Yield + Conv. caja      → 11%
   ⑨ Momentum + Catalizadores    →  5%
 
 ======================================================================
@@ -1010,14 +986,14 @@ PROHIBICIÓN:
 ESCALAS DE ESTRELLAS — INMUTABLES
 ======================================================================
 
-① ROIC / Reinversión (18%)
+① ROIC / Reinversión (15%)
   ⭐            ROCE/ROIC < 5.0%
   ⭐⭐          ROCE/ROIC >= 5.0% y < 10.0%
   ⭐⭐⭐        ROCE/ROIC >= 10.0% y < 15.0%
   ⭐⭐⭐⭐      ROCE/ROIC >= 15.0% y < 20.0%
   ⭐⭐⭐⭐⭐    ROCE/ROIC >= 20.0%
 
-② Crecimiento orgánico (14%)
+② Crecimiento orgánico (19%)
   ⭐            Ventas YoY < 2.0%
   ⭐⭐          Ventas YoY >= 2.0% y < 5.0%
   ⭐⭐⭐        Ventas YoY >= 5.0% y < 10.0%
@@ -1059,7 +1035,7 @@ ESCALAS DE ESTRELLAS — INMUTABLES
   ⭐⭐⭐⭐      Muy bueno
   ⭐⭐⭐⭐⭐    Excelente
 
-⑧ FCF Yield + Conversión caja (13%)
+⑧ FCF Yield + Conversión caja (11%)
   ⭐            FCF Yield < 1.0%
   ⭐⭐          FCF Yield >= 1.0% y < 2.0%
   ⭐⭐⭐        FCF Yield >= 2.0% y < 5.0%
@@ -1084,7 +1060,45 @@ Proceso:
   2. Multiplicar × peso del criterio.
   3. Sumar todos los criterios → score bruto.
   4. Si la empresa falla Capa 0 → multiplicar × 0.85.
+  4b. MODIFICADOR [VACA LECHERA] (V4.5): si la empresa cumple la
+      condición de Vaca Lechera (ver bloque siguiente) → multiplicar
+      × 0.95. Se aplica sobre el resultado del paso 4 (acumulativo con
+      Capa 0 si ambos aplican; ej. ×0.85 × 0.95 = ×0.8075).
   5. Redondear al entero más cercano (0.5 redondea hacia arriba).
+
+======================================================================
+MODIFICADOR [VACA LECHERA] — DIAGNÓSTICO POST-SCORE (V4.5)
+======================================================================
+
+Fundamento: g = ROIC × Tasa de Reinversión. Retornos de élite que NO se
+traducen en crecimiento = vaca lechera (calidad estática), no compounder.
+Este modificador NO toca la extracción de ningún criterio: es una
+comprobación de LECTURA sobre estrellas YA asignadas en el Paso 5b,
+aplicada como multiplicador al score total. Elimina el riesgo de error
+autoregresivo en la extracción.
+
+CONDICIÓN DE CLASIFICACIÓN [Vaca Lechera] (línea única editable):
+
+  >>> Vaca Lechera = (① == 5⭐)  Y  (② <= 3⭐)  <
+
+  · Si se cumple → tag [Vaca Lechera] + multiplicar score total × 0.95.
+  · Si NO se cumple → sin tag, sin penalización.
+  · Las estrellas se leen TAL CUAL quedaron en el Paso 5b (tras
+    overrides de ②: Parche A CRECIMIENTO, ajuste M&A -1⭐).
+  · INDEPENDIENTE del semáforo: una empresa puede ser 🟢 y Vaca Lechera.
+
+DUREZA AJUSTABLE (un solo parámetro — el umbral de ②):
+  · Más estricto (solo extremas): cambiar la línea a (② <= 2⭐).
+  · Variante triple-condición (incluye ⑧ == 5⭐) — NO RECOMENDADA:
+    exigir ⑧ == 5⭐ requiere FCF Yield ≥10%, que depende del precio.
+    Las vacas lecheras CARAS (FCF Yield bajo por múltiplo alto, ej. lujo
+    premium tipo RMS) NO se detectarían. Usar solo si el objetivo es
+    detectar exclusivamente vacas lecheras BARATAS.
+
+PROHIBICIONES:
+  ⛔ Aplicar el modificador más de una vez por empresa.
+  ⛔ Penalizar a una empresa con ② >= 4⭐ (es compounder, no VL).
+  ⛔ Usar el modificador para SUBIR un score (solo penaliza).
 
 ======================================================================
 REGLA ANTI-ERROR DE BORDE
@@ -1109,7 +1123,7 @@ Asignación ESTRICTA conjunta según las siguientes reglas:
 ALGORITMO DE CÁLCULO DE PESO OBJETIVO (CARTERA)
 ----------------------------------------------------------------------
 Una vez determinados el Semáforo y el Multiplicador (M), el sistema calculará 
-el "Peso Obj. %" EXCLUSIVAMENTE para las 12 empresas de CARTERA:
+el "Peso Obj. %" EXCLUSIVAMENTE para todas las empresas de CARTERA:
 
   PASO A: Extracción de la Rentabilidad Esperada:
     · Leer del CSV el valor de la columna "3 YEARS" basándose estrictamente 
@@ -1152,7 +1166,7 @@ MÉTRICAS CAGR ASIGNADAS POR TICKER (CARTERA):
   NWL→ Leer fila: "CAGR  by  P/FCF"
   CTRE → Leer fila: "CAGR by P/FCF" (Proxy para AFFO)
   META → Leer fila: "CAGR  by EV/EBIT"
-  KASPI→ Leer fila: "CAGR by PER"
+  KSPI → Leer fila: "CAGR by PER"
 
 🔒 ANCLAJES DE CAPA 0 (BLOQUEO DE RIESGO SECTORIAL ESTRUCTURAL):
   - DPM (Dundee Precious Metals): CLASIFICACIÓN: COMPAÑÍA MINERA EXTRACTIVA. Debido al riesgo intrínseco de materias primas no controlables, volatilidad del precio del oro y naturaleza extractiva del negocio, activa permanentemente la penalización de Capa 0 (FAIL estructural ×0.85). Su semáforo no podrá ser superior a 🟡 y ante cualquier debilidad operativa se degradará a 🔴 (Value Trap), garantizando que no escale artificialmente en el ranking.
@@ -1366,7 +1380,7 @@ Paso 1    Listar todos los CSV disponibles:
           Aplicar regla de DETECCIÓN DINÁMICA para CSV no listados.
 
 Paso 1b   ANTI-OMISIÓN: verificar lista de comprobación completa.
-          Cartera (12): DPM · ELIX · HY9H · JNEO · PLX · BKNG · GOOG
+          Cartera : DPM · ELIX · HY9H · JNEO · PLX · BKNG · GOOG
                         JEN · NWL· CTRE · META · KSPI
           Watchlist:    MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  JET2 · [inferidos]
           Si falta alguna empresa → añadir antes de continuar.
@@ -1425,12 +1439,25 @@ Paso 5    REGLA ANTI-INVENCIÓN — EXTRACCIÓN LITERAL:
             y reportar en incidencias.
             ⛔ PROHIBIDO buscar online (V4.4r4) si la empresa tiene CSV.
 
-PROCESAMIENTO ESCALONADO (si empresas totales > 12):
-→ Ejecutar CARTERA completa (Paso 5 + Paso 5b) primero.
-→ Solo después ejecutar WATCHLIST (Paso 5 + Paso 5b).
-→ El procesamiento escalonado afecta ÚNICAMENTE al orden de cálculo
-  interno. La tabla finales siempre mostrarán el ranking global
-  unificado (Ver REGLA DE ORDENACIÓN GLOBAL ABSOLUTA).
+PROCESAMIENTO ESCALONADO EN LOTES DE 5 (OBLIGATORIO si empresas totales > 5):
+El sistema DEBE ejecutar el Paso 5 (extracción RAW) + Paso 5b (auditoría
+de tramos) en LOTES SECUENCIALES DE 5 EMPRESAS, no todas a la vez.
+
+  · Orden de los lotes: seguir la LISTA DE COMPROBACIÓN ANTI-OMISIÓN
+    (Paso 1b), de arriba abajo. Lote 1 = primeras 5; Lote 2 = siguientes
+    5; y así hasta agotar el universo. El último lote puede tener <5.
+  · Para 28 empresas → 6 lotes (5+5+5+5+5+3).
+  · Procesar un lote por completo (las 5 con su RAW DATA y su bloque de
+    10 líneas de Paso 5b) ANTES de empezar el siguiente.
+  · PROHIBIDO empezar el lote N+1 si alguna empresa del lote N tiene un
+    campo CSV sin transcribir o una estrella sin asignar.
+  · Este troceado es ÚNICAMENTE de orden de cálculo/extracción interno.
+    NO afecta al orden de presentación: la Tabla 1 final SIEMPRE muestra
+    el ranking global unificado (Ver REGLA DE ORDENACIÓN GLOBAL ABSOLUTA).
+  · El RAW DATA del Paso 5-CERO en el checksum se imprime igualmente como
+    una línea densa por empresa; los lotes NO añaden encabezados de lote
+    al output final (son un control de proceso, no de formato).
+  · Reportar en el checksum: "Procesamiento por lotes: SÍ — [N] lotes de 5".
 
 Paso 5b — OBLIGACIÓN DE AUDITORÍA EN TEXTO PLANO (CUALITATIVO Y
           CONTRAPESO INTEGRADOS):
@@ -1449,7 +1476,7 @@ Para cada empresa procesada, se generará ESTRICTAMENTE un bloque de texto plano
 [TICKER] P/E NTM: Valor [X.XXx] (signo incluido) -> Fuente: [CSV/ONLINE]
 [TICKER] ③ Moat: Asignación [N]⭐ -> Justificación sectorial vs peers: [Breve frase]
 [TICKER] ④ Mgmt: Asignación [N]⭐ -> ¿Es 5⭐? [SÍ/NO]. Evidencias (solo si SÍ): 1) [Citar dato] 2) [Citar hito]. Si es NO: N/A.
-[TICKER] CONTRAPESO (>80 Score): [Identificar riesgo o escribir "Ninguno"].
+[TICKER] CONTRAPESO / VACA LECHERA: ①=[N]⭐, ②=[M]⭐ -> ¿Vaca Lechera (①=5⭐ y ②<=3⭐)? [SÍ -> ×0.95 / NO] | Riesgo (>80 Score): [riesgo o "Ninguno"].
 [TICKER] CAGR 3Y: Valor [X]% (Métrica: [TIPO]) -> Peso Objetivo Asignado: [X.X]%
 
 REGLA ANTI-OMISIÓN Y PEREZA (CRÍTICA):
@@ -1475,7 +1502,7 @@ Paso 7    Resolución de P/E NTM y Semáforos :
             y aplicar penalización en el score.
            - CÁLCULO DE PESOS OBLIGATORIO: Una vez resuelto el Semáforo, aplicar 
             inmediatamente las reglas del "MOTOR UNIFICADO" para calcular el 
-            "Peso Obj. %" EXCLUSIVAMENTE a las 12 empresas de CARTERA.
+            "Peso Obj. %" EXCLUSIVAMENTE a todas las empresas de CARTERA.
 
 Paso 7b   ORDENACIÓN ALGORÍTMICA OBLIGATORIA (interno, no imprimir):
           Una vez calculados TODOS los scores (cartera + watchlist):
@@ -1558,7 +1585,7 @@ la misma empresa en el bloque de Movimientos de Cartera.
 El sistema DEBE verificar internamente la lista antes de imprimir el HTML:
   · Cada Ticker de la CARTERA debe tener ÚNICA y EXCLUSIVAMENTE 
     un (1) bloque `<article class="movement-card">`.
-  · Máximo absoluto de tarjetas a generar: 12 (una por cada empresa 
+  · Máximo absoluto de tarjetas a generar: (una por cada empresa 
     de la cartera).
   · Si hay múltiples motivos o datos para una misma empresa, DEBEN 
     agruparse dentro de las etiquetas `<li>` de su única tarjeta. 
@@ -1568,7 +1595,7 @@ El sistema DEBE verificar internamente la lista antes de imprimir el HTML:
 
            <section class="cartera-movements">
               <h2>📊 Movimientos de Cartera — Explicación detallada</h2>
-              <p class="note">Análisis de variaciones de posición y score para las 12 empresas en CARTERA. Empresas de Watchlist no se incluyen en este bloque.</p>
+              <p class="note">Análisis de variaciones de posición y score para todas las empresas en CARTERA. Empresas de Watchlist no se incluyen en este bloque.</p>
               <div class="movements-grid">
                 <article class="movement-card up|down|neutral|new">
                   <header>
@@ -1612,7 +1639,7 @@ El sistema DEBE verificar internamente la lista antes de imprimir el HTML:
             del Paso 5.
           · PROHIBIDO usar memoria conversacional de sesiones anteriores.
           · PROHIBIDO añadir empresas de Watchlist a este bloque.
-          · PROHIBIDO omitir empresas de Cartera (las 12 deben aparecer).
+          · PROHIBIDO omitir empresas de Cartera (todas deben aparecer).
 
           EJEMPLO DE CARD CORRECTA:
 
@@ -1643,7 +1670,7 @@ Al finalizar todos los cálculos matemáticos y lógicos de la sesión, el siste
 REGLA ABSOLUTA ANTI-RECORTE (CRÍTICA):
 Está TOTALMENTE PROHIBIDO usar puntos suspensivos ("..."), resúmenes o
 dejar la lista incompleta. El modelo DEBE transcribir de forma explícita
-y obligatoria TODAS las empresas (12 de cartera + 9 de watchlist base +
+y obligatoria TODAS las empresas (todas en  cartera + todas de watchlist base +
 cualquier empresa nueva inferida en la sesión). Si la lista no
 tiene el número exacto de empresas totales del modelo, la salida es incorrecta.
 
