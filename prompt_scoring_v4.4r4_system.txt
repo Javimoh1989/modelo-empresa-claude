@@ -743,18 +743,14 @@ Para cada empresa con CSV disponible, leer y registrar internamente los
 siguientes campos ANTES de calcular ninguna estrella o score:
  
   A. CRITERIOS CONTABLES GENERALES:
- · S1: Y/Y Growth % → SIEMPRE la celda de la COLUMNA del año en curso (2026).
-  Es la ÚNICA fuente válida del criterio ②.
-  - PROHIBIDO usar la celda con etiqueta de texto al final de la fila
-    ("CRECIMIENTO", "COMPANY GROWTH", "MARKET GROWTH", "INNOVATION RATE", etc.):
-    esas celdas son la HIPÓTESIS de crecimiento futuro del modelo (tasa plana
-    suavizada), NO el crecimiento real del año en curso.
-  - SEÑAL DE ALARMA: si el valor candidato es una cifra plana redonda que se
-    repite idéntica en 2026, 2027, 2028... (ej. 0.10, 0.15) procede de la
-    hipótesis. Re-leer la columna 2026.
-  - Si la columna 2026 está LITERALMENTE vacía → usar año anterior con sufijo
-    'e' y anotar '(col 2025e — fallback)'. Nunca sustituir por la etiqueta.
-  - Etiqueta de celda HTML: "21.00% CSV·26" (sin sufijo [C] ni [CRECIMIENTO]).
+  · S1: Y/Y Growth % → PROTOCOLO DE INTERSECCIÓN MATRICIAL OBLIGATORIO:
+    1. Localiza la fila de encabezados de años (donde aparecen 2019, 2020..., 2026).
+    2. Cuenta exactamente en qué posición de división por comas (índice de columna N) se encuentra el año en curso (2026).
+    3. Ve a la fila "Y/Y Growth %" y extrae ÚNICAMENTE el valor que se encuentra en ese mismo índice de columna N.
+    4. SÓLO si ese índice N está vacío, aplica la regla de fallback al año anterior (2025e).
+    
+  ⛔ PROHIBICIÓN ABSOLUTA DE BARRIDO FINAL (ANTI-PANEL LATERAL):
+  Queda estrictamente prohibido escanear el final de la línea o buscar términos independientes a la derecha de la matriz de años. Ignora por completo cualquier celda que contenga la palabra "CRECIMIENTO", "MARGEN EBIT" o "TAX RATE" que se encuentren en la periferia derecha del bloque de años (usualmente tras las columnas de proyección 2031). Todo dato extraído fuera del índice N de la columna analizada se considerará una ALUCINACIÓN CRÍTICA.
   · S1: EBIT margin %          — columna del año en curso (2026)
   · S3: ROCE con goodwill( EBIT / Capital empleado)     — columna del año en curso (2026)
   · S4: Deuda neta / EBITDA    — columna del año en curso (2026)
@@ -1419,8 +1415,16 @@ Paso 5    REGLA ANTI-INVENCIÓN — EXTRACCIÓN LITERAL:
           internamente los siguientes campos ANTES de calcular ninguna
           estrella o score:
 
-          A. CRITERIOS CONTABLES GENERALES:
-          · S1: Y/Y Growth %           — columna del año en curso (2026)
+      
+      · S1: Y/Y Growth % → PROTOCOLO DE INTERSECCIÓN MATRICIAL OBLIGATORIO:
+       1. Localiza la fila de encabezados de años (donde apar    A. CRITERIOS CONTABLES GENERALES:
+          A. CRITERIOS CONTABLES GENERALES:ecen 2019, 2020..., 2026).
+       2. Cuenta exactamente en qué posición de división por comas (índice de columna N) se encuentra      el año en curso (2026).
+    3. Ve a la fila "Y/Y Growth %" y extrae ÚNICAMENTE el valor que se encuentra en ese mismo índice de columna N.
+    4. SÓLO si ese índice N está vacío, aplica la regla de fallback al año anterior (2025e).
+    
+  ⛔ PROHIBICIÓN ABSOLUTA DE BARRIDO FINAL (ANTI-PANEL LATERAL):
+  Queda estrictamente prohibido escanear el final de la línea o buscar términos independientes a la derecha de la matriz de años. Ignora por completo cualquier celda que contenga la palabra "CRECIMIENTO", "MARGEN EBIT" o "TAX RATE" que se encuentren en la periferia derecha del bloque de años (usualmente tras las columnas de proyección 2031). Todo dato extraído fuera del índice N de la columna analizada se considerará una ALUCINACIÓN CRÍTICA.
           · S1: EBIT margin %          — columna del año en curso (2026)
           · S3: ROCE con goodwill      — columna del año en curso (2026)
           · S4: Deuda neta / EBITDA    — columna del año en curso (2026)
