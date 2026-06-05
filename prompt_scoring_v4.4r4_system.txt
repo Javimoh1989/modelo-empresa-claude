@@ -340,6 +340,7 @@ CARTERA :
   CTRE.csv   → CareTrust
   META.csv   → Meta
   KSPI.csv   → Kaspi.kz AO - ADR
+  MLUAV.csv → EMBENTION
 
 WATCHLIST:
   MCO.csv    → Moody's Corporation
@@ -364,7 +365,7 @@ WATCHLIST:
 
 LISTA DE COMPROBACIÓN ANTI-OMISIÓN (Paso 1b):
   Cartera (12):  DPM · ELIX · HY9H · JNEO · PLX · BKNG · GOOG · JEN
-                 NWL · CTRE · META · KSPI 
+                 NWL · CTRE · META · KSPI · MLUAV
   Watchlist:     MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  SAP  · JET2 ·  QLYS  ·  MLUAV  · [inferidos]
 
 ======================================================================
@@ -541,7 +542,7 @@ CASOS PERMITIDOS DE USO DE [ONLINE] EN P/E NTM:
     SIEMPRE indicándolo en incidencias del checksum.
 
 EMPRESAS QUE TÍPICAMENTE TIENEN NTM P/E EN CSV (referencia operativa):
-  DPM · ELIX · JNEO · PLX · BKNG · JEN · NWL· CTRE · META · ETC ·
+  DPM · ELIX · JNEO · PLX · BKNG · JEN · NWL· CTRE · META · ETC · MLUAV· 
   MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · KSPI · NVDA ·  AZO · MA · ALWEC · AER ·  JET2 ·   SAP ·  QLYS  · MLUAV  ·  [cualquier inferido con sección 4 completa]
   → Para todas estas: la celda P/E NTM DEBE etiquetarse [CSV].
 
@@ -1170,7 +1171,8 @@ MÉTRICAS CAGR ASIGNADAS POR TICKER (CARTERA):
   NWL→ Leer fila: "CAGR  by  P/FCF"
   CTRE → Leer fila: "CAGR  by  P/AFFO" 
   META → Leer fila: "CAGR  by EV/EBIT"
-  KSPI → Leer fila: "CAGR  by EV/EBIT"
+  KSPI → Leer fila: "CAGR by EV/EBITDA"
+  MLUAV → Leer fila: "CAGR  by PER"
 
 🔒 ANCLAJES DE CAPA 0 (BLOQUEO DE RIESGO SECTORIAL ESTRUCTURAL):
   - DPM (Dundee Precious Metals): CLASIFICACIÓN: COMPAÑÍA MINERA EXTRACTIVA. Debido al riesgo intrínseco de materias primas no controlables, volatilidad del precio del oro y naturaleza extractiva del negocio, activa permanentemente la penalización de Capa 0 (FAIL estructural ×0.85). Su semáforo no podrá ser superior a 🟡 y ante cualquier debilidad operativa se degradará a 🔴 (Value Trap), garantizando que no escale artificialmente en el ranking.
@@ -1385,7 +1387,7 @@ Paso 1    Listar todos los CSV disponibles:
 
 Paso 1b   ANTI-OMISIÓN: verificar lista de comprobación completa.
           Cartera : DPM · ELIX · HY9H · JNEO · PLX · BKNG · GOOG
-                        JEN · NWL· CTRE · META · KSPI
+                        JEN · NWL· CTRE · META · KSPI · MLUAV
           Watchlist:    MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  JET2 ·   SAP  ·  QLYS  ·  MLUAV  · [inferidos]
           Si falta alguna empresa → añadir antes de continuar.
 
