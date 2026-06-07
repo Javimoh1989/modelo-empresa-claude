@@ -361,13 +361,13 @@ WATCHLIST:
   QLYS.csv   → Qualys Inc
   MLUAV.csv   → EMBENTION
   PEP.csv   → PepsiCo Inc
-
+   MSFT.csv   → Microsoft Corp
   [añadir nuevos tickers aquí al incorporarlos]
 
 LISTA DE COMPROBACIÓN ANTI-OMISIÓN (Paso 1b):
   Cartera (12):  DPM · ELIX · HY9H · JNEO · PLX · BKNG · GOOG · JEN
                  NWL · CTRE · META · KSPI · MLUAV
-  Watchlist:     MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  SAP  · JET2 ·  QLYS  ·  MLUAV  ·  PEP · [inferidos]
+  Watchlist:     MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  SAP  · JET2 ·  QLYS  ·  MLUAV  ·  PEP · MSFT · [inferidos]
 
 ======================================================================
 DETECCIÓN DINÁMICA DE CSV
@@ -544,7 +544,7 @@ CASOS PERMITIDOS DE USO DE [ONLINE] EN P/E NTM:
 
 EMPRESAS QUE TÍPICAMENTE TIENEN NTM P/E EN CSV (referencia operativa):
   DPM · ELIX · JNEO · PLX · BKNG · JEN · NWL· CTRE · META · ETC · MLUAV· 
-  MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · KSPI · NVDA ·  AZO · MA · ALWEC · AER ·  JET2 ·   SAP ·  QLYS  · MLUAV  · PEP ·  [cualquier inferido con sección 4 completa]
+  MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · KSPI · NVDA ·  AZO · MA · ALWEC · AER ·  JET2 ·   SAP ·  QLYS  · MLUAV  · PEP ·  MSFT · [cualquier inferido con sección 4 completa]
   → Para todas estas: la celda P/E NTM DEBE etiquetarse [CSV].
 
 ======================================================================
@@ -1389,7 +1389,7 @@ Paso 1    Listar todos los CSV disponibles:
 Paso 1b   ANTI-OMISIÓN: verificar lista de comprobación completa.
           Cartera : DPM · ELIX · HY9H · JNEO · PLX · BKNG · GOOG
                         JEN · NWL· CTRE · META · KSPI · MLUAV
-          Watchlist:    MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  JET2 ·   SAP  ·  QLYS  ·  MLUAV  ·  PEP · [inferidos]
+          Watchlist:    MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  JET2 ·   SAP  ·  QLYS  ·  MLUAV  ·  PEP · MSFT · [inferidos]
           Si falta alguna empresa → añadir antes de continuar.
 
 Paso 2    Determinar año fiscal para cada empresa. Confirmar en checksum.
