@@ -360,13 +360,14 @@ WATCHLIST:
   SAP.csv    → SAP SE
   QLYS.csv   → Qualys Inc
   MLUAV.csv   → EMBENTION
+  PEP.csv   → PepsiCo Inc
 
   [añadir nuevos tickers aquí al incorporarlos]
 
 LISTA DE COMPROBACIÓN ANTI-OMISIÓN (Paso 1b):
   Cartera (12):  DPM · ELIX · HY9H · JNEO · PLX · BKNG · GOOG · JEN
                  NWL · CTRE · META · KSPI · MLUAV
-  Watchlist:     MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  SAP  · JET2 ·  QLYS  ·  MLUAV  · [inferidos]
+  Watchlist:     MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  SAP  · JET2 ·  QLYS  ·  MLUAV  ·  PEP · [inferidos]
 
 ======================================================================
 DETECCIÓN DINÁMICA DE CSV
@@ -543,7 +544,7 @@ CASOS PERMITIDOS DE USO DE [ONLINE] EN P/E NTM:
 
 EMPRESAS QUE TÍPICAMENTE TIENEN NTM P/E EN CSV (referencia operativa):
   DPM · ELIX · JNEO · PLX · BKNG · JEN · NWL· CTRE · META · ETC · MLUAV· 
-  MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · KSPI · NVDA ·  AZO · MA · ALWEC · AER ·  JET2 ·   SAP ·  QLYS  · MLUAV  ·  [cualquier inferido con sección 4 completa]
+  MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · KSPI · NVDA ·  AZO · MA · ALWEC · AER ·  JET2 ·   SAP ·  QLYS  · MLUAV  · PEP ·  [cualquier inferido con sección 4 completa]
   → Para todas estas: la celda P/E NTM DEBE etiquetarse [CSV].
 
 ======================================================================
@@ -1388,7 +1389,7 @@ Paso 1    Listar todos los CSV disponibles:
 Paso 1b   ANTI-OMISIÓN: verificar lista de comprobación completa.
           Cartera : DPM · ELIX · HY9H · JNEO · PLX · BKNG · GOOG
                         JEN · NWL· CTRE · META · KSPI · MLUAV
-          Watchlist:    MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  JET2 ·   SAP  ·  QLYS  ·  MLUAV  · [inferidos]
+          Watchlist:    MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  JET2 ·   SAP  ·  QLYS  ·  MLUAV  ·  PEP · [inferidos]
           Si falta alguna empresa → añadir antes de continuar.
 
 Paso 2    Determinar año fiscal para cada empresa. Confirmar en checksum.
@@ -1453,15 +1454,14 @@ Paso 5    REGLA ANTI-INVENCIÓN — EXTRACCIÓN LITERAL:
             y reportar en incidencias.
             ⛔ PROHIBIDO buscar online (V4.4r4) si la empresa tiene CSV.
 
-PROCESAMIENTO ESCALONADO EN LOTES DE 5 (OBLIGATORIO si empresas totales > 5):
+PROCESAMIENTO ESCALONADO EN LOTES DE 10 (OBLIGATORIO si empresas totales > 10):
 El sistema DEBE ejecutar el Paso 5 (extracción RAW) + Paso 5b (auditoría
-de tramos) en LOTES SECUENCIALES DE 5 EMPRESAS, no todas a la vez.
+de tramos) en LOTES SECUENCIALES DE 10 EMPRESAS, no todas a la vez.
 
   · Orden de los lotes: seguir la LISTA DE COMPROBACIÓN ANTI-OMISIÓN
-    (Paso 1b), de arriba abajo. Lote 1 = primeras 5; Lote 2 = siguientes
-    5; y así hasta agotar el universo. El último lote puede tener <5.
-  · Para 28 empresas → 6 lotes (5+5+5+5+5+3).
-  · Procesar un lote por completo (las 5 con su RAW DATA y su bloque de
+    (Paso 1b), de arriba abajo. Lote 1 = primeras 10; Lote 2 = siguientes
+    10; y así hasta agotar el universo. El último lote puede tener <10.
+  · Procesar un lote por completo (las 10 con su RAW DATA y su bloque de
     10 líneas de Paso 5b) ANTES de empezar el siguiente.
   · PROHIBIDO empezar el lote N+1 si alguna empresa del lote N tiene un
     campo CSV sin transcribir o una estrella sin asignar.
@@ -1471,7 +1471,7 @@ de tramos) en LOTES SECUENCIALES DE 5 EMPRESAS, no todas a la vez.
   · El RAW DATA del Paso 5-CERO en el checksum se imprime igualmente como
     una línea densa por empresa; los lotes NO añaden encabezados de lote
     al output final (son un control de proceso, no de formato).
-  · Reportar en el checksum: "Procesamiento por lotes: SÍ — [N] lotes de 5".
+  · Reportar en el checksum: "Procesamiento por lotes: SÍ — [N] lotes de 10".
 
 Paso 5b — OBLIGACIÓN DE AUDITORÍA EN TEXTO PLANO (CUALITATIVO Y
           CONTRAPESO INTEGRADOS):
