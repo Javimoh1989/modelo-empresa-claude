@@ -1179,6 +1179,7 @@ MÉTRICAS CAGR ASIGNADAS POR TICKER (CARTERA):
   - DPM (Dundee Precious Metals): CLASIFICACIÓN: COMPAÑÍA MINERA EXTRACTIVA. Debido al riesgo intrínseco de materias primas no controlables, volatilidad del precio del oro y naturaleza extractiva del negocio, activa permanentemente la penalización de Capa 0 (FAIL estructural ×0.85). Su semáforo no podrá ser superior a 🟡 y ante cualquier debilidad operativa se degradará a 🔴 (Value Trap), garantizando que no escale artificialmente en el ranking.
   - HY9H: CLASIFICACIÓN: INDUSTRIAL CÍCLICA EXTREMA (Semiconductores). Sujeta a penalización fija por alta sensibilidad macroeconómica.
   - NWL: Mantiene penalización permanente de P/E NTM Negativo (-21.9x) con activación de semáforo ⚫.
+- AER : ARRENDAMIENTO DE ACTIVOS INTENSIVOS. Activa permanentemente la Capa 0 (FAIL estructural ×0.80) por su total dependencia del duopolio Airbus/Boeing y su masiva intensidad de capital (Capex constante). Su semáforo máximo será 🟡 y se degradará a 🔴 ante retrasos de entregas o caída del net spread, bloqueando que sus deprimidos múltiplos PER tradicionales escalen artificialmente su peso en el ranking.
 
 ----------------------------------------------------------------------
 REGLAS Y EXCEPCIONES HISTÓRICAS (Overrides/Proxies puntuales):
