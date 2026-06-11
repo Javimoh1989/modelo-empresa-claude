@@ -100,7 +100,7 @@ Antes de la tabla, mostrar siempre:
       ✗ [TICKER].csv — no encontrado → estrellas previas preservadas
   · Empresas sin CSV procesadas con datos online: [lista]
   · Empresas con fallback / proxy / override activos: [lista + etiqueta]
-  · Empresas clasificadas [Vaca Lechera] (×0.95 V4.5): [lista con ①/② estrellas, o "Ninguna"]
+  · Regla FCF Dinámico activada en: [Lista de tickers con tag [FCF_COMPOUNDER] o [FCF_CASHCOW_RESTRIC], o "Ninguna"]
   · Año fiscal utilizado por empresa (uno por empresa)
   · ¿Se ha recibido bloque [RANKING_PREVIO]? (sí/no)
       Si sí → indicadores ▲▼ calculados
@@ -1048,6 +1048,11 @@ ESCALAS DE ESTRELLAS — INMUTABLES
   ⭐⭐⭐⭐      FCF Yield >= 5.0% y < 10.0%
   ⭐⭐⭐⭐⭐    FCF Yield >= 10.0%
 
+  >>> REGLA DE FCF DINÁMICO (ANTI-HALO / ANTI-PEREZA) <<<
+  Tras leer el valor bruto del CSV y ver el tramo, aplica OBLIGATORIAMENTE:
+  1. CONDICIÓN COMPOUNDER: Si ①=5⭐ Y ②=5⭐ → Queda PROHIBIDO asignar menos de 4⭐ en FCF Yield (asumimos alto Capex expansivo muy rentable). Etiquetar en tabla: [FCF_COMPOUNDER].
+  2. CONDICIÓN VACA LECHERA: Si el dato bruto de FCF da 5⭐, PERO ②<=2⭐ → La nota se CAPA a un máximo de 3⭐, A MENOS que ⑦ (Cap.Alloc) sea 5⭐ (validando buybacks masivos). Etiquetar en tabla: [FCF_CASHCOW_RESTRIC].
+
 ⑨ Momentum + Catalizadores (5%)
   ⭐            TSR 12M < 0.0% (Negativo)
   ⭐⭐          TSR 12M >= 0.0% y < 5.0%
@@ -1066,45 +1071,22 @@ Proceso:
   2. Multiplicar × peso del criterio.
   3. Sumar todos los criterios → score bruto.
   4. Si la empresa falla Capa 0 → multiplicar × 0.85.
-  4b. MODIFICADOR [VACA LECHERA] (V4.5): si la empresa cumple la
-      condición de Vaca Lechera (ver bloque siguiente) → multiplicar
-      × 0.95. Se aplica sobre el resultado del paso 4 (acumulativo con
-      Capa 0 si ambos aplican; ej. ×0.85 × 0.95 = ×0.8075).
   5. Redondear al entero más cercano (0.5 redondea hacia arriba).
+======================================================================
+REGLA DE OPTIMIZACIÓN CRITERIO ⑧: FCF YIELD DINÁMICO (ANTI-HALO VACA LECHERA)
+======================================================================
+Al evaluar el Criterio ⑧ (FCF Yield - 11%), el sistema aplicará un filtro de "Pasaporte de Compounder" antes de asignar las estrellas para evitar premiar la perezosa retención de capital:
+
+1. EVALUACIÓN ESTÁNDAR: Asigna las estrellas según los umbrales numéricos literales del CSV (e.g., >8% = 5⭐, 6-8% = 4⭐...).
+2. CONDICIÓN COMPOUNDER (Excepcionalidad por Alta Reinversión): 
+   Si una empresa obtiene 5⭐ en el Criterio ② (Crecimiento Ventas/CAGR 3Y) Y 5⭐ en el Criterio ① (ROIC), queda terminantemente PROHIBIDO asignarle menos de 4⭐ en FCF Yield, independientemente de lo bajo que sea el dato del CSV. El sistema asumirá que el flujo está justamente deprimido por Capex expansivo de alta rentabilidad. Taggear como: [FCF_COMPOUNDER].
+3. CONDICIÓN VACA LECHERA (Penalización por Estancamiento): 
+   Si una empresa obtiene 5⭐ en FCF Yield por datos brutos, pero su Criterio ② (Ventas) es <= 2⭐, automáticamente su nota en FCF Yield se CAPA a un máximo de 3⭐, A MENOS que el Criterio ⑦ (Capital Allocation) sea de 5⭐ (Demostración de CEO Caníbal vía buybacks masivos). Taggear como: [FCF_CASHCOW_RESTRIC].
 
 ======================================================================
-MODIFICADOR [VACA LECHERA] — DIAGNÓSTICO POST-SCORE (V4.5)
+ELIMINACIÓN DEL MODIFICADOR EXTERNO
 ======================================================================
-
-Fundamento: g = ROIC × Tasa de Reinversión. Retornos de élite que NO se
-traducen en crecimiento = vaca lechera (calidad estática), no compounder.
-Este modificador NO toca la extracción de ningún criterio: es una
-comprobación de LECTURA sobre estrellas YA asignadas en el Paso 5b,
-aplicada como multiplicador al score total. Elimina el riesgo de error
-autoregresivo en la extracción.
-
-CONDICIÓN DE CLASIFICACIÓN [Vaca Lechera] (línea única editable):
-
-  >>> Vaca Lechera = (① == 5⭐)  Y  (② <= 2⭐)  <
-
-  · Si se cumple → tag [Vaca Lechera] + multiplicar score total × 0.95.
-  · Si NO se cumple → sin tag, sin penalización.
-  · Las estrellas se leen TAL CUAL quedaron en el Paso 5b (tras
-    overrides de ②: Parche A CRECIMIENTO, ajuste M&A -1⭐).
-  · INDEPENDIENTE del semáforo: una empresa puede ser 🟢 y Vaca Lechera.
-
-DUREZA AJUSTABLE (un solo parámetro — el umbral de ②):
-  · Más estricto (solo extremas): cambiar la línea a (② <= 2⭐).
-  · Variante triple-condición (incluye ⑧ == 5⭐) — NO RECOMENDADA:
-    exigir ⑧ == 5⭐ requiere FCF Yield ≥10%, que depende del precio.
-    Las vacas lecheras CARAS (FCF Yield bajo por múltiplo alto, ej. lujo
-    premium tipo RMS) NO se detectarían. Usar solo si el objetivo es
-    detectar exclusivamente vacas lecheras BARATAS.
-
-PROHIBICIONES:
-  ⛔ Aplicar el modificador más de una vez por empresa.
-  ⛔ Penalizar a una empresa con ② >= 4⭐ (es compounder, no VL).
-  ⛔ Usar el modificador para SUBIR un score (solo penaliza).
+Queda derogado el antiguo modificador plano final de ×0.95 para Vacas Lecheras. La fricción se resuelve ahora de forma orgánica en la matriz de puntuación mediante la regla de FCF Yield Dinámico, evitando el doble conteo matemático y permitiendo que los "Share Cannibals" legítimos mantengan su posición justa si su asignación de capital es impecable.
 
 ======================================================================
 REGLA ANTI-ERROR DE BORDE
@@ -1491,7 +1473,8 @@ Para cada empresa procesada, se generará ESTRICTAMENTE un bloque de texto plano
 [TICKER] P/E NTM: Valor [X.XXx] (signo incluido) -> Fuente: [CSV/ONLINE]
 [TICKER] ③ Moat: Asignación [N]⭐ -> Justificación sectorial vs peers: [Breve frase]
 [TICKER] ④ Mgmt: Asignación [N]⭐ -> ¿Es 5⭐? [SÍ/NO]. Evidencias (solo si SÍ): 1) [Citar dato] 2) [Citar hito]. Si es NO: N/A.
-[TICKER] CONTRAPESO / VACA LECHERA: ①=[N]⭐, ②=[M]⭐ -> ¿Vaca Lechera (①=5⭐ y ②<=3⭐)? [SÍ -> ×0.95 / NO] | Riesgo (>80 Score): [riesgo o "Ninguno"].
+[TICKER] CONTROL FCF DINÁMICO: ①=[N]⭐, ②=[M]⭐, ⑦=[K]⭐ -> ¿Se activa regla FCF? [SÍ: COMPOUNDER / SÍ: CASHCOW / NO].
+Riesgo (>80 Score): [riesgo o "Ninguno"].
 [TICKER] CAGR 3Y: Valor [X]% (Métrica: [TIPO]) -> Peso Objetivo Asignado: [X.X]%
 
 REGLA ANTI-OMISIÓN Y PEREZA (CRÍTICA):
