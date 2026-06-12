@@ -1187,6 +1187,8 @@ REGLAS Y EXCEPCIONES HISTÓRICAS (Overrides/Proxies puntuales):
 AER ROIC:    usar ROE indicado en el CSV disponible del periodo en cuestion. [PROXY]
                 Si hay CSV → aplicar REGLA DE RECALCULO V4.4r4 si ROCE negativo.
 
+AMZN ROIC: Forzar activación de la condición [FCF_COMPOUNDER] en el Criterio ⑧ aunque el ROIC no alcance las 5⭐, debido a la distorsión contable generada por la masiva inversión en R&D y AWS. [OVERRIDE]
+
 ======================================================================
 FORMATO OBLIGATORIO — TABLA 1 (DETALLE POR CRITERIO)
 ======================================================================
