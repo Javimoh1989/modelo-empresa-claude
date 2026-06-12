@@ -361,13 +361,14 @@ WATCHLIST:
   QLYS.csv   → Qualys Inc
   MLUAV.csv   → EMBENTION
   PEP.csv   → PepsiCo Inc
-   MSFT.csv   → Microsoft Corp
+  MSFT.csv   → Microsoft Corp
+  AMZN.csv   → Amazon.com Inc
   [añadir nuevos tickers aquí al incorporarlos]
 
 LISTA DE COMPROBACIÓN ANTI-OMISIÓN (Paso 1b):
   Cartera (12):  DPM · ELIX · HY9H · JNEO · PLX · BKNG · GOOG · JEN
                  NWL · CTRE · META · KSPI · MLUAV
-  Watchlist:     MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  SAP  · JET2 ·  QLYS  ·  MLUAV  ·  PEP · MSFT · [inferidos]
+  Watchlist:     MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  SAP  · JET2 ·  QLYS  ·  MLUAV  ·  PEP · MSFT · AMZN· [inferidos]
 
 ======================================================================
 DETECCIÓN DINÁMICA DE CSV
@@ -544,7 +545,7 @@ CASOS PERMITIDOS DE USO DE [ONLINE] EN P/E NTM:
 
 EMPRESAS QUE TÍPICAMENTE TIENEN NTM P/E EN CSV (referencia operativa):
   DPM · ELIX · JNEO · PLX · BKNG · JEN · NWL· CTRE · META · ETC · MLUAV· 
-  MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · KSPI · NVDA ·  AZO · MA · ALWEC · AER ·  JET2 ·   SAP ·  QLYS  · MLUAV  · PEP ·  MSFT · [cualquier inferido con sección 4 completa]
+  MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · KSPI · NVDA ·  AZO · MA · ALWEC · AER ·  JET2 ·   SAP ·  QLYS  · MLUAV  · PEP ·  MSFT · AMZN· [cualquier inferido con sección 4 completa]
   → Para todas estas: la celda P/E NTM DEBE etiquetarse [CSV].
 
 ======================================================================
@@ -1171,7 +1172,7 @@ REGLAS Y EXCEPCIONES HISTÓRICAS (Overrides/Proxies puntuales):
   BKNG ROIC:    NEG(V) por goodwill contable. ROIC real >90%. Aplicar
                 REGLA DE RECALCULO V4.4r4 ([PROXY · EQ_NEG]) → ⭐⭐⭐⭐⭐.
   JNEO Moment.: usar proxy CAGR P/FCF como métrica sustitutiva. [PROXY]
-  META Mgmt:    techo ⭐⭐⭐ por concentración de control. [OVERRIDE]
+  META Mgmt: techo ⭐⭐⭐ por concentración de control y quema destructiva de caja en Reality Labs (metalabs). [OVERRIDE]
   CTRE Mgmt:    techo ⭐⭐⭐ por estructura REIT externa. [OVERRIDE]
   HY9H:         sin modelo CSV → preservar estrellas de ejecución previa.
                 [OVERRIDE] (compatible con [ONLINE_PREVIO] V4.4r4).
@@ -1372,7 +1373,7 @@ Paso 1    Listar todos los CSV disponibles:
 Paso 1b   ANTI-OMISIÓN: verificar lista de comprobación completa.
           Cartera : DPM · ELIX · HY9H · JNEO · PLX · BKNG · GOOG
                         JEN · NWL· CTRE · META · KSPI · MLUAV
-          Watchlist:    MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  JET2 ·   SAP  ·  QLYS  ·  MLUAV  ·  PEP · MSFT · [inferidos]
+          Watchlist:    MCO · V · TEQ · SAVE · RMS · MCD · TJX · DPZ · ETC · NVDA · AZO · MA · ALWEC · AER ·  JET2 ·   SAP  ·  QLYS  ·  MLUAV  ·  PEP · MSFT ·  AMZN· [inferidos]
           Si falta alguna empresa → añadir antes de continuar.
 
 Paso 2    Determinar año fiscal para cada empresa. Confirmar en checksum.
