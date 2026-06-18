@@ -966,31 +966,44 @@ ADAPTACIÓN SECTORIAL SUAVE:
   · Mineras: AISC; vida de reservas.
 
 ======================================================================
-CAPA 0 — FILTROS BINARIOS
+CAPA 0 — FILTROS BINARIOS Y VETOS ESTRUCTURALES (4.4r4)
 ======================================================================
+Antes de proceder al cálculo de las estrellas (Pasos 6 y 7) y del Score Global (Paso 8), el sistema DEBE someter a cada empresa a la evaluación de los Filtros Binarios de Calidad Estructural. 
 
-DEFINICIÓN DE LOS FILTROS:
-  F-A: Industria con penetración de producto/servicio >10 años.
-  F-B: >70% de ingresos recurrentes o visibles.
-  F-C: Maintenance capex <25% del CFO.
- 
-EFECTO DE FALLAR CUALQUIER FILTRO:
-  → Mantener en tabla.
-  → Multiplicar score final × 0.85.
-  → Añadir ⚠️ junto al ticker.
- 
-LISTA HARDCODEADA DE CAPA 0:
-La clasificación Capa 0 por ticker está fijada en la sección
-"HIPÓTESIS FIJADAS — PERMANENTES" (subsección "CLASIFICACIÓN CAPA 0
-POR TICKER"). El sistema NO debe revaluar Capa 0 ticker a ticker en
-cada ejecución basándose en datos online del momento. La clasificación
-es INMUTABLE excepto si este documento se actualiza con una nueva
-versión.
- 
-PROHIBICIÓN:
-- ⛔ Olvidar aplicar ×0.85 a una empresa de la lista FAIL.
-- ⛔ Aplicar ×0.85 a una empresa de la lista PASS.
-- ⛔ Reevaluar Capa 0 con datos online sin actualizar este documento.
+El impacto de fallar estos filtros ya no es un multiplicador plano, sino que se divide en dos categorías estrictas:
+
+----------------------------------------------------------------------
+CATEGORÍA A: VETOS BINARIOS INNEGOCIABLES (GATE SYSTEM)
+----------------------------------------------------------------------
+Si una empresa falla cualquiera de los siguientes dos filtros, el sistema detendrá su evaluación de inmediato. Su Score Global será automáticamente 0 (Cero) y su Peso Objetivo en cartera será 0%. No se calculará media ponderada.
+
+1. [F-A] PODER DE FIJACIÓN DE PRECIOS (PRICING POWER):
+   - CRITERIO: La empresa NO puede ser un "Commodity price-taker" cíclico puro cuyo destino dependa del precio de una materia prima que no controla (e.g., mineras junior de exploración, petroleras upstream puras). Debe poseer control mínimo sobre sus precios de venta.
+   - ACCIÓN SI FALLA: VETO ABSOLUTO -> SCORE GLOBAL = 0.
+
+2. [F-B] TRANSPARENCIA Y SORDIDEZ CONTABLE:
+   - CRITERIO: Ausencia de opacidad material, retrasos injustificados en auditorías, discrepancias graves en la conversión de EBITDA a FCF, o sospechas fundadas de fraude/manipulación de add-backs.
+   - ACCIÓN SI FALLA: VETO ABSOLUTO -> SCORE GLOBAL = 0.
+
+----------------------------------------------------------------------
+CATEGORÍA B: PENALIZACIONES CRÍTICAS (MULTIPLICADOR SEVERO)
+----------------------------------------------------------------------
+Si una empresa supera la Categoría A, pero falla cualquiera de los siguientes filtros de intensidad de capital o riesgo financiero, el sistema completará el cálculo del score analítico pero aplicará un factor de castigo severo al Score Global Final antes de calcular el peso de la cartera.
+
+3. [F-C] INTENSIDAD DE CAPITAL EXTREMA:
+   - CRITERIO: El ratio Capex/CFO (Flujo de Caja Operativo) sostenido de los últimos 3 años o estimado NTM NO debe ser superior al 50%. Negocios que canibalizan su propia caja para mantener la infraestructura (e.g., REITs puros de desarrollo, aerolíneas, leasing de aviación pesado).
+   - ACCIÓN SI FALLA: Asignar flag [FAIL_CAPEX_INTENSE] y aplicar multiplicador M_capa0 = 0.65 al Score Global Final.
+
+4. [F-D] APALANCAMIENTO DESCONTROLADO / INSOLVENCIA:
+   - CRITERIO: El ratio Deuda Neta / EBITDA NO debe superar las 4.5x de forma estructural, A MENOS que el patrimonio neto sea negativo única y exclusivamente por recompras masivas de acciones (buybacks) con ROIC > 20%. Si el patrimonio es negativo por pérdidas acumuladas o destrucción de valor, es un fallo.
+   - ACCIÓN SI FALLA: Asignar flag [FAIL_LEVERAGE_RISK] y aplicar multiplicador M_capa0 = 0.70 al Score Global Final.
+
+----------------------------------------------------------------------
+PROTOCOLO DE EJECUCIÓN Y EXCEPCIONES:
+----------------------------------------------------------------------
+- Multiplicador acumulativo: Si una empresa falla [F-C] y [F-D] simultáneamente (y no es vetada por la Categoría A), los multiplicadores se aplicarán en cascada (Score × 0.65 × 0.70).
+- Excepciones explícitas hardcodeadas: Las hipótesis fijadas en la configuración para tickers específicos (e.g., AER, DPM, CTRE) tienen prioridad absoluta sobre la inferencia dinámica del modelo si están explícitamente tabuladas.
+- Caso Serial Acquirers (Roll-ups): El crecimiento inorgánico por M&A masivo (e.g., CSU, VHI, TEQ) NO se veta en la Capa 0. Se evaluará de forma estricta su calidad de ejecución en el Criterio ① (ROIC) y Criterio ⑦ (Capital Allocation).
 
 ======================================================================
 ESCALAS DE ESTRELLAS — INMUTABLES
@@ -1052,10 +1065,7 @@ ESCALAS DE ESTRELLAS — INMUTABLES
   ⭐⭐⭐⭐      FCF Yield >= 5.0% y < 10.0%
   ⭐⭐⭐⭐⭐    FCF Yield >= 10.0%
 
-  >>> REGLA DE FCF DINÁMICO (ANTI-HALO / ANTI-PEREZA) <<<
-  Tras leer el valor bruto del CSV y ver el tramo, aplica OBLIGATORIAMENTE:
-  1. CONDICIÓN COMPOUNDER: Si ①=5⭐ Y ②=5⭐ → Queda PROHIBIDO asignar menos de 4⭐ en FCF Yield (asumimos alto Capex expansivo muy rentable). Etiquetar en tabla: [FCF_COMPOUNDER].
-  2. CONDICIÓN VACA LECHERA: Si el dato bruto de FCF da 5⭐, PERO ②<=2⭐ → La nota se CAPA a un máximo de 3⭐, A MENOS que ⑦ (Cap.Alloc) sea 5⭐ (validando buybacks masivos). Etiquetar en tabla: [FCF_CASHCOW_RESTRIC].
+Antes de fijar la nota definitiva, el sistema DEBE aplicar de forma estricta la "REGLA DE OPTIMIZACIÓN CRITERIO ⑧" que se encuentra en la sección de Lógicas Avanzadas para ajustar la nota según el perfil de la empresa (Compounder o Vaca Lechera).
 
 ⑨ Momentum + Catalizadores (5%)
   ⭐            TSR 12M < 0.0% (Negativo)
@@ -1074,8 +1084,12 @@ Proceso:
   1. Convertir estrellas a puntos por criterio.
   2. Multiplicar × peso del criterio.
   3. Sumar todos los criterios → score bruto.
-  4. Si la empresa falla Capa 0 → multiplicar × 0.85.
+  4. Someter el Score Bruto a la Capa 0: 
+     - Si falla Categoría A → Score Global = 0.
+     - Si falla Categoría B → Multiplicar el Score Bruto por el 
+       factor correspondiente (×0.65 y/o ×0.70).
   5. Redondear al entero más cercano (0.5 redondea hacia arriba).
+
 ======================================================================
 REGLA DE OPTIMIZACIÓN CRITERIO ⑧: FCF YIELD DINÁMICO (ANTI-HALO VACA LECHERA)
 ======================================================================
@@ -1138,6 +1152,10 @@ final con 1 decimal (ej. "14.2%"). Esta columna se calculará EXCLUSIVAMENTE
 para las filas etiquetadas como CARTERA. En las filas de la Watchlist se 
 mostrará obligatoriamente un guion fijo "—".
 
+CAP DE SEGURIDAD PARA P/E NEGATIVO (SEMÁFORO ⚫)
+Al calcular el Peso Objetivo, se aplicará la siguiente restricción inquebrantable para proteger la asimetría de la cartera:
+Si la empresa activa el Semáforo Negro debido a un P/E NTM negativo, el resultado del algoritmo de peso bruto se someterá a un factor de penalización adicional de 0.25. Independientemente del resultado o de su CAGR por flujo de caja, el Peso Objetivo Final para estas empresas nunca podrá superar el máximo absoluto del 2.0%.
+
 ======================================================================
 HIPÓTESIS FIJADAS — PERMANENTES
 ======================================================================
@@ -1162,7 +1180,8 @@ MÉTRICAS CAGR ASIGNADAS POR TICKER (CARTERA):
   MLUAV → Leer fila: "CAGR  by PER"
 
 🔒 ANCLAJES DE CAPA 0 (BLOQUEO DE RIESGO SECTORIAL ESTRUCTURAL):
-  - DPM (Dundee Precious Metals): CLASIFICACIÓN: COMPAÑÍA MINERA EXTRACTIVA. Debido al riesgo intrínseco de materias primas no controlables, volatilidad del precio del oro y naturaleza extractiva del negocio, activa permanentemente la penalización de Capa 0 (FAIL estructural ×0.85). Su semáforo no podrá ser superior a 🟡 y ante cualquier debilidad operativa se degradará a 🔴 (Value Trap), garantizando que no escale artificialmente en el ranking.
+  - DPM (Dundee Precious Metals): CLASIFICACIÓN: COMPAÑÍA MINERA EXTRACTIVA.
+    Debido al riesgo intrínseco de materias primas no controlables, volatilidad del precio del oro y naturaleza extractiva del negocio, activa permanentemente el VETO ABSOLUTO de la Capa 0 [F-A]. Su Score Global será siempre 0 y quedará excluida como inversión estructural.
   - HY9H: CLASIFICACIÓN: INDUSTRIAL CÍCLICA EXTREMA (Semiconductores). Sujeta a penalización fija por alta sensibilidad macroeconómica.
   - NWL: Mantiene penalización permanente de P/E NTM Negativo (-21.9x) con activación de semáforo ⚫.
 - AER : ARRENDAMIENTO DE ACTIVOS INTENSIVOS. Activa permanentemente la Capa 0 (FAIL estructural ×0.80) por su total dependencia del duopolio Airbus/Boeing y su masiva intensidad de capital (Capex constante). Su semáforo máximo será 🟡 y se degradará a 🔴 ante retrasos de entregas o caída del net spread, bloqueando que sus deprimidos múltiplos PER tradicionales escalen artificialmente su peso en el ranking.
@@ -1197,9 +1216,9 @@ FORMATO OBLIGATORIO — TABLA 1 (DETALLE POR CRITERIO)
 ======================================================================
 
 Columnas:
-  # | Ticker | ①ROIC 18% | ②Ventas 14% | ③Moat+Mrg.Rel 12% | ④Mgmt 10% |
-  ⑤Balance 10% | ⑥Mrg.Abs+Resil 8% | ⑦Cap.Alloc 10% | ⑧FCF Yield 13% |
-  ⑨Momentum 5% | Score | P/E NTM | Semáforo | Veredicto | CAGR 3Y | Peso Obj.
+  # | Ticker | ①ROIC 15% | ②Ventas 19% | ③Moat+Mrg.Rel 12% | ④Mgmt+Governance 10% |
+  ⑤Balance+Liquidez 10% | ⑥Mrg.Abs+Resil 8% | ⑦Cap.Alloc 10% | ⑧FCF Yield 11% |
+  ⑨Momentum+Catalizadores 5% | Score | P/E NTM | Semáforo | Veredicto | CAGR 3Y | Peso Obj.
 
 OBLIGATORIO DE CELDAS NUEVAS (V4.4r4):
   - Celda "CAGR 3Y": Valor literal extraído del CSV con la métrica fijada. Ej: "14.2% (PER)".
@@ -1399,8 +1418,10 @@ Paso 3    Determinar criterios de mercado (Regla de acceso jerárquico):
             Capital Allocation): Buscar online SOLO si no existen en
             el CSV. Etiquetar siempre la fuente: [ONLINE] o [ESTIMADO].
 
-Paso 4    Verificar Capa 0 para cada empresa (F-A, F-B, F-C).
-          Anotar qué empresas fallan y la penalización ×0.85.
+Paso 4    Verificar Capa 0 para cada empresa (F-A, F-B, F-C, F-D).
+          Anotar qué empresas fallan y aplicar el Veto (Score = 0) o 
+          las penalizaciones de la Categoría B (×0.65 o ×0.70) 
+          según las reglas de Capa 0.
 
 Paso 5    REGLA ANTI-INVENCIÓN — EXTRACCIÓN LITERAL:
           Para cada empresa con CSV disponible, leer y registrar
