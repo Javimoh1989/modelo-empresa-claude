@@ -992,7 +992,8 @@ Si una empresa supera la Categoría A, pero falla cualquiera de los siguientes f
 
 3. [F-C] INTENSIDAD DE CAPITAL EXTREMA:
    - CRITERIO: El ratio Capex/CFO (Flujo de Caja Operativo) sostenido de los últimos 3 años o estimado NTM NO debe ser superior al 50%. Negocios que canibalizan su propia caja para mantener la infraestructura (e.g., REITs puros de desarrollo, aerolíneas, leasing de aviación pesado).
-   - ACCIÓN SI FALLA: Asignar flag [FAIL_CAPEX_INTENSE] y aplicar multiplicador M_capa0 = 0.65 al Score Global Final.
+   - EXCEPCIÓN DE INMUNIDAD: Quedan automáticamente EXENTAS de sufrir la penalización de este filtro aquellas empresas que hayan activado el tag [FCF_COMPOUNDER] en el Criterio ⑧. Se reconoce formalmente que su alto Capex es expansivo/crecimiento de alto retorno y no de mantenimiento estructural.
+   - ACCIÓN SI FALLA: Si supera el 50% y NO cumple la excepción, asignar flag [FAIL_CAPEX_INTENSE] y aplicar multiplicador M_capa0 = 0.65 al Score Global Final.
 
 4. [F-D] APALANCAMIENTO DESCONTROLADO / INSOLVENCIA:
    - CRITERIO: El ratio Deuda Neta / EBITDA NO debe superar las 4.5x de forma estructural, A MENOS que el patrimonio neto sea negativo única y exclusivamente por recompras masivas de acciones (buybacks) con ROIC > 20%. Si el patrimonio es negativo por pérdidas acumuladas o destrucción de valor, es un fallo.
