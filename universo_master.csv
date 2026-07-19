@@ -148,6 +148,90 @@ TICKER: GOOG | PÁGINA: 4. VALORACIÓN
 ,,,,,,,Multiple EV/EBIT,,21,21,22,22,23,24,,,,,,,
 
 
+--------------------------------------------------
+TICKER: GOOG | PÁGINA: 5.BDD
+--------------------------------------------------
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,GOOG,    Y/Y Growth %,2028,0.16,
+,GOOG,    Y/Y Growth %,2027,0.155,
+,GOOG,    Y/Y Growth %,2026,0.20828049131656556,
+,GOOG,    Y/Y Growth %,2025,0.15090081081544376,
+,GOOG,    Y/Y Growth %,2024,0.13866243322901553,
+,GOOG,Sales,2028,649321.83,USD
+,GOOG,Sales,2027,562183.4064,USD
+,GOOG,Sales,2026,486738.88,USD
+,GOOG,Sales,2025,402836,USD
+,GOOG,Sales,2024,350018,USD
+,GOOG,EBITDA,2028,266690.29758112,USD
+,GOOG,EBITDA,2027,230296.566304,USD
+,GOOG,EBITDA,2026,219033,USD
+,GOOG,EBITDA,2025,175128,USD
+,GOOG,EBITDA,2024,150486,USD
+,GOOG,EBIT ,2028,233755.86038112,USD
+,GOOG,EBIT ,2027,202386.026304,USD
+,GOOG,EBIT ,2026,195380,USD
+,GOOG,EBIT ,2025,153992,USD
+,GOOG,EBIT ,2024,135175,USD
+,GOOG,    EBIT margin %,2028,0.36,
+,GOOG,    EBIT margin %,2027,0.36,
+,GOOG,    EBIT margin %,2026,0.40140619134432,
+,GOOG,    EBIT margin %,2025,0.3822697077718972,
+,GOOG,    EBIT margin %,2024,0.386194424286751,
+,GOOG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,3500,USD
+,GOOG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,3000,USD
+,GOOG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,-3482,USD
+,GOOG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,-3601,USD
+,GOOG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,-4214,USD
+,GOOG,Net income per share ( EPS ),2028,15.790353280538293,USD
+,GOOG,Net income per share ( EPS ),2027,13.673379645285301,USD
+,GOOG,Net income per share ( EPS ),2026,13.327747080373227,USD
+,GOOG,Net income per share ( EPS ),2025,10.706214227309895,USD
+,GOOG,Net income per share ( EPS ),2024,9.61613240138186,USD
+,GOOG,Fully diluted shares  (millions),2028,12394.75,USD
+,GOOG,Fully diluted shares  (millions),2027,12394.75,USD
+,GOOG,Fully diluted shares  (millions),2026,12351.75,USD
+,GOOG,Fully diluted shares  (millions),2025,12230,USD
+,GOOG,Fully diluted shares  (millions),2024,12447,USD
+,GOOG,Flujo de caja libre,2028,-40448.08147604801,USD
+,GOOG,Flujo de caja libre,2027,-101611.3376416,USD
+,GOOG,Flujo de caja libre,2026,-1726,USD
+,GOOG,Flujo de caja libre,2025,60626,USD
+,GOOG,Flujo de caja libre,2024,82468,USD
+,GOOG,Flujo de caja libre por accion,2028,-3.263323703668732,USD
+,GOOG,Flujo de caja libre por accion,2027,-8.197933612343936,USD
+,GOOG,Flujo de caja libre por accion,2026,-0.13973728419049933,USD
+,GOOG,Flujo de caja libre por accion,2025,4.95715453802126,USD
+,GOOG,Flujo de caja libre por accion,2024,6.625532256768699,USD
+,GOOG,ROE ( net income / equity ),2028,0.30645061084753905,
+,GOOG,ROE ( net income / equity ),2027,0.30649719281666643,
+,GOOG,ROE ( net income / equity ),2026,0.34385874764488894,
+,GOOG,ROE ( net income / equity ),2025,0.31530950116190865,
+,GOOG,ROE ( net income / equity ),2024,0.36818791450825017,
+,GOOG,ROCE con goodwill( EBIT / Capital empleado),2028,0.33336457855051005,
+,GOOG,ROCE con goodwill( EBIT / Capital empleado),2027,0.3479902249712228,
+,GOOG,ROCE con goodwill( EBIT / Capital empleado),2026,0.47383049031906627,
+,GOOG,ROCE con goodwill( EBIT / Capital empleado),2025,0.4028926052284572,
+,GOOG,ROCE con goodwill( EBIT / Capital empleado),2024,0.5216070939336526,
+,GOOG,Deuda neta /EBITDA,2028,0.23451442158948932,USD
+,GOOG,Deuda neta /EBITDA,2027,0.12433423480662056,USD
+,GOOG,Deuda neta /EBITDA,2026,-0.30317097195399784,USD
+,GOOG,Deuda neta /EBITDA,2025,-0.18871339820017358,USD
+,GOOG,Deuda neta /EBITDA,2024,-0.4381337798865011,USD
+,GOOG,NTM P/E,2026,25.606831405582064,USD
+,GOOG,Free cashflow yield,2026,-0.0004037249629911572,
+,GOOG,TSR 12M en %,2026,81%,
+,GOOG,PEG ratio,2026,9.87,USD
+,GOOG,Stock price,2026,346.12,USD
+,GOOG,% of CAPEX/CFO,2026,100.92,USD
+,GOOG,% of CAPEX/CFO,2025,60.13,USD
+,GOOG,% of CAPEX/CFO,2024,38.91,USD
+,GOOG,3 YEARS CAGR  by PER,2026,0.023072470026524235,
+,GOOG,3 YEARS CAGR  by  P/FCF,2026,-0.5198712064559686,
+,GOOG,3 YEARS CAGR by EV/EBITDA,2026,0.0909800696114017,
+,GOOG,3 YEARS CAGR  by EV/EBIT,2026,0.11548625844803884,
+
+
 ==================================================
 EMPRESA: JEN
 ==================================================
@@ -269,6 +353,90 @@ TICKER: JEN | PÁGINA: 4. VALORACIÓN
 ,,,,,,FCF/EBITDA,,,0.6716194792671166,,,,,,,,,,
 ,,,,,,LTM P/E,,,12.927346010948142,,,,,,,,,,
 ,,,,,,NTM P/E,,,11.156499500996842,,,,,,,,,,
+
+
+--------------------------------------------------
+TICKER: JEN | PÁGINA: 5.BDD
+--------------------------------------------------
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,GOOG,    Y/Y Growth %,2028,0.09,
+,GOOG,    Y/Y Growth %,2027,0.09,
+,GOOG,    Y/Y Growth %,2026,0.22673357332460634,
+,GOOG,    Y/Y Growth %,2025,0.19426048565121412,
+,GOOG,    Y/Y Growth %,2024,0.1325,
+,GOOG,Sales,2028,788.5,USD
+,GOOG,Sales,2027,723.3925208537871,USD
+,GOOG,Sales,2026,663.662863168612,USD
+,GOOG,Sales,2025,541,USD
+,GOOG,Sales,2024,453,USD
+,GOOG,EBITDA,2028,125.54153798228793,USD
+,GOOG,EBITDA,2027,115.1757229195302,USD
+,GOOG,EBITDA,2026,103.7,USD
+,GOOG,EBITDA,2025,81.7,USD
+,GOOG,EBITDA,2024,63,USD
+,GOOG,EBIT ,2028,110.38969868228793,USD
+,GOOG,EBIT ,2027,101.27495291953021,USD
+,GOOG,EBIT ,2026,90.947,USD
+,GOOG,EBIT ,2025,70,USD
+,GOOG,EBIT ,2024,54,USD
+,GOOG,    EBIT margin %,2028,0.14,
+,GOOG,    EBIT margin %,2027,0.14,
+,GOOG,    EBIT margin %,2026,0.13703795262217913,
+,GOOG,    EBIT margin %,2025,0.12939001848428835,
+,GOOG,    EBIT margin %,2024,0.11920529801324503,
+,GOOG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,1.986574486,USD
+,GOOG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,1.8225454,USD
+,GOOG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,1.67206,USD
+,GOOG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,1.534,USD
+,GOOG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,-0.7,USD
+,GOOG,Net income per share ( EPS ),2028,8.378363211511932,USD
+,GOOG,Net income per share ( EPS ),2027,7.866726366938047,USD
+,GOOG,Net income per share ( EPS ),2026,7.478146310716914,USD
+,GOOG,Net income per share ( EPS ),2025,5.622732123799359,USD
+,GOOG,Net income per share ( EPS ),2024,4.559748427672957,USD
+,GOOG,Fully diluted shares  (millions),2028,9.632942749046995,USD
+,GOOG,Fully diluted shares  (millions),2027,9.412340303437782,USD
+,GOOG,Fully diluted shares  (millions),2026,9.196789838337182,USD
+,GOOG,Fully diluted shares  (millions),2025,9.37,USD
+,GOOG,Fully diluted shares  (millions),2024,9.54,USD
+,GOOG,Flujo de caja libre,2028,81.74431634721597,USD
+,GOOG,Flujo de caja libre,2027,74.99478563964766,USD
+,GOOG,Flujo de caja libre,2026,69.64694,USD
+,GOOG,Flujo de caja libre,2025,53.485,USD
+,GOOG,Flujo de caja libre,2024,39.400000000000006,USD
+,GOOG,Flujo de caja libre por accion,2028,8.485913233035989,USD
+,GOOG,Flujo de caja libre por accion,2027,7.9677086911377835,USD
+,GOOG,Flujo de caja libre por accion,2026,7.572962003510614,USD
+,GOOG,Flujo de caja libre por accion,2025,5.70811099252935,USD
+,GOOG,Flujo de caja libre por accion,2024,4.129979035639414,USD
+,GOOG,ROE ( net income / equity ),2028,0.2052078059670917,
+,GOOG,ROE ( net income / equity ),2027,0.2052078059670917,
+,GOOG,ROE ( net income / equity ),2026,0.20775856183522487,
+,GOOG,ROE ( net income / equity ),2025,0.17347711557458018,
+,GOOG,ROE ( net income / equity ),2024,0.15398230088495576,
+,GOOG,ROCE con goodwill( EBIT / Capital empleado),2028,0.3159418150162393,
+,GOOG,ROCE con goodwill( EBIT / Capital empleado),2027,0.3159418150162393,
+,GOOG,ROCE con goodwill( EBIT / Capital empleado),2026,0.3092572819825763,
+,GOOG,ROCE con goodwill( EBIT / Capital empleado),2025,0.2594514455151965,
+,GOOG,ROCE con goodwill( EBIT / Capital empleado),2024,0.2548371873525248,
+,GOOG,Deuda neta /EBITDA,2028,-1.0355138393982484,USD
+,GOOG,Deuda neta /EBITDA,2027,-0.6928394039259123,USD
+,GOOG,Deuda neta /EBITDA,2026,-0.35632594021215047,USD
+,GOOG,Deuda neta /EBITDA,2025,-0.41493268053855575,USD
+,GOOG,Deuda neta /EBITDA,2024,-1.1206349206349207,USD
+,GOOG,NTM P/E,2026,11.156499500996842,USD
+,GOOG,Free cashflow yield,2026,0.08826296041387663,
+,GOOG,TSR 12M en %,2026,81%,
+,GOOG,PEG ratio,2026,2.15,USD
+,GOOG,Stock price,2026,346.12,USD
+,GOOG,% of CAPEX/CFO,2026,9.87,USD
+,GOOG,% of CAPEX/CFO,2025,11.57,USD
+,GOOG,% of CAPEX/CFO,2024,22.75,USD
+,GOOG,3 YEARS CAGR  by PER,2026,0.21942607205682527,
+,GOOG,3 YEARS CAGR  by  P/FCF,2026,0.22404816708644024,
+,GOOG,3 YEARS CAGR by EV/EBITDA,2026,0.19481457104857733,
+,GOOG,3 YEARS CAGR  by EV/EBIT,2026,0.22051853740760993,
 
 
 ==================================================
