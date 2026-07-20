@@ -121,3 +121,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,,Multiple EV/EBIT,,14,18,18,19,20,20,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,MSFT,    Y/Y Growth %,2028,0.15,
+,MSFT,    Y/Y Growth %,2027,0.15,
+,MSFT,    Y/Y Growth %,2026,0.16953472192642444,
+,MSFT,    Y/Y Growth %,2025,0.1493215623240672,
+,MSFT,    Y/Y Growth %,2024,0.15669962013071279,
+,MSFT,Sales,2028,453100,USD
+,MSFT,Sales,2027,384170,USD
+,MSFT,Sales,2026,329486,USD
+,MSFT,Sales,2025,281724,USD
+,MSFT,Sales,2024,245122,USD
+,MSFT,EBITDA,2028,276761.53125,USD
+,MSFT,EBITDA,2027,230139,USD
+,MSFT,EBITDA,2026,201400.17782495622,USD
+,MSFT,EBITDA,2025,156528,USD
+,MSFT,EBITDA,2024,129433,USD
+,MSFT,EBIT ,2028,203895,USD
+,MSFT,EBIT ,2027,172876.5,USD
+,MSFT,EBIT ,2026,156400.17782495622,USD
+,MSFT,EBIT ,2025,128528,USD
+,MSFT,EBIT ,2024,109433,USD
+,MSFT,    EBIT margin %,2028,0.45,
+,MSFT,    EBIT margin %,2027,0.45,
+,MSFT,    EBIT margin %,2026,0.47467928174476676,
+,MSFT,    EBIT margin %,2025,0.4562195624085985,
+,MSFT,    EBIT margin %,2024,0.44644299573273716,
+,MSFT,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,-814.1424000000001,USD
+,MSFT,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,-720.48,USD
+,MSFT,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,-456,USD
+,MSFT,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,-262,USD
+,MSFT,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,-222,USD
+,MSFT,Net income per share ( EPS ),2028,22.71430210191781,USD
+,MSFT,Net income per share ( EPS ),2027,18.96173762839896,USD
+,MSFT,Net income per share ( EPS ),2026,16.777774427827527,USD
+,MSFT,Net income per share ( EPS ),2025,14.332886805090421,USD
+,MSFT,Net income per share ( EPS ),2024,12.050341411166153,USD
+,MSFT,Fully diluted shares  (millions),2028,7300,USD
+,MSFT,Fully diluted shares  (millions),2027,7415.647054909321,USD
+,MSFT,Fully diluted shares  (millions),2026,7457,USD
+,MSFT,Fully diluted shares  (millions),2025,7465,USD
+,MSFT,Fully diluted shares  (millions),2024,7469,USD
+,MSFT,Flujo de caja libre,2028,-20759.063405999976,USD
+,MSFT,Flujo de caja libre,2027,-78123.9462,USD
+,MSFT,Flujo de caja libre,2026,-19888.13609169014,USD
+,MSFT,Flujo de caja libre,2025,70444,USD
+,MSFT,Flujo de caja libre,2024,65527,USD
+,MSFT,Flujo de caja libre por accion,2028,-2.843707315890408,USD
+,MSFT,Flujo de caja libre por accion,2027,-10.535014088660036,USD
+,MSFT,Flujo de caja libre por accion,2026,-2.6670425226887677,USD
+,MSFT,Flujo de caja libre por accion,2025,9.436570663094441,USD
+,MSFT,Flujo de caja libre por accion,2024,8.77319587628866,USD
+,MSFT,ROE ( net income / equity ),2028,0.30258083425429155,
+,MSFT,ROE ( net income / equity ),2027,0.2950829952150168,
+,MSFT,ROE ( net income / equity ),2026,0.30193491254928573,
+,MSFT,ROE ( net income / equity ),2025,0.31150376005519986,
+,MSFT,ROE ( net income / equity ),2024,0.33523914525266596,
+,MSFT,ROCE con goodwill( EBIT / Capital empleado),2028,0.3281597107029812,
+,MSFT,ROCE con goodwill( EBIT / Capital empleado),2027,0.3307538019511135,
+,MSFT,ROCE con goodwill( EBIT / Capital empleado),2026,0.4155633556037385,
+,MSFT,ROCE con goodwill( EBIT / Capital empleado),2025,0.4400664235700957,
+,MSFT,ROCE con goodwill( EBIT / Capital empleado),2024,0.4474616051422123,
+,MSFT,Deuda neta /EBITDA,2028,0.2649508428494793,USD
+,MSFT,Deuda neta /EBITDA,2027,0.2005406037220984,USD
+,MSFT,Deuda neta /EBITDA,2026,-0.1887287310790549,USD
+,MSFT,Deuda neta /EBITDA,2025,-0.3284651947255443,USD
+,MSFT,Deuda neta /EBITDA,2024,-0.18475195661075614,USD
+,MSFT,NTM P/E,2026,20.5463897647129,USD
+,MSFT,Free cashflow yield,2026,-0.0067722373741525765,
+,MSFT,TSR 12M en %,2026,-23%,
+,MSFT,PEG ratio,2026,1.22,USD
+,MSFT,Stock price,2026,393.82,USD
+,MSFT,% of CAPEX/CFO,2026,111.69,USD
+,MSFT,% of CAPEX/CFO,2025,47.82,USD
+,MSFT,% of CAPEX/CFO,2024,40.43,USD
+,MSFT,3 YEARS CAGR  by PER,2026,0.11420859328929821,
+,MSFT,3 YEARS CAGR  by  P/FCF,2026,-0.3075520780886638,
+,MSFT,3 YEARS CAGR by EV/EBITDA,2026,0.20580826877470115,
+,MSFT,3 YEARS CAGR  by EV/EBIT,2026,0.16854796232196279,
+
+
