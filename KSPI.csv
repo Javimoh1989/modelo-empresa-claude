@@ -115,3 +115,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,18.47347163278306,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,KSPI,    Y/Y Growth %,2028,0.15,
+,KSPI,    Y/Y Growth %,2027,0.15,
+,KSPI,    Y/Y Growth %,2026,0.31487337729101744,
+,KSPI,    Y/Y Growth %,2025,0.5978770660259478,
+,KSPI,    Y/Y Growth %,2024,0.32331812551933903,
+,KSPI,Sales,2028,7035799.17,KZ
+,KSPI,Sales,2027,6118086.232921783,KZ
+,KSPI,Sales,2026,5320074.985149376,KZ
+,KSPI,Sales,2025,4046074,KZ
+,KSPI,Sales,2024,2532156,KZ
+,KSPI,EBITDA,2028,2224815.055652133,KZ
+,KSPI,EBITDA,2027,1934621.7875235938,KZ
+,KSPI,EBITDA,2026,1650000,KZ
+,KSPI,EBITDA,2025,1556372,KZ
+,KSPI,EBITDA,2024,1300044,KZ
+,KSPI,EBIT ,2028,2110739.7503580153,KZ
+,KSPI,EBIT ,2027,1835425.869876535,KZ
+,KSPI,EBIT ,2026,1650000,KZ
+,KSPI,EBIT ,2025,1478120,KZ
+,KSPI,EBIT ,2024,1271210,KZ
+,KSPI,    EBIT margin %,2028,0.3,
+,KSPI,    EBIT margin %,2027,0.3,
+,KSPI,    EBIT margin %,2026,0.31014600444652785,
+,KSPI,    EBIT margin %,2025,0.36532203810409797,
+,KSPI,    EBIT margin %,2024,0.5020267313704211,
+,KSPI,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,1314010.8724999998,KZ
+,KSPI,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,1142618.15,KZ
+,KSPI,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,993581,KZ
+,KSPI,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,908698,KZ
+,KSPI,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,616116,KZ
+,KSPI,Net income per share ( EPS ),2028,2859.5489124287974,KZ
+,KSPI,Net income per share ( EPS ),2027,2492.357752888629,KZ
+,KSPI,Net income per share ( EPS ),2026,1929.981756580662,KZ
+,KSPI,Net income per share ( EPS ),2025,1618.9734236581553,KZ
+,KSPI,Net income per share ( EPS ),2024,2155.064514443922,KZ
+,KSPI,Fully diluted shares  (millions),2028,192.74502950623503,KZ
+,KSPI,Fully diluted shares  (millions),2027,192.29699402427275,KZ
+,KSPI,Fully diluted shares  (millions),2026,191.85,KZ
+,KSPI,Fully diluted shares  (millions),2025,191.9,KZ
+,KSPI,Fully diluted shares  (millions),2024,191.43,KZ
+,KSPI,Flujo de caja libre,2028,415827.5472947288,KZ
+,KSPI,Flujo de caja libre,2027,361589.17156063346,KZ
+,KSPI,Flujo de caja libre,2026,181676,KZ
+,KSPI,Flujo de caja libre,2025,206427,KZ
+,KSPI,Flujo de caja libre,2024,346171,KZ
+,KSPI,Flujo de caja libre por accion,2028,2157.396994153239,KZ
+,KSPI,Flujo de caja libre por accion,2027,1880.3682990228738,KZ
+,KSPI,Flujo de caja libre por accion,2026,946.9689861871254,KZ
+,KSPI,Flujo de caja libre por accion,2025,1075.7008858780614,KZ
+,KSPI,Flujo de caja libre por accion,2024,1808.3424750561562,KZ
+,KSPI,ROE ( net income / equity ),2028,0.15017976023699933,
+,KSPI,ROE ( net income / equity ),2027,0.15017976023699928,
+,KSPI,ROE ( net income / equity ),2026,0.13342628000467016,
+,KSPI,ROE ( net income / equity ),2025,0.11942025932732339,
+,KSPI,ROE ( net income / equity ),2024,0.2622889117347305,
+,KSPI,ROCE con goodwill( EBIT / Capital empleado),2028,0.6976558898177391,
+,KSPI,ROCE con goodwill( EBIT / Capital empleado),2027,0.6976558898177391,
+,KSPI,ROCE con goodwill( EBIT / Capital empleado),2026,0.7212506223518628,
+,KSPI,ROCE con goodwill( EBIT / Capital empleado),2025,0.7202710104221284,
+,KSPI,ROCE con goodwill( EBIT / Capital empleado),2024,1.1915467583753023,
+,KSPI,Deuda neta /EBITDA,2028,-0.28971101928787957,KZ
+,KSPI,Deuda neta /EBITDA,2027,-0.2897110192878796,KZ
+,KSPI,Deuda neta /EBITDA,2026,-0.29537878787878785,KZ
+,KSPI,Deuda neta /EBITDA,2025,-0.3530036520831781,KZ
+,KSPI,Deuda neta /EBITDA,2024,-0.38922067253108356,KZ
+,KSPI,NTM P/E,2026,18.47347163278306,KZ
+,KSPI,Free cashflow yield,2026,0.022894813470125498,
+,KSPI,TSR 12M en %,2026,0%,
+,KSPI,PEG ratio,2026,0.49,KZ
+,KSPI,Stock price,2026,87.91,KZ
+,KSPI,% of CAPEX/CFO,2026,50.93,KZ
+,KSPI,% of CAPEX/CFO,2025,46.92,KZ
+,KSPI,% of CAPEX/CFO,2024,21.57,KZ
+,KSPI,3 YEARS CAGR  by PER,2026,0.04544497001271679,
+,KSPI,3 YEARS CAGR  by  P/FCF,2026,-0.006019274290948687,
+,KSPI,3 YEARS CAGR by EV/EBITDA,2026,0.3804386194379961,
+,KSPI,3 YEARS CAGR  by EV/EBIT,2026,0.3893497038511005,
+
+
