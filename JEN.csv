@@ -117,3 +117,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,11.10294665172411,,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,JEN,    Y/Y Growth %,2028,0.09,
+,JEN,    Y/Y Growth %,2027,0.09,
+,JEN,    Y/Y Growth %,2026,0.22673357332460634,
+,JEN,    Y/Y Growth %,2025,0.19426048565121412,
+,JEN,    Y/Y Growth %,2024,0.1325,
+,JEN,Sales,2028,788.5,EUR
+,JEN,Sales,2027,723.3925208537871,EUR
+,JEN,Sales,2026,663.662863168612,EUR
+,JEN,Sales,2025,541,EUR
+,JEN,Sales,2024,453,EUR
+,JEN,EBITDA,2028,125.54153798228793,EUR
+,JEN,EBITDA,2027,115.1757229195302,EUR
+,JEN,EBITDA,2026,103.7,EUR
+,JEN,EBITDA,2025,81.7,EUR
+,JEN,EBITDA,2024,63,EUR
+,JEN,EBIT ,2028,110.38969868228793,EUR
+,JEN,EBIT ,2027,101.27495291953021,EUR
+,JEN,EBIT ,2026,90.947,EUR
+,JEN,EBIT ,2025,70,EUR
+,JEN,EBIT ,2024,54,EUR
+,JEN,    EBIT margin %,2028,0.14,
+,JEN,    EBIT margin %,2027,0.14,
+,JEN,    EBIT margin %,2026,0.13703795262217913,
+,JEN,    EBIT margin %,2025,0.12939001848428835,
+,JEN,    EBIT margin %,2024,0.11920529801324503,
+,JEN,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,1.986574486,EUR
+,JEN,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,1.8225454,EUR
+,JEN,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,1.67206,EUR
+,JEN,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,1.534,EUR
+,JEN,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,-0.7,EUR
+,JEN,Net income per share ( EPS ),2028,8.378363211511932,EUR
+,JEN,Net income per share ( EPS ),2027,7.866726366938047,EUR
+,JEN,Net income per share ( EPS ),2026,7.478146310716914,EUR
+,JEN,Net income per share ( EPS ),2025,5.622732123799359,EUR
+,JEN,Net income per share ( EPS ),2024,4.559748427672957,EUR
+,JEN,Fully diluted shares  (millions),2028,9.632942749046995,EUR
+,JEN,Fully diluted shares  (millions),2027,9.412340303437782,EUR
+,JEN,Fully diluted shares  (millions),2026,9.196789838337182,EUR
+,JEN,Fully diluted shares  (millions),2025,9.37,EUR
+,JEN,Fully diluted shares  (millions),2024,9.54,EUR
+,JEN,Flujo de caja libre,2028,81.74431634721597,EUR
+,JEN,Flujo de caja libre,2027,74.99478563964766,EUR
+,JEN,Flujo de caja libre,2026,69.64694,EUR
+,JEN,Flujo de caja libre,2025,53.485,EUR
+,JEN,Flujo de caja libre,2024,39.400000000000006,EUR
+,JEN,Flujo de caja libre por accion,2028,8.485913233035989,EUR
+,JEN,Flujo de caja libre por accion,2027,7.9677086911377835,EUR
+,JEN,Flujo de caja libre por accion,2026,7.572962003510614,EUR
+,JEN,Flujo de caja libre por accion,2025,5.70811099252935,EUR
+,JEN,Flujo de caja libre por accion,2024,4.129979035639414,EUR
+,JEN,ROE ( net income / equity ),2028,0.2052078059670917,
+,JEN,ROE ( net income / equity ),2027,0.2052078059670917,
+,JEN,ROE ( net income / equity ),2026,0.20775856183522487,
+,JEN,ROE ( net income / equity ),2025,0.17347711557458018,
+,JEN,ROE ( net income / equity ),2024,0.15398230088495576,
+,JEN,ROCE con goodwill( EBIT / Capital empleado),2028,0.3159418150162393,
+,JEN,ROCE con goodwill( EBIT / Capital empleado),2027,0.3159418150162393,
+,JEN,ROCE con goodwill( EBIT / Capital empleado),2026,0.3092572819825763,
+,JEN,ROCE con goodwill( EBIT / Capital empleado),2025,0.2594514455151965,
+,JEN,ROCE con goodwill( EBIT / Capital empleado),2024,0.2548371873525248,
+,JEN,Deuda neta /EBITDA,2028,-1.0355138393982484,EUR
+,JEN,Deuda neta /EBITDA,2027,-0.6934782045068133,EUR
+,JEN,Deuda neta /EBITDA,2026,-0.35632594021215047,EUR
+,JEN,Deuda neta /EBITDA,2025,-0.41493268053855575,EUR
+,JEN,Deuda neta /EBITDA,2024,-1.1206349206349207,EUR
+,JEN,NTM P/E,2026,11.10294665172411,EUR
+,JEN,Free cashflow yield,2026,0.0886763700645271,
+,JEN,TSR 12M en %,2026,48%,
+,JEN,PEG ratio,2026,0.49,EUR
+,JEN,Stock price,2026,85.4,EUR
+,JEN,% of CAPEX/CFO,2026,9.87,EUR
+,JEN,% of CAPEX/CFO,2025,11.57,EUR
+,JEN,% of CAPEX/CFO,2024,22.75,EUR
+,JEN,3 YEARS CAGR  by PER,2026,0.2212957961622368,
+,JEN,3 YEARS CAGR  by  P/FCF,2026,0.22592509633996036,
+,JEN,3 YEARS CAGR by EV/EBITDA,2026,0.19664592954081958,
+,JEN,3 YEARS CAGR  by EV/EBIT,2026,0.22238996450151569,
+
+
