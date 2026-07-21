@@ -93,7 +93,7 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,
 ,,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030,2031,,,,
-,"Valuation  ( millons ,except EPS )",,,,,,,,,,,,,,Cotización actual,,2780.49,USD
+,"Valuation  ( millons ,except EPS )",,,,,,,,,,,,,,Cotización actual,,2780.49,CAD
 ,Market cap,,,,,,,,58918.583099999996,58918.583099999996,58918.583099999996,58918.583099999996,58918.583099999996,58918.583099999996,,,,
 ,Net DEBT  (-) si es caja neta ,303,204,545,1381,2286,2438,2166,2991,3439.65,3955.5975,4548.9371249999995,5231.277693749998,6015.969347812498, Dividend yield ,,0.002,
 ,Deuda neta /EBITDA,0.32441113490364026,0.16571892770105606,0.36044973544973546,0.811875367430923,1.034857401539158,0.9063197026022305,0.6607687614399024,0.7788819099403144,0.8026396901365906,0.8026396901365905,0.8026396901365905,0.8026396901365904,0.8026396901365904,,,,
@@ -113,5 +113,89 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,FCF/EBITDA,,,0.7297128505147041,,,,,,,,,
 ,,,,,,LTM P/E,,,47.21793300531375,,,,,,,,,
 ,,,,,,NTM P/E,,,43.877945986467616,,,,,,,,,
+
+
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,CSU,    Y/Y Growth %,2028,0.15,
+,CSU,    Y/Y Growth %,2027,0.15,
+,CSU,    Y/Y Growth %,2026,0.19856819894498878,
+,CSU,    Y/Y Growth %,2025,0.15467911782237234,
+,CSU,    Y/Y Growth %,2024,0.19733555370524564,
+,CSU,Sales,2028,18423.69,CAD
+,CSU,Sales,2027,16020.601902788245,CAD
+,CSU,Sales,2026,13930.958176337605,CAD
+,CSU,Sales,2025,11623,CAD
+,CSU,Sales,2024,10066,CAD
+,CSU,EBITDA,2028,4928.235606348908,CAD
+,CSU,EBITDA,2027,4285.422266390355,CAD
+,CSU,EBITDA,2026,3840.12,CAD
+,CSU,EBITDA,2025,3278,CAD
+,CSU,EBITDA,2024,2690,CAD
+,CSU,EBIT ,2028,2579.3169063489077,CAD
+,CSU,EBIT ,2027,2242.8842663903547,CAD
+,CSU,EBIT ,2026,2064,CAD
+,CSU,EBIT ,2025,1895,CAD
+,CSU,EBIT ,2024,1464,CAD
+,CSU,    EBIT margin %,2028,0.14,
+,CSU,    EBIT margin %,2027,0.14,
+,CSU,    EBIT margin %,2026,0.14815922737502737,
+,CSU,    EBIT margin %,2025,0.16303880237460208,
+,CSU,    EBIT margin %,2024,0.14544009537055433,
+,CSU,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,378.70066901408444,CAD
+,CSU,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,329.30492957746475,CAD
+,CSU,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,286.3521126760563,CAD
+,CSU,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,251,CAD
+,CSU,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,189,CAD
+,CSU,Net income per share ( EPS ),2028,75.95500124738199,CAD
+,CSU,Net income per share ( EPS ),2027,66.04782717163651,CAD
+,CSU,Net income per share ( EPS ),2026,60.06507267641096,CAD
+,CSU,Net income per share ( EPS ),2025,57.43275129778197,CAD
+,CSU,Net income per share ( EPS ),2024,46.90891930155733,CAD
+,CSU,Fully diluted shares  (millions),2028,21.19,CAD
+,CSU,Fully diluted shares  (millions),2027,21.19,CAD
+,CSU,Fully diluted shares  (millions),2026,21.19,CAD
+,CSU,Fully diluted shares  (millions),2025,21.19,CAD
+,CSU,Fully diluted shares  (millions),2024,21.19,CAD
+,CSU,Flujo de caja libre,2028,3632.125939872885,CAD
+,CSU,Flujo de caja libre,2027,3158.370382498161,CAD
+,CSU,Flujo de caja libre,2026,2802.1849115185255,CAD
+,CSU,Flujo de caja libre,2025,2401,CAD
+,CSU,Flujo de caja libre,2024,2035,CAD
+,CSU,Flujo de caja libre por accion,2028,171.40754789395396,CAD
+,CSU,Flujo de caja libre por accion,2027,149.0500416469165,CAD
+,CSU,Flujo de caja libre por accion,2026,132.2409113505675,CAD
+,CSU,Flujo de caja libre por accion,2025,113.30816422840962,CAD
+,CSU,Flujo de caja libre por accion,2024,96.03586597451627,CAD
+,CSU,ROE ( net income / equity ),2028,0.2640492529298966,
+,CSU,ROE ( net income / equity ),2027,0.2640492529298966,
+,CSU,ROE ( net income / equity ),2026,0.2761507680653392,
+,CSU,ROE ( net income / equity ),2025,0.340324384787472,
+,CSU,ROE ( net income / equity ),2024,0.35576234788833216,
+,CSU,ROCE con goodwill( EBIT / Capital empleado),2028,0.25662291377464014,
+,CSU,ROCE con goodwill( EBIT / Capital empleado),2027,0.2566229137746401,
+,CSU,ROCE con goodwill( EBIT / Capital empleado),2026,0.27157894736842103,
+,CSU,ROCE con goodwill( EBIT / Capital empleado),2025,0.33002438174851967,
+,CSU,ROCE con goodwill( EBIT / Capital empleado),2024,0.2798165137614679,
+,CSU,Deuda neta /EBITDA,2028,0.8026396901365905,CAD
+,CSU,Deuda neta /EBITDA,2027,0.8026396901365906,CAD
+,CSU,Deuda neta /EBITDA,2026,0.7788819099403144,CAD
+,CSU,Deuda neta /EBITDA,2025,0.6607687614399024,CAD
+,CSU,Deuda neta /EBITDA,2024,0.9063197026022305,CAD
+,CSU,NTM P/E,2026,43.877945986467616,CAD
+,CSU,Free cashflow yield,2026,0.047560290218834636,
+,CSU,TSR 12M en %,2026,-43%,
+,CSU,PEG ratio,2026,2.71,CAD
+,CSU,Stock price,2026,2780.49,CAD
+,CSU,% of CAPEX/CFO,2026,2.98,CAD
+,CSU,% of CAPEX/CFO,2025,2.75,CAD
+,CSU,% of CAPEX/CFO,2024,3.19,CAD
+,CSU,3 YEARS CAGR  by PER,2026,-0.051402076571171795,
+,CSU,3 YEARS CAGR  by  P/FCF,2026,0.16169301652455204,
+,CSU,3 YEARS CAGR by EV/EBITDA,2026,0.2071704306087101,
+,CSU,3 YEARS CAGR  by EV/EBIT,2026,0.16773323906282211,
 
 
