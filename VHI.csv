@@ -115,3 +115,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,17.128335041105863,,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,VHI,    Y/Y Growth %,2028,0.23,
+,VHI,    Y/Y Growth %,2027,0.225,
+,VHI,    Y/Y Growth %,2026,0.2003303661558228,
+,VHI,    Y/Y Growth %,2025,0.5887155562035281,
+,VHI,    Y/Y Growth %,2024,0.3062273852599506,
+,VHI,Sales,2028,196.28,CAD
+,VHI,Sales,2027,160.23000000000002,CAD
+,VHI,Sales,2026,130.8,CAD
+,VHI,Sales,2025,108.97,CAD
+,VHI,Sales,2024,68.59,CAD
+,VHI,EBITDA,2028,53.527293750000005,CAD
+,VHI,EBITDA,2027,43.695750000000004,CAD
+,VHI,EBITDA,2026,34.73,CAD
+,VHI,EBITDA,2025,26.55,CAD
+,VHI,EBITDA,2024,17.84,CAD
+,VHI,EBIT ,2028,39.256350000000005,CAD
+,VHI,EBIT ,2027,32.04600000000001,CAD
+,VHI,EBIT ,2026,25.22,CAD
+,VHI,EBIT ,2025,17.66,CAD
+,VHI,EBIT ,2024,13.129999999999999,CAD
+,VHI,    EBIT margin %,2028,0.2,
+,VHI,    EBIT margin %,2027,0.2,
+,VHI,    EBIT margin %,2026,0.19281345565749233,
+,VHI,    EBIT margin %,2025,0.16206295310635954,
+,VHI,    EBIT margin %,2024,0.1914273217670214,
+,VHI,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,-3.7215500000000006,CAD
+,VHI,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,-3.0380000000000003,CAD
+,VHI,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,-2.48,CAD
+,VHI,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,-2.35,CAD
+,VHI,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,-1.91,CAD
+,VHI,Net income per share ( EPS ),2028,0.4632146776406036,CAD
+,VHI,Net income per share ( EPS ),2027,0.3970411522633745,CAD
+,VHI,Net income per share ( EPS ),2026,0.41651234567901235,CAD
+,VHI,Net income per share ( EPS ),2025,0.32841267208492286,CAD
+,VHI,Net income per share ( EPS ),2024,0.35224818378166106,CAD
+,VHI,Fully diluted shares  (millions),2028,71.44200000000001,CAD
+,VHI,Fully diluted shares  (millions),2027,68.04,CAD
+,VHI,Fully diluted shares  (millions),2026,64.8,CAD
+,VHI,Fully diluted shares  (millions),2025,60.29,CAD
+,VHI,Fully diluted shares  (millions),2024,50.93,CAD
+,VHI,Flujo de caja libre,2028,45.698233,CAD
+,VHI,Flujo de caja libre,2027,37.304680000000005,CAD
+,VHI,Flujo de caja libre,2026,35.38999999999999,CAD
+,VHI,Flujo de caja libre,2025,27.669999999999998,CAD
+,VHI,Flujo de caja libre,2024,21.403,CAD
+,VHI,Flujo de caja libre por accion,2028,0.6396550068587106,CAD
+,VHI,Flujo de caja libre por accion,2027,0.5482757201646091,CAD
+,VHI,Flujo de caja libre por accion,2026,0.546141975308642,CAD
+,VHI,Flujo de caja libre por accion,2025,0.45894841598938463,CAD
+,VHI,Flujo de caja libre por accion,2024,0.42024347143137636,CAD
+,VHI,ROE ( net income / equity ),2028,0.08449348659003832,
+,VHI,ROE ( net income / equity ),2027,0.08449348659003832,
+,VHI,ROE ( net income / equity ),2026,0.10340996168582375,
+,VHI,ROE ( net income / equity ),2025,0.0744556838265709,
+,VHI,ROE ( net income / equity ),2024,0.12384371116940492,
+,VHI,ROCE con goodwill( EBIT / Capital empleado),2028,0.18699070764832024,
+,VHI,ROCE con goodwill( EBIT / Capital empleado),2027,0.18699070764832024,
+,VHI,ROCE con goodwill( EBIT / Capital empleado),2026,0.18027162258756252,
+,VHI,ROCE con goodwill( EBIT / Capital empleado),2025,0.11831703068471125,
+,VHI,ROCE con goodwill( EBIT / Capital empleado),2024,0.14769403824521932,
+,VHI,Deuda neta /EBITDA,2028,-2.1178436970297962,CAD
+,VHI,Deuda neta /EBITDA,2027,-2.6828975551111935,CAD
+,VHI,Deuda neta /EBITDA,2026,-3.4868989346386416,CAD
+,VHI,Deuda neta /EBITDA,2025,-4.394350282485876,CAD
+,VHI,Deuda neta /EBITDA,2024,-3.1367713004484306,CAD
+,VHI,NTM P/E,2026,17.128335041105863,CAD
+,VHI,Free cashflow yield,2026,0.07858157918109956,
+,VHI,TSR 12M en %,2026,-22%,
+,VHI,PEG ratio,2026,0.49,CAD
+,VHI,Stock price,2026,13.79,CAD
+,VHI,% of CAPEX/CFO,2026,1.15,CAD
+,VHI,% of CAPEX/CFO,2025,1.5,CAD
+,VHI,% of CAPEX/CFO,2024,3.95,CAD
+,VHI,3 YEARS CAGR  by PER,2026,0.3649023061293022,
+,VHI,3 YEARS CAGR  by  P/FCF,2026,0.3508306265433394,
+,VHI,3 YEARS CAGR by EV/EBITDA,2026,0.27988748205668457,
+,VHI,3 YEARS CAGR  by EV/EBIT,2026,0.2239272744813443,
+
+
