@@ -115,3 +115,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,28.35921418086599,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,TJX,    Y/Y Growth %,2028,0.06,
+,TJX,    Y/Y Growth %,2027,0.056,
+,TJX,    Y/Y Growth %,2026,0.07118523775727466,
+,TJX,    Y/Y Growth %,2025,0.039526347824483096,
+,TJX,    Y/Y Growth %,2024,0.08572973405959629,
+,TJX,Sales,2028,67322.99,USD
+,TJX,Sales,2027,63752.832,USD
+,TJX,Sales,2026,60372,USD
+,TJX,Sales,2025,56360,USD
+,TJX,Sales,2024,54217,USD
+,TJX,EBITDA,2028,9469.33346304,USD
+,TJX,EBITDA,2027,8967.171839999999,USD
+,TJX,EBITDA,2026,8109,USD
+,TJX,EBITDA,2025,7406,USD
+,TJX,EBITDA,2024,6761,USD
+,TJX,EBIT ,2028,8078.75887104,USD
+,TJX,EBIT ,2027,7650.33984,USD
+,TJX,EBIT ,2026,6862,USD
+,TJX,EBIT ,2025,6302,USD
+,TJX,EBIT ,2024,5797,USD
+,TJX,    EBIT margin %,2028,0.12,
+,TJX,    EBIT margin %,2027,0.12,
+,TJX,    EBIT margin %,2026,0.1136619624991718,
+,TJX,    EBIT margin %,2025,0.11181689141234918,
+,TJX,    EBIT margin %,2024,0.10692218307910803,
+,TJX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,-0.134931456,USD
+,TJX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,-0.127776,USD
+,TJX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,-0.121,USD
+,TJX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,-0.181,USD
+,TJX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,-0.17,USD
+,TJX,Net income per share ( EPS ),2028,5.697094197425434,USD
+,TJX,Net income per share ( EPS ),2027,5.307983257900732,USD
+,TJX,Net income per share ( EPS ),2026,4.48326329787234,USD
+,TJX,Net income per share ( EPS ),2025,4.100859019264448,USD
+,TJX,Net income per share ( EPS ),2024,3.713692838654012,USD
+,TJX,Fully diluted shares  (millions),2028,1091.9159860009213,USD
+,TJX,Fully diluted shares  (millions),2027,1109.8113498288974,USD
+,TJX,Fully diluted shares  (millions),2026,1128,USD
+,TJX,Fully diluted shares  (millions),2025,1142,USD
+,TJX,Fully diluted shares  (millions),2024,1159,USD
+,TJX,Flujo de caja libre,2028,5429.001667921921,USD
+,TJX,Flujo de caja libre,2027,5141.100064319999,USD
+,TJX,Flujo de caja libre,2026,4347.121,USD
+,TJX,Flujo de caja libre,2025,3869.1809999999996,USD
+,TJX,Flujo de caja libre,2024,3546.17,USD
+,TJX,Flujo de caja libre por accion,2028,4.971995773965471,USD
+,TJX,Flujo de caja libre por accion,2027,4.632408981141359,USD
+,TJX,Flujo de caja libre por accion,2026,3.8538306737588655,USD
+,TJX,Flujo de caja libre por accion,2025,3.3880744308231168,USD
+,TJX,Flujo de caja libre por accion,2024,3.0596807592752375,USD
+,TJX,ROE ( net income / equity ),2028,0.5474451393523062,
+,TJX,ROE ( net income / equity ),2027,0.5474451393523062,
+,TJX,ROE ( net income / equity ),2026,0.4962827281648675,
+,TJX,ROE ( net income / equity ),2025,0.5579865363993803,
+,TJX,ROE ( net income / equity ),2024,0.589450835387565,
+,TJX,ROCE con goodwill( EBIT / Capital empleado),2028,1.0608639625128131,
+,TJX,ROCE con goodwill( EBIT / Capital empleado),2027,1.060863962512813,
+,TJX,ROCE con goodwill( EBIT / Capital empleado),2026,1.0048323326987847,
+,TJX,ROCE con goodwill( EBIT / Capital empleado),2025,1.063808237677245,
+,TJX,ROCE con goodwill( EBIT / Capital empleado),2024,1.2701577563540754,
+,TJX,Deuda neta /EBITDA,2028,-0.3696141881222095,USD
+,TJX,Deuda neta /EBITDA,2027,-0.3345536422774742,USD
+,TJX,Deuda neta /EBITDA,2026,-0.41447774078184735,USD
+,TJX,Deuda neta /EBITDA,2025,-0.33337834188495813,USD
+,TJX,Deuda neta /EBITDA,2024,-0.4049696790415619,USD
+,TJX,NTM P/E,2026,28.35921418086599,USD
+,TJX,Free cashflow yield,2026,0.02475164209222136,
+,TJX,TSR 12M en %,2026,25%,
+,TJX,PEG ratio,2026,25.55,USD
+,TJX,Stock price,2026,155.7,USD
+,TJX,% of CAPEX/CFO,2026,31.04,USD
+,TJX,% of CAPEX/CFO,2025,33.14,USD
+,TJX,% of CAPEX/CFO,2024,32.69,USD
+,TJX,3 YEARS CAGR  by PER,2026,0.0006904593851929548,
+,TJX,3 YEARS CAGR  by  P/FCF,2026,0.01109843261358089,
+,TJX,3 YEARS CAGR by EV/EBITDA,2026,0.013440234928967055,
+,TJX,3 YEARS CAGR  by EV/EBIT,2026,0.016433686798740455,
+
+
