@@ -115,3 +115,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,26.53563491213069,,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,V,    Y/Y Growth %,2028,0.1,
+,V,    Y/Y Growth %,2027,0.1,
+,V,    Y/Y Growth %,2026,0.15844849246231146,
+,V,    Y/Y Growth %,2025,0.10000000000000016,
+,V,    Y/Y Growth %,2024,0.10023581294214927,
+,V,Sales,2028,55394.12,EUR
+,V,Sales,2027,50358.28885364322,EUR
+,V,Sales,2026,45780.26259422111,EUR
+,V,Sales,2025,39518.600000000006,EUR
+,V,Sales,2024,35926,EUR
+,V,EBITDA,2028,36302.89598136691,EUR
+,V,EBITDA,2027,33002.632710333564,EUR
+,V,EBITDA,2026,30011.559535209042,EUR
+,V,EBITDA,2025,25131,EUR
+,V,EBITDA,2024,25131,EUR
+,V,EBIT ,2028,34898.29417557475,EUR
+,V,EBIT ,2027,31725.72197779523,EUR
+,V,EBIT ,2026,28850.731596537833,EUR
+,V,EBIT ,2025,24097,EUR
+,V,EBIT ,2024,24097,EUR
+,V,    EBIT margin %,2028,0.63,
+,V,    EBIT margin %,2027,0.63,
+,V,    EBIT margin %,2026,0.630200220830094,
+,V,    EBIT margin %,2025,0.6097635037678459,
+,V,    EBIT margin %,2024,0.6707398541446307,
+,V,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,174.24,EUR
+,V,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,158.4,EUR
+,V,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,144,EUR
+,V,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,-300,EUR
+,V,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,-321,EUR
+,V,Net income per share ( EPS ),2028,15.542744195369586,EUR
+,V,Net income per share ( EPS ),2027,13.812864796325782,EUR
+,V,Net income per share ( EPS ),2026,12.657604512268595,EUR
+,V,Net income per share ( EPS ),2025,10.199203327884742,EUR
+,V,Net income per share ( EPS ),2024,9.977821586988664,EUR
+,V,Fully diluted shares  (millions),2028,1838.664796079691,EUR
+,V,Fully diluted shares  (millions),2027,1880.8484967315485,EUR
+,V,Fully diluted shares  (millions),2026,1924,EUR
+,V,Fully diluted shares  (millions),2025,1982.8999726583884,EUR
+,V,Fully diluted shares  (millions),2024,2029,EUR
+,V,Flujo de caja libre,2028,14841.203005385418,EUR
+,V,Flujo de caja libre,2027,13492.002732168567,EUR
+,V,Flujo de caja libre,2026,13000.59175837122,EUR
+,V,Flujo de caja libre,2025,10208,EUR
+,V,Flujo de caja libre,2024,20022,EUR
+,V,Flujo de caja libre por accion,2028,8.071728483097674,EUR
+,V,Flujo de caja libre por accion,2027,7.173359659544267,EUR
+,V,Flujo de caja libre por accion,2026,6.757064323477765,EUR
+,V,Flujo de caja libre por accion,2025,5.148015603789926,EUR
+,V,Flujo de caja libre por accion,2024,9.867915229176935,EUR
+,V,ROE ( net income / equity ),2028,0.6622948417733016,
+,V,ROE ( net income / equity ),2027,0.6622948417733014,
+,V,ROE ( net income / equity ),2026,0.682909371066565,
+,V,ROE ( net income / equity ),2025,0.5167488565807292,
+,V,ROE ( net income / equity ),2024,0.5172854332217595,
+,V,ROCE con goodwill( EBIT / Capital empleado),2028,0.6106231963745539,
+,V,ROCE con goodwill( EBIT / Capital empleado),2027,0.6106231963745539,
+,V,ROCE con goodwill( EBIT / Capital empleado),2026,0.6108172590463835,
+,V,ROCE con goodwill( EBIT / Capital empleado),2025,0.46045516213479065,
+,V,ROCE con goodwill( EBIT / Capital empleado),2024,0.5020417517396558,
+,V,Deuda neta /EBITDA,2028,0.04682822000957043,EUR
+,V,Deuda neta /EBITDA,2027,0.770566317919959,EUR
+,V,Deuda neta /EBITDA,2026,0.385584760646108,EUR
+,V,Deuda neta /EBITDA,2025,0.525088536070988,EUR
+,V,Deuda neta /EBITDA,2024,0.35259241574151445,EUR
+,V,NTM P/E,2026,26.53563491213069,EUR
+,V,Free cashflow yield,2026,0.018739951530847728,
+,V,TSR 12M en %,2026,3%,
+,V,PEG ratio,2026,3.39,EUR
+,V,Stock price,2026,360.57,EUR
+,V,% of CAPEX/CFO,2026,49.05,EUR
+,V,% of CAPEX/CFO,2025,51.98,EUR
+,V,% of CAPEX/CFO,2024,5.91,EUR
+,V,3 YEARS CAGR  by PER,2026,0.1401857404977077,
+,V,3 YEARS CAGR  by  P/FCF,2026,-0.10818760939176653,
+,V,3 YEARS CAGR by EV/EBITDA,2026,0.07836186264998124,
+,V,3 YEARS CAGR  by EV/EBIT,2026,0.06433240530691242,
+
+
