@@ -119,3 +119,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,NTM P/E,,,4.800945250748543,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,SAVE,    Y/Y Growth %,2027,0.03,
+,SAVE,    Y/Y Growth %,2026,0.03,
+,SAVE,    Y/Y Growth %,2025,0.03,
+,SAVE,    Y/Y Growth %,2024,0.05133264614931533,
+,SAVE,    Y/Y Growth %,2023,0.021049466245677342,
+,SAVE,Sales,2027,7801.63,EUR
+,SAVE,Sales,2026,7574.40164,EUR
+,SAVE,Sales,2025,7353.7880000000005,EUR
+,SAVE,Sales,2024,7139.6,EUR
+,SAVE,Sales,2023,6791,EUR
+,SAVE,EBITDA,2027,512.364392122,EUR
+,SAVE,EBITDA,2026,497.44115740000007,EUR
+,SAVE,EBITDA,2025,482.95258,EUR
+,SAVE,EBITDA,2024,451,EUR
+,SAVE,EBITDA,2023,417,EUR
+,SAVE,EBIT ,2027,273.05717912200004,EUR
+,SAVE,EBIT ,2026,265.10405740000004,EUR
+,SAVE,EBIT ,2025,257.38258,EUR
+,SAVE,EBIT ,2024,232,EUR
+,SAVE,EBIT ,2023,213,EUR
+,SAVE,    EBIT margin %,2027,0.035,
+,SAVE,    EBIT margin %,2026,0.035,
+,SAVE,    EBIT margin %,2025,0.035,
+,SAVE,    EBIT margin %,2024,0.0324948176368424,
+,SAVE,    EBIT margin %,2023,0.03136504196730967,
+,SAVE,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,15,EUR
+,SAVE,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,17,EUR
+,SAVE,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,19,EUR
+,SAVE,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,21.6,EUR
+,SAVE,Interest expense/ Income (introducir en negativo si es un ingreso) ,2023,18,EUR
+,SAVE,Net income per share ( EPS ),2027,13.572330884022401,EUR
+,SAVE,Net income per share ( EPS ),2026,13.032756198080001,EUR
+,SAVE,Net income per share ( EPS ),2025,12.21235228125,EUR
+,SAVE,Net income per share ( EPS ),2024,10.780303030303031,EUR
+,SAVE,Net income per share ( EPS ),2023,10.119402985074625,EUR
+,SAVE,Fully diluted shares  (millions),2027,12.5,EUR
+,SAVE,Fully diluted shares  (millions),2026,12.5,EUR
+,SAVE,Fully diluted shares  (millions),2025,12.8,EUR
+,SAVE,Fully diluted shares  (millions),2024,13.2,EUR
+,SAVE,Fully diluted shares  (millions),2023,13.4,EUR
+,SAVE,Flujo de caja libre,2027,110.75615075027997,EUR
+,SAVE,Flujo de caja libre,2026,105.726942476,EUR
+,SAVE,Flujo de caja libre,2025,100.8011092,EUR
+,SAVE,Flujo de caja libre,2024,88.4,EUR
+,SAVE,Flujo de caja libre,2023,136.29999999999998,EUR
+,SAVE,Flujo de caja libre por accion,2027,8.860492060022398,EUR
+,SAVE,Flujo de caja libre por accion,2026,8.45815539808,EUR
+,SAVE,Flujo de caja libre por accion,2025,7.87508665625,EUR
+,SAVE,Flujo de caja libre por accion,2024,6.696969696969698,EUR
+,SAVE,Flujo de caja libre por accion,2023,10.171641791044774,EUR
+,SAVE,ROE ( net income / equity ),2027,0.08948562972978671,
+,SAVE,ROE ( net income / equity ),2026,0.08850592706806766,
+,SAVE,ROE ( net income / equity ),2025,0.08747271156375032,
+,SAVE,ROE ( net income / equity ),2024,0.08201729106628243,
+,SAVE,ROE ( net income / equity ),2023,0.0857685009487666,
+,SAVE,ROCE con goodwill( EBIT / Capital empleado),2027,0.11286630532971995,
+,SAVE,ROCE con goodwill( EBIT / Capital empleado),2026,0.11286630532971997,
+,SAVE,ROCE con goodwill( EBIT / Capital empleado),2025,0.11286630532971995,
+,SAVE,ROCE con goodwill( EBIT / Capital empleado),2024,0.10478771454381211,
+,SAVE,ROCE con goodwill( EBIT / Capital empleado),2023,0.10260115606936417,
+,SAVE,Deuda neta /EBITDA,2027,0.644072861178501,EUR
+,SAVE,Deuda neta /EBITDA,2026,0.7639094480765615,EUR
+,SAVE,Deuda neta /EBITDA,2025,0.8696505979945277,EUR
+,SAVE,Deuda neta /EBITDA,2024,1.0620842572062086,EUR
+,SAVE,Deuda neta /EBITDA,2023,1.1870503597122302,EUR
+,SAVE,,2025,,EUR
+,SAVE,,2025,,EUR
+,SAVE,TSR 12M en %,2025,#N/A,EUR
+,SAVE,PEG ratio,2025,0,EUR
+,SAVE,Stock price,2025,5.51,EUR
+,SAVE,% of CAPEX/CFO,2025,71.25,EUR
+,SAVE,% of CAPEX/CFO,2024,73.28,EUR
+,SAVE,% of CAPEX/CFO,2023,56.22,EUR
+,SAVE,3 YEARS CAGR  by PER,2025,0.3147683272993178,
+,SAVE,3 YEARS CAGR  by  P/FCF,2025,0.1445322052157256,
+,SAVE,3 YEARS CAGR by EV/EBITDA,2025,0.38167596253033187,
+,SAVE,3 YEARS CAGR  by EV/EBIT,2025,0.3851667624569588,
+
+
