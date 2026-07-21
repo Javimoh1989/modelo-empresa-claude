@@ -118,3 +118,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,31.054430098199305,,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,MCO,    Y/Y Growth %,2027,0.09,
+,MCO,    Y/Y Growth %,2026,0.09,
+,MCO,    Y/Y Growth %,2025,0.08888261851015801,
+,MCO,    Y/Y Growth %,2024,0.19810682893847195,
+,MCO,    Y/Y Growth %,2023,0.08193123628383321,
+,MCO,Sales,2027,9169.76,USD
+,MCO,Sales,2026,8412.62,USD
+,MCO,Sales,2025,7718,USD
+,MCO,Sales,2024,7088,USD
+,MCO,Sales,2023,5916,USD
+,MCO,EBITDA,2027,4604.980552000001,USD
+,MCO,EBITDA,2026,4224.7528,USD
+,MCO,EBITDA,2025,3831,USD
+,MCO,EBITDA,2024,3306,USD
+,MCO,EBITDA,2023,2510,USD
+,MCO,EBIT ,2027,4034.6925520000004,USD
+,MCO,EBIT ,2026,3701.5528000000004,USD
+,MCO,EBIT ,2025,3351,USD
+,MCO,EBIT ,2024,2875,USD
+,MCO,EBIT ,2023,2137,USD
+,MCO,    EBIT margin %,2027,0.44,
+,MCO,    EBIT margin %,2026,0.44,
+,MCO,    EBIT margin %,2025,0.4341798393366157,
+,MCO,    EBIT margin %,2024,0.4056151241534989,
+,MCO,    EBIT margin %,2023,0.3612237998647735,
+,MCO,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,253.06529999999998,USD
+,MCO,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,232.17,USD
+,MCO,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,213,USD
+,MCO,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,237,USD
+,MCO,Interest expense/ Income (introducir en negativo si es un ingreso) ,2023,251,USD
+,MCO,Net income per share ( EPS ),2027,16.97826258880398,USD
+,MCO,Net income per share ( EPS ),2026,15.404849104769157,USD
+,MCO,Net income per share ( EPS ),2025,15.625347415230683,USD
+,MCO,Net income per share ( EPS ),2024,12.326217843459224,USD
+,MCO,Net income per share ( EPS ),2023,7.304347826086956,USD
+,MCO,Fully diluted shares  (millions),2027,175.95943715996273,USD
+,MCO,Fully diluted shares  (millions),2026,177.91880941900803,USD
+,MCO,Fully diluted shares  (millions),2025,179.9,USD
+,MCO,Fully diluted shares  (millions),2024,182.7,USD
+,MCO,Fully diluted shares  (millions),2023,184,USD
+,MCO,Flujo de caja libre,2027,3170.4529290800006,USD
+,MCO,Flujo de caja libre,2026,2908.672412,USD
+,MCO,Flujo de caja libre,2025,2965,USD
+,MCO,Flujo de caja libre,2024,2366,USD
+,MCO,Flujo de caja libre,2023,1446,USD
+,MCO,Flujo de caja libre por accion,2027,18.018089738476363,USD
+,MCO,Flujo de caja libre por accion,2026,16.34831315192721,USD
+,MCO,Flujo de caja libre por accion,2025,16.48137854363535,USD
+,MCO,Flujo de caja libre por accion,2024,12.950191570881227,USD
+,MCO,Flujo de caja libre por accion,2023,7.858695652173913,USD
+,MCO,ROE ( net income / equity ),2027,0.6202532807104095,
+,MCO,ROE ( net income / equity ),2026,0.6202532807104095,
+,MCO,ROE ( net income / equity ),2025,0.6933892451899358,
+,MCO,ROE ( net income / equity ),2024,0.6316970546984573,
+,MCO,ROE ( net income / equity ),2023,0.4050632911392405,
+,MCO,ROCE con goodwill( EBIT / Capital empleado),2027,0.39195752539242845,
+,MCO,ROCE con goodwill( EBIT / Capital empleado),2026,0.39195752539242845,
+,MCO,ROCE con goodwill( EBIT / Capital empleado),2025,0.38677285318559557,
+,MCO,ROCE con goodwill( EBIT / Capital empleado),2024,0.3598247809762203,
+,MCO,ROCE con goodwill( EBIT / Capital empleado),2023,0.2609598241543534,
+,MCO,Deuda neta /EBITDA,2027,1.1893950339532293,USD
+,MCO,Deuda neta /EBITDA,2026,1.189395033953229,USD
+,MCO,Deuda neta /EBITDA,2025,1.2033411641868963,USD
+,MCO,Deuda neta /EBITDA,2024,1.338475499092559,USD
+,MCO,Deuda neta /EBITDA,2023,1.9406374501992032,USD
+,MCO,LTM P/E,2025,32.59696891537378,USD
+,MCO,Yield Graham,2025,0.03773584905660377,
+,MCO,TSR 12M en %,2025,1%,
+,MCO,PEG ratio,2025,7.14,USD
+,MCO,Stock price,2025,505.37,USD
+,MCO,% of CAPEX/CFO,2025,9.91,USD
+,MCO,% of CAPEX/CFO,2024,11.82,USD
+,MCO,% of CAPEX/CFO,2023,15.78,USD
+,MCO,3 YEARS CAGR  by PER,2025,0.04565144061415837,
+,MCO,3 YEARS CAGR  by  P/FCF,2025,0.066376618464818,
+,MCO,3 YEARS CAGR by EV/EBITDA,2025,0.033956356714244455,
+,MCO,3 YEARS CAGR  by EV/EBIT,2025,0.036700578789298215,
+
+
