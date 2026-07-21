@@ -136,3 +136,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,19.328352780151587,,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,NFLX,    Y/Y Growth %,2028,0.1,
+,NFLX,    Y/Y Growth %,2027,0.1,
+,NFLX,    Y/Y Growth %,2026,0.13750756921181048,
+,NFLX,    Y/Y Growth %,2025,0.15851067293967303,
+,NFLX,    Y/Y Growth %,2024,0.15649921567580866,
+,NFLX,Sales,2028,62189.22,USD
+,NFLX,Sales,2027,56535.655000000006,USD
+,NFLX,Sales,2026,51396.05,USD
+,NFLX,Sales,2025,45183.04,USD
+,NFLX,Sales,2024,39000.97,USD
+,NFLX,EBITDA,2028,19082.565150000002,USD
+,NFLX,EBITDA,2027,17347.786500000002,USD
+,NFLX,EBITDA,2026,16617.48,USD
+,NFLX,EBITDA,2025,13659.99,USD
+,NFLX,EBITDA,2024,10746.52,USD
+,NFLX,EBIT ,2028,18656.766150000003,USD
+,NFLX,EBIT ,2027,16960.696500000002,USD
+,NFLX,EBIT ,2026,16265.58,USD
+,NFLX,EBIT ,2025,13326.6,USD
+,NFLX,EBIT ,2024,10417.61,USD
+,NFLX,    EBIT margin %,2028,0.3,
+,NFLX,    EBIT margin %,2027,0.3,
+,NFLX,    EBIT margin %,2026,0.31647529333479907,
+,NFLX,    EBIT margin %,2025,0.2949469535471717,
+,NFLX,    EBIT margin %,2024,0.26711156158423754,
+,NFLX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,-1815,USD
+,NFLX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,-1650,USD
+,NFLX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,-1500,USD
+,NFLX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,604.51,USD
+,NFLX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,451.73,USD
+,NFLX,Net income per share ( EPS ),2028,3.880821401490416,USD
+,NFLX,Net income per share ( EPS ),2027,3.5062472447653334,USD
+,NFLX,Net income per share ( EPS ),2026,3.4866079374582477,USD
+,NFLX,Net income per share ( EPS ),2025,2.5278761286045133,USD
+,NFLX,Net income per share ( EPS ),2024,1.983296946462354,USD
+,NFLX,Fully diluted shares  (millions),2028,4272.840428866861,USD
+,NFLX,Fully diluted shares  (millions),2027,4299.372837299419,USD
+,NFLX,Fully diluted shares  (millions),2026,4326.07,USD
+,NFLX,Fully diluted shares  (millions),2025,4343.86,USD
+,NFLX,Fully diluted shares  (millions),2024,4392.61,USD
+,NFLX,Flujo de caja libre,2028,16093.084881499999,USD
+,NFLX,Flujo de caja libre,2027,14630.077165000002,USD
+,NFLX,Flujo de caja libre,2026,14679.14,USD
+,NFLX,Flujo de caja libre,2025,10625.91,USD
+,NFLX,Flujo de caja libre,2024,8601.22,USD
+,NFLX,Flujo de caja libre por accion,2028,3.7663669283731753,USD
+,NFLX,Flujo de caja libre por accion,2027,3.4028398370283344,USD
+,NFLX,Flujo de caja libre por accion,2026,3.3931813401077653,USD
+,NFLX,Flujo de caja libre por accion,2025,2.4461907151703786,USD
+,NFLX,Flujo de caja libre por accion,2024,1.958111464482392,USD
+,NFLX,ROE ( net income / equity ),2028,0.44027706866197186,
+,NFLX,ROE ( net income / equity ),2027,0.44027706866197186,
+,NFLX,ROE ( net income / equity ),2026,0.48458254086563174,
+,NFLX,ROE ( net income / equity ),2025,0.4125695224848387,
+,NFLX,ROE ( net income / equity ),2024,0.35208541047229647,
+,NFLX,ROCE con goodwill( EBIT / Capital empleado),2028,0.46444354212709205,
+,NFLX,ROCE con goodwill( EBIT / Capital empleado),2027,0.4644435421270921,
+,NFLX,ROCE con goodwill( EBIT / Capital empleado),2026,0.48994968744041517,
+,NFLX,ROCE con goodwill( EBIT / Capital empleado),2025,0.41624851597499624,
+,NFLX,ROCE con goodwill( EBIT / Capital empleado),2024,0.3388652825083605,
+,NFLX,Deuda neta /EBITDA,2028,-0.5719409145054064,USD
+,NFLX,Deuda neta /EBITDA,2027,-0.2548460509068404,USD
+,NFLX,Deuda neta /EBITDA,2026,0.12469219159583762,USD
+,NFLX,Deuda neta /EBITDA,2025,0.3953502162153852,USD
+,NFLX,Deuda neta /EBITDA,2024,0.5582328046660687,USD
+,NFLX,NTM P/E,2026,19.328352780151587,USD
+,NFLX,Free cashflow yield,2026,0.05019499023828056,
+,NFLX,TSR 12M en %,2026,-45%,
+,NFLX,PEG ratio,2026,0.76,USD
+,NFLX,Stock price,2026,67.6,USD
+,NFLX,% of CAPEX/CFO,2026,4.9,USD
+,NFLX,% of CAPEX/CFO,2025,6.08,USD
+,NFLX,% of CAPEX/CFO,2024,4.86,USD
+,NFLX,3 YEARS CAGR  by PER,2026,0.2529290093150267,
+,NFLX,3 YEARS CAGR  by  P/FCF,2026,0.24087590681130866,
+,NFLX,3 YEARS CAGR by EV/EBITDA,2026,0.25185631760780414,
+,NFLX,3 YEARS CAGR  by EV/EBIT,2026,0.27289024352637403,
+
+
