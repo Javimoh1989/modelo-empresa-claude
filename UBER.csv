@@ -154,3 +154,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,17.368736211833152,,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,UBER,    Y/Y Growth %,2028,0.12,
+,UBER,    Y/Y Growth %,2027,0.12,
+,UBER,    Y/Y Growth %,2026,0.1448018728864997,
+,UBER,    Y/Y Growth %,2025,0.18279594342625857,
+,UBER,    Y/Y Growth %,2024,0.17963573938467317,
+,UBER,Sales,2028,75072.48,USD
+,UBER,Sales,2027,67029,USD
+,UBER,Sales,2026,59549.159021937056,USD
+,UBER,Sales,2025,52017,USD
+,UBER,Sales,2024,43978,USD
+,UBER,EBITDA,2028,14579.286399999999,USD
+,UBER,EBITDA,2027,13017.22,USD
+,UBER,EBITDA,2026,11300,USD
+,UBER,EBITDA,2025,8730,USD
+,UBER,EBITDA,2024,6484,USD
+,UBER,EBIT ,2028,13513.0464,USD
+,UBER,EBIT ,2027,12065.22,USD
+,UBER,EBIT ,2026,10450,USD
+,UBER,EBIT ,2025,7983,USD
+,UBER,EBIT ,2024,5747,USD
+,UBER,    EBIT margin %,2028,0.18,
+,UBER,    EBIT margin %,2027,0.18,
+,UBER,    EBIT margin %,2026,0.17548526581459142,
+,UBER,    EBIT margin %,2025,0.153469058192514,
+,UBER,    EBIT margin %,2024,0.13067897585156216,
+,UBER,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,-397.89959999999996,USD
+,UBER,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,-355.2675,USD
+,UBER,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,-317.203125,USD
+,UBER,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,-303,USD
+,UBER,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,-198,USD
+,UBER,Net income per share ( EPS ),2028,5.486773547799474,USD
+,UBER,Net income per share ( EPS ),2027,4.8009268543245405,USD
+,UBER,Net income per share ( EPS ),2026,3.3588619628198937,USD
+,UBER,Net income per share ( EPS ),2025,1.8398916822742948,USD
+,UBER,Net income per share ( EPS ),2024,0.09207118311470301,USD
+,UBER,Fully diluted shares  (millions),2028,1988.9884,USD
+,UBER,Fully diluted shares  (millions),2027,2029.58,USD
+,UBER,Fully diluted shares  (millions),2026,2071,USD
+,UBER,Fully diluted shares  (millions),2025,2119.69,USD
+,UBER,Fully diluted shares  (millions),2024,2150.51,USD
+,UBER,Flujo de caja libre,2028,11569.180139999999,USD
+,UBER,Flujo de caja libre,2027,10329.625125,USD
+,UBER,Flujo de caja libre,2026,7479.203125,USD
+,UBER,Flujo de caja libre,2025,4311,USD
+,UBER,Flujo de caja libre,2024,693,USD
+,UBER,Flujo de caja libre por accion,2028,5.81661518991262,USD
+,UBER,Flujo de caja libre por accion,2027,5.089538291173544,USD
+,UBER,Flujo de caja libre por accion,2026,3.6113969700627715,USD
+,UBER,Flujo de caja libre por accion,2025,2.0337879595601245,USD
+,UBER,Flujo de caja libre por accion,2024,0.32224914090146056,USD
+,UBER,ROE ( net income / equity ),2028,0.35149608403267973,
+,UBER,ROE ( net income / equity ),2027,0.3514960840326798,
+,UBER,ROE ( net income / equity ),2026,0.28104735667245767,
+,UBER,ROE ( net income / equity ),2025,0.1442254354498724,
+,UBER,ROE ( net income / equity ),2024,0.009184525466184246,
+,UBER,ROCE con goodwill( EBIT / Capital empleado),2028,0.3692506292295488,
+,UBER,ROCE con goodwill( EBIT / Capital empleado),2027,0.36925062922954877,
+,UBER,ROCE con goodwill( EBIT / Capital empleado),2026,0.35819565366422157,
+,UBER,ROCE con goodwill( EBIT / Capital empleado),2025,0.2667312639914464,
+,UBER,ROCE con goodwill( EBIT / Capital empleado),2024,0.23868261483511918,
+,UBER,Deuda neta /EBITDA,2028,-0.0765030776814973,USD
+,UBER,Deuda neta /EBITDA,2027,0.12704862174872988,USD
+,UBER,Deuda neta /EBITDA,2026,0.39141592920353985,USD
+,UBER,Deuda neta /EBITDA,2025,0.33081328751431843,USD
+,UBER,Deuda neta /EBITDA,2024,0.38864898210980875,USD
+,UBER,NTM P/E,2026,17.368736211833152,USD
+,UBER,Free cashflow yield,2026,0.05004014091814842,
+,UBER,TSR 12M en %,2026,-21%,
+,UBER,PEG ratio,2026,0.69,USD
+,UBER,Stock price,2026,72.17,USD
+,UBER,% of CAPEX/CFO,2026,4.19,USD
+,UBER,% of CAPEX/CFO,2025,7.23,USD
+,UBER,% of CAPEX/CFO,2024,25.88,USD
+,UBER,3 YEARS CAGR  by PER,2026,0.22809410134843566,
+,UBER,3 YEARS CAGR  by  P/FCF,2026,0.25187310060405266,
+,UBER,3 YEARS CAGR by EV/EBITDA,2026,0.28401862544561207,
+,UBER,3 YEARS CAGR  by EV/EBIT,2026,0.39543869038596124,
+
+
