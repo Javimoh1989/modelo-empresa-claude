@@ -115,3 +115,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,16.43348878809511,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,DPZ,    Y/Y Growth %,2027,0.05,
+,DPZ,    Y/Y Growth %,2026,0.05,
+,DPZ,    Y/Y Growth %,2025,0.049723756906077346,
+,DPZ,    Y/Y Growth %,2024,0.05068095557043983,
+,DPZ,    Y/Y Growth %,2023,-0.012818591365523777,
+,DPZ,Sales,2027,5446.35,USD
+,DPZ,Sales,2026,5187,USD
+,DPZ,Sales,2025,4940,USD
+,DPZ,Sales,2024,4706,USD
+,DPZ,Sales,2023,4479,USD
+,DPZ,EBITDA,2027,1159.94025,USD
+,DPZ,EBITDA,2026,1104.705,USD
+,DPZ,EBITDA,2025,1042.77,USD
+,DPZ,EBITDA,2024,966.732,USD
+,DPZ,EBITDA,2023,900.12,USD
+,DPZ,EBIT ,2027,1062.03825,USD
+,DPZ,EBIT ,2026,1011.465,USD
+,DPZ,EBIT ,2025,953.97,USD
+,DPZ,EBIT ,2024,879,USD
+,DPZ,EBIT ,2023,819.52,USD
+,DPZ,    EBIT margin %,2027,0.195,
+,DPZ,    EBIT margin %,2026,0.195,
+,DPZ,    EBIT margin %,2025,0.19311133603238867,
+,DPZ,    EBIT margin %,2024,0.18678283042923927,
+,DPZ,    EBIT margin %,2023,0.18296941281536055,
+,DPZ,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,199.651725,USD
+,DPZ,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,190.1445,USD
+,DPZ,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,181.09,USD
+,DPZ,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,178.85,USD
+,DPZ,Interest expense/ Income (introducir en negativo si es un ingreso) ,2023,184.79999999999998,USD
+,DPZ,Net income per share ( EPS ),2027,20.718359625277778,USD
+,DPZ,Net income per share ( EPS ),2026,19.154967176289624,USD
+,DPZ,Net income per share ( EPS ),2025,17.76683328432814,USD
+,DPZ,Net income per share ( EPS ),2024,16.19418035148372,USD
+,DPZ,Net income per share ( EPS ),2023,14.293044469783354,USD
+,DPZ,Fully diluted shares  (millions),2027,32.05068529845529,USD
+,DPZ,Fully diluted shares  (millions),2026,33.015811469665024,USD
+,DPZ,Fully diluted shares  (millions),2025,34.01,USD
+,DPZ,Fully diluted shares  (millions),2024,34.71,USD
+,DPZ,Fully diluted shares  (millions),2023,35.08,USD
+,DPZ,Flujo de caja libre,2027,638.5037242500002,USD
+,DPZ,Flujo de caja libre,2026,608.0987849999999,USD
+,DPZ,Flujo de caja libre,2025,581.0899999999999,USD
+,DPZ,Flujo de caja libre,2024,537.0159999999998,USD
+,DPZ,Flujo de caja libre,2023,476.7,USD
+,DPZ,Flujo de caja libre por accion,2027,19.921687112280665,USD
+,DPZ,Flujo de caja libre por accion,2026,18.418410995553508,USD
+,DPZ,Flujo de caja libre por accion,2025,17.08585710085269,USD
+,DPZ,Flujo de caja libre por accion,2024,15.47150677038317,USD
+,DPZ,Flujo de caja libre por accion,2023,13.588939566704676,USD
+,DPZ,ROE ( net income / equity ),2027,-0.15439120359689737,
+,DPZ,ROE ( net income / equity ),2026,-0.15439120359689731,
+,DPZ,ROE ( net income / equity ),2025,-0.1548906217157036,
+,DPZ,ROE ( net income / equity ),2024,-0.14186240785000592,
+,DPZ,ROE ( net income / equity ),2023,-0.123182904748217,
+,DPZ,ROCE con goodwill( EBIT / Capital empleado),2027,1.220479424285423,
+,DPZ,ROCE con goodwill( EBIT / Capital empleado),2026,1.2204794242854238,
+,DPZ,ROCE con goodwill( EBIT / Capital empleado),2025,1.208658524224609,
+,DPZ,ROCE con goodwill( EBIT / Capital empleado),2024,1.0647060248552531,
+,DPZ,ROCE con goodwill( EBIT / Capital empleado),2023,1.0932909990794961,
+,DPZ,Deuda neta /EBITDA,2027,4.458150365934797,USD
+,DPZ,Deuda neta /EBITDA,2026,4.458150365934798,USD
+,DPZ,Deuda neta /EBITDA,2025,4.498038877221248,USD
+,DPZ,Deuda neta /EBITDA,2024,4.9526342357551005,USD
+,DPZ,Deuda neta /EBITDA,2023,5.354797138159356,USD
+,DPZ,NTM P/E,2025,16.43348878809511,USD
+,DPZ,Free cashflow yield,2025,0.05193743229125053,
+,DPZ,TSR 12M en %,2025,"-29,%",
+,DPZ,PEG ratio,2025,0.97,USD
+,DPZ,Stock price,2025,328.97,USD
+,DPZ,% of CAPEX/CFO,2025,16.15,USD
+,DPZ,% of CAPEX/CFO,2024,17.36,USD
+,DPZ,% of CAPEX/CFO,2023,18.09,USD
+,DPZ,3 YEARS CAGR  by PER,2025,0.1693667641307862,
+,DPZ,3 YEARS CAGR  by  P/FCF,2025,0.10063714674536403,
+,DPZ,3 YEARS CAGR by EV/EBITDA,2025,0.06823666590821839,
+,DPZ,3 YEARS CAGR  by EV/EBIT,2025,0.058449530298684584,
+
+
