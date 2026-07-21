@@ -133,3 +133,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,17.860357642154103,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,BKNG,    Y/Y Growth %,2028,0.08,
+,BKNG,    Y/Y Growth %,2027,0.08,
+,BKNG,    Y/Y Growth %,2026,0.09389161454627168,
+,BKNG,    Y/Y Growth %,2025,0.12477357934201104,
+,BKNG,    Y/Y Growth %,2024,0.11111631172478352,
+,BKNG,Sales,2028,34068.21,EUR
+,BKNG,Sales,2027,31544.64,EUR
+,BKNG,Sales,2026,29208,EUR
+,BKNG,Sales,2025,26701,EUR
+,BKNG,Sales,2024,23739,EUR
+,BKNG,EBITDA,2028,13090.273919999998,EUR
+,BKNG,EBITDA,2027,12120.624,EUR
+,BKNG,EBITDA,2026,10950,EUR
+,BKNG,EBITDA,2025,9759,EUR
+,BKNG,EBITDA,2024,8306,EUR
+,BKNG,EBIT ,2028,11923.873919999998,EUR
+,BKNG,EBIT ,2027,11040.624,EUR
+,BKNG,EBIT ,2026,9950,EUR
+,BKNG,EBIT ,2025,8959,EUR
+,BKNG,EBIT ,2024,7715,EUR
+,BKNG,    EBIT margin %,2028,0.35,
+,BKNG,    EBIT margin %,2027,0.35,
+,BKNG,    EBIT margin %,2026,0.3406600931251712,
+,BKNG,    EBIT margin %,2025,0.3355305044754878,
+,BKNG,    EBIT margin %,2024,0.3249926281646236,
+,BKNG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,933.12,EUR
+,BKNG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,864,EUR
+,BKNG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,800,EUR
+,BKNG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,901,EUR
+,BKNG,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,181,EUR
+,BKNG,Net income per share ( EPS ),2028,295.37087053980036,EUR
+,BKNG,Net income per share ( EPS ),2027,266.65425812620873,EUR
+,BKNG,Net income per share ( EPS ),2026,232.10891983674486,EUR
+,BKNG,Net income per share ( EPS ),2025,199.54434993924664,EUR
+,BKNG,Net income per share ( EPS ),2024,179.80035231943629,EUR
+,BKNG,Fully diluted shares  (millions),2028,30.512210625,EUR
+,BKNG,Fully diluted shares  (millions),2027,31.294575000000002,EUR
+,BKNG,Fully diluted shares  (millions),2026,32.097,EUR
+,BKNG,Fully diluted shares  (millions),2025,32.92,EUR
+,BKNG,Fully diluted shares  (millions),2024,34.06,EUR
+,BKNG,Flujo de caja libre,2028,9712.258214399997,EUR
+,BKNG,Flujo de caja libre,2027,8992.83168,EUR
+,BKNG,Flujo de caja libre,2026,8050,EUR
+,BKNG,Flujo de caja libre,2025,7044,EUR
+,BKNG,Flujo de caja libre,2024,6286,EUR
+,BKNG,Flujo de caja libre por accion,2028,318.30726176366636,EUR
+,BKNG,Flujo de caja libre por accion,2027,287.3607224255322,EUR
+,BKNG,Flujo de caja libre por accion,2026,250.80225566252298,EUR
+,BKNG,Flujo de caja libre por accion,2025,213.97326852976911,EUR
+,BKNG,Flujo de caja libre por accion,2024,184.55666470933645,EUR
+,BKNG,ROE ( net income / equity ),2028,-1.6314814189189182,
+,BKNG,ROE ( net income / equity ),2027,-1.6314814189189188,
+,BKNG,ROE ( net income / equity ),2026,-1.5730574324324325,
+,BKNG,ROE ( net income / equity ),2025,-1.387035472972973,
+,BKNG,ROE ( net income / equity ),2024,-1.5233830845771144,
+,BKNG,ROCE con goodwill( EBIT / Capital empleado),2028,-2.4059308072487626,
+,BKNG,ROCE con goodwill( EBIT / Capital empleado),2027,-2.4059308072487635,
+,BKNG,ROCE con goodwill( EBIT / Capital empleado),2026,-2.3417274652859494,
+,BKNG,ROCE con goodwill( EBIT / Capital empleado),2025,-2.108496116733349,
+,BKNG,ROCE con goodwill( EBIT / Capital empleado),2024,-2.151422197434467,
+,BKNG,Deuda neta /EBITDA,2028,0.061114076366096406,EUR
+,BKNG,Deuda neta /EBITDA,2027,0.04950240185653808,EUR
+,BKNG,Deuda neta /EBITDA,2026,0.04447488584474886,EUR
+,BKNG,Deuda neta /EBITDA,2025,0.04990265396044677,EUR
+,BKNG,Deuda neta /EBITDA,2024,0.05225138454129545,EUR
+,BKNG,NTM P/E,2026,17.860357642154103,EUR
+,BKNG,Free cashflow yield,2026,0.05590465436891011,
+,BKNG,TSR 12M en %,2026,-21%,
+,BKNG,PEG ratio,2026,1.17,EUR
+,BKNG,Stock price,2026,179.45,EUR
+,BKNG,% of CAPEX/CFO,2026,4.73,EUR
+,BKNG,% of CAPEX/CFO,2025,4.41,EUR
+,BKNG,% of CAPEX/CFO,2024,6.39,EUR
+,BKNG,3 YEARS CAGR  by PER,2026,0.16994937419717826,
+,BKNG,3 YEARS CAGR  by  P/FCF,2026,0.15299747764058869,
+,BKNG,3 YEARS CAGR by EV/EBITDA,2026,0.2001641826164311,
+,BKNG,3 YEARS CAGR  by EV/EBIT,2026,0.19640285844893857,
+
+
