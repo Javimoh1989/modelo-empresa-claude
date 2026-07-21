@@ -86,7 +86,7 @@ PÁGINA: 3.RETORNOS CAPITAL
 PÁGINA: 4. VALORACIÓN
 ==================================================
 2026-07-21,,,,,,,,,,,,,,,,,,,
-,CellImage,#N/A,,,,,,,,,,,,,,,,,
+,CellImage,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,
@@ -187,7 +187,7 @@ PÁGINA: 5.BDD
 ,PLX,Deuda neta /EBITDA,2024,-2.4651162790697674,EUR
 ,PLX,NTM P/E,2026,9.735909089764492,EUR
 ,PLX,Free cashflow yield,2026,0.12024378613235512,
-,PLX,TSR 12M en %,2026,#N/A,EUR
+,PLX,TSR 12M en %,2026,-25%,
 ,PLX,PEG ratio,2026,0.43,EUR
 ,PLX,Stock price,2026,13.57,EUR
 ,PLX,% of CAPEX/CFO,2026,30.55,EUR
