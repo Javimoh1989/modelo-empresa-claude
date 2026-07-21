@@ -115,3 +115,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,24.92142842134366,,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,MA,    Y/Y Growth %,2028,0.11,
+,MA,    Y/Y Growth %,2027,0.11,
+,MA,    Y/Y Growth %,2026,0.11311030465676558,
+,MA,    Y/Y Growth %,2025,0.16416373770724607,
+,MA,    Y/Y Growth %,2024,0.12228065981353096,
+,MA,Sales,2028,44971.65,EUR
+,MA,Sales,2027,40515,EUR
+,MA,Sales,2026,36500,EUR
+,MA,Sales,2025,32791,EUR
+,MA,Sales,2024,28167,EUR
+,MA,EBITDA,2028,30867.801300000003,EUR
+,MA,EBITDA,2027,27808.83,EUR
+,MA,EBITDA,2026,23386.23,EUR
+,MA,EBITDA,2025,20544,EUR
+,MA,EBITDA,2024,17349,EUR
+,MA,EBIT ,2028,29231.572500000002,EUR
+,MA,EBIT ,2027,26334.75,EUR
+,MA,EBIT ,2026,22058.23,EUR
+,MA,EBIT ,2025,19240,EUR
+,MA,EBIT ,2024,16307,EUR
+,MA,    EBIT margin %,2028,0.65,
+,MA,    EBIT margin %,2027,0.65,
+,MA,    EBIT margin %,2026,0.6043350684931507,
+,MA,    EBIT margin %,2025,0.586746363331402,
+,MA,    EBIT margin %,2024,0.5789398942024355,
+,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,501.4647,EUR
+,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,451.77,EUR
+,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,407,EUR
+,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,397,EUR
+,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,319,EUR
+,MA,Net income per share ( EPS ),2028,26.784803702352658,EUR
+,MA,Net income per share ( EPS ),2027,23.699012879206013,EUR
+,MA,Net income per share ( EPS ),2026,19.83039689147932,EUR
+,MA,Net income per share ( EPS ),2025,16.81346578366446,EUR
+,MA,Net income per share ( EPS ),2024,14.679611650485437,EUR
+,MA,Fully diluted shares  (millions),2028,868.8279957771707,EUR
+,MA,Fully diluted shares  (millions),2027,884.6450232699478,EUR
+,MA,Fully diluted shares  (millions),2026,900.75,EUR
+,MA,Fully diluted shares  (millions),2025,906,EUR
+,MA,Fully diluted shares  (millions),2024,927,EUR
+,MA,Flujo de caja libre,2028,24311.279718,EUR
+,MA,Flujo de caja libre,2027,21902.0538,EUR
+,MA,Flujo de caja libre,2026,18706.23,EUR
+,MA,Flujo de caja libre,2025,16048,EUR
+,MA,Flujo de caja libre,2024,14176,EUR
+,MA,Flujo de caja libre por accion,2028,27.98169469234638,EUR
+,MA,Flujo de caja libre por accion,2027,24.758013919574868,EUR
+,MA,Flujo de caja libre por accion,2026,20.767393838467942,EUR
+,MA,Flujo de caja libre por accion,2025,17.713024282560706,EUR
+,MA,Flujo de caja libre por accion,2024,15.292340884573894,EUR
+,MA,ROE ( net income / equity ),2028,2.8110700997172198,
+,MA,ROE ( net income / equity ),2027,2.8110700997172193,
+,MA,ROE ( net income / equity ),2026,2.6584655454680757,
+,MA,ROE ( net income / equity ),2025,1.9688509758304251,
+,MA,ROE ( net income / equity ),2024,2.0983808789514264,
+,MA,ROCE con goodwill( EBIT / Capital empleado),2028,1.3348900016879537,
+,MA,ROCE con goodwill( EBIT / Capital empleado),2027,1.3348900016879537,
+,MA,ROCE con goodwill( EBIT / Capital empleado),2026,1.2411089855398638,
+,MA,ROCE con goodwill( EBIT / Capital empleado),2025,1.189784181559582,
+,MA,ROCE con goodwill( EBIT / Capital empleado),2024,1.0023357305304568,
+,MA,Deuda neta /EBITDA,2028,0.05507356949326999,EUR
+,MA,Deuda neta /EBITDA,2027,0.3974996430989725,EUR
+,MA,Deuda neta /EBITDA,2026,0.47267131128018497,EUR
+,MA,Deuda neta /EBITDA,2025,0.4105334890965732,EUR
+,MA,Deuda neta /EBITDA,2024,0.5639518127845985,EUR
+,MA,NTM P/E,2026,24.92142842134366,EUR
+,MA,Free cashflow yield,2026,0.03793547025878259,
+,MA,TSR 12M en %,2026,-1%,
+,MA,PEG ratio,2026,1.43,EUR
+,MA,Stock price,2026,547.44,EUR
+,MA,% of CAPEX/CFO,2026,2.52,EUR
+,MA,% of CAPEX/CFO,2025,2.96,EUR
+,MA,% of CAPEX/CFO,2024,3.24,EUR
+,MA,3 YEARS CAGR  by PER,2026,0.19079672873795206,
+,MA,3 YEARS CAGR  by  P/FCF,2026,0.17383504359247082,
+,MA,3 YEARS CAGR by EV/EBITDA,2026,0.14232233307243913,
+,MA,3 YEARS CAGR  by EV/EBIT,2026,0.1218456901520436,
+
+
