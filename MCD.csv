@@ -115,3 +115,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,20.451390149276396,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,MCD,    Y/Y Growth %,2027,0.05,
+,MCD,    Y/Y Growth %,2026,0.05,
+,MCD,    Y/Y Growth %,2025,0.03722993827160494,
+,MCD,    Y/Y Growth %,2024,0.01670981407389974,
+,MCD,    Y/Y Growth %,2023,0.09970408841113601,
+,MCD,Sales,2027,29640.71,USD
+,MCD,Sales,2026,28229.25,USD
+,MCD,Sales,2025,26885,USD
+,MCD,Sales,2024,25920,USD
+,MCD,Sales,2023,25494,USD
+,MCD,EBITDA,2027,16355.532374999999,USD
+,MCD,EBITDA,2026,15576.697499999998,USD
+,MCD,EBITDA,2025,14592,USD
+,MCD,EBITDA,2024,13809,USD
+,MCD,EBITDA,2023,13625,USD
+,MCD,EBIT ,2027,13931.134875,USD
+,MCD,EBIT ,2026,13267.7475,USD
+,MCD,EBIT ,2025,12393,USD
+,MCD,EBIT ,2024,11712,USD
+,MCD,EBIT ,2023,11647,USD
+,MCD,    EBIT margin %,2027,0.47,
+,MCD,    EBIT margin %,2026,0.47,
+,MCD,    EBIT margin %,2025,0.4609633624697787,
+,MCD,    EBIT margin %,2024,0.45185185185185184,
+,MCD,    EBIT margin %,2023,0.4568525927669255,
+,MCD,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,1744.155,USD
+,MCD,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,1661.1,USD
+,MCD,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,1582,USD
+,MCD,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,1506,USD
+,MCD,Interest expense/ Income (introducir en negativo si es un ingreso) ,2023,1361,USD
+,MCD,Net income per share ( EPS ),2027,13.448471500952747,USD
+,MCD,Net income per share ( EPS ),2026,12.640457285003189,USD
+,MCD,Net income per share ( EPS ),2025,11.832774986041318,USD
+,MCD,Net income per share ( EPS ),2024,11.199612134644688,USD
+,MCD,Net income per share ( EPS ),2023,11.242660111975967,USD
+,MCD,Fully diluted shares  (millions),2027,697.7725686584679,USD
+,MCD,Fully diluted shares  (millions),2026,707.0249417007341,USD
+,MCD,Fully diluted shares  (millions),2025,716.4,USD
+,MCD,Fully diluted shares  (millions),2024,721.9,USD
+,MCD,Fully diluted shares  (millions),2023,732.3,USD
+,MCD,Flujo de caja libre,2027,8241.78450375,USD
+,MCD,Flujo de caja libre,2026,7849.3185749999975,USD
+,MCD,Flujo de caja libre,2025,7441,USD
+,MCD,Flujo de caja libre,2024,7529,USD
+,MCD,Flujo de caja libre,2023,7949,USD
+,MCD,Flujo de caja libre por accion,2027,11.811562784125478,USD
+,MCD,Flujo de caja libre por accion,2026,11.101897701258773,USD
+,MCD,Flujo de caja libre por accion,2025,10.386655499720826,USD
+,MCD,Flujo de caja libre por accion,2024,10.429422357667267,USD
+,MCD,Flujo de caja libre por accion,2023,10.854840912194456,USD
+,MCD,ROE ( net income / equity ),2027,-4.752396147403685,
+,MCD,ROE ( net income / equity ),2026,-4.752396147403685,
+,MCD,ROE ( net income / equity ),2025,-4.733109994416527,
+,MCD,ROE ( net income / equity ),2024,-2.129312615222544,
+,MCD,ROE ( net income / equity ),2023,-1.7490970894412576,
+,MCD,ROCE con goodwill( EBIT / Capital empleado),2027,0.337787371685201,
+,MCD,ROCE con goodwill( EBIT / Capital empleado),2026,0.337787371685201,
+,MCD,ROCE con goodwill( EBIT / Capital empleado),2025,0.3312927715996578,
+,MCD,ROCE con goodwill( EBIT / Capital empleado),2024,0.34917416969769244,
+,MCD,ROCE con goodwill( EBIT / Capital empleado),2023,0.38747130643068634,
+,MCD,Deuda neta /EBITDA,2027,2.6423412279785237,USD
+,MCD,Deuda neta /EBITDA,2026,2.642341227978524,USD
+,MCD,Deuda neta /EBITDA,2025,2.6863349780701755,USD
+,MCD,Deuda neta /EBITDA,2024,2.7039611847345935,USD
+,MCD,Deuda neta /EBITDA,2023,2.5516330275229357,USD
+,MCD,NTM P/E,2025,20.451390149276396,USD
+,MCD,Free cashflow yield,2025,0.03880830780048134,
+,MCD,TSR 12M en %,2025,-10%,
+,MCD,PEG ratio,2025,2.02,USD
+,MCD,Stock price,2025,267.64,USD
+,MCD,% of CAPEX/CFO,2025,30.3,USD
+,MCD,% of CAPEX/CFO,2024,26.06,USD
+,MCD,% of CAPEX/CFO,2023,22.15,USD
+,MCD,3 YEARS CAGR  by PER,2025,0.10132184637102723,
+,MCD,3 YEARS CAGR  by  P/FCF,2025,0.08487782741134306,
+,MCD,3 YEARS CAGR by EV/EBITDA,2025,0.10567255012416263,
+,MCD,3 YEARS CAGR  by EV/EBIT,2025,0.11057876141998865,
+
+
