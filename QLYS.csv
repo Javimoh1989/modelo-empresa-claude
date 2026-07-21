@@ -115,3 +115,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,19.654829989592944,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,QLYS,    Y/Y Growth %,2029,0.08,
+,QLYS,    Y/Y Growth %,2028,0.078,
+,QLYS,    Y/Y Growth %,2027,0.078,
+,QLYS,    Y/Y Growth %,2026,0.07753467240554758,
+,QLYS,    Y/Y Growth %,2025,0.1014320987654321,
+,QLYS,Sales,2029,903.22,USD
+,QLYS,Sales,2028,837.862564,USD
+,QLYS,Sales,2027,777.238,USD
+,QLYS,Sales,2026,721,USD
+,QLYS,Sales,2025,669.12,USD
+,QLYS,EBITDA,2029,392.64177765029854,USD
+,QLYS,EBITDA,2028,364.231704684878,USD
+,QLYS,EBITDA,2027,337.8772770731707,USD
+,QLYS,EBITDA,2026,332.8,USD
+,QLYS,EBITDA,2025,313.41,USD
+,QLYS,EBIT ,2029,379.35065447664,USD
+,QLYS,EBIT ,2028,351.90227688,USD
+,QLYS,EBIT ,2027,326.43996,USD
+,QLYS,EBIT ,2026,322.190243902439,USD
+,QLYS,EBIT ,2025,298.91,USD
+,QLYS,    EBIT margin %,2029,0.42,
+,QLYS,    EBIT margin %,2028,0.42,
+,QLYS,    EBIT margin %,2027,0.41999999999999993,
+,QLYS,    EBIT margin %,2026,0.4468658029160042,
+,QLYS,    EBIT margin %,2025,0.4467210664753707,
+,QLYS,Interest expense/ Income (introducir en negativo si es un ingreso) ,2029,-19.69527048696308,USD
+,QLYS,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,-18.270195256923078,USD
+,QLYS,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,-16.948233076923078,USD
+,QLYS,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,-15.721923076923076,USD
+,QLYS,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,-24.925,USD
+,QLYS,Net income per share ( EPS ),2029,9.947711469710345,USD
+,QLYS,Net income per share ( EPS ),2028,9.024303319761101,USD
+,QLYS,Net income per share ( EPS ),2027,8.186611629722158,USD
+,QLYS,Net income per share ( EPS ),2026,7.671191291292591,USD
+,QLYS,Net income per share ( EPS ),2025,7.5641483516483525,USD
+,QLYS,Fully diluted shares  (millions),2029,33.294905941761755,USD
+,QLYS,Fully diluted shares  (millions),2028,34.04619071267872,USD
+,QLYS,Fully diluted shares  (millions),2027,34.81442789090986,USD
+,QLYS,Fully diluted shares  (millions),2026,35.6,USD
+,QLYS,Fully diluted shares  (millions),2025,36.4,USD
+,QLYS,Flujo de caja libre,2029,339.1751530474491,USD
+,QLYS,Flujo de caja libre,2028,314.63372267852424,USD
+,QLYS,Flujo de caja libre,2027,279.12266606757726,USD
+,QLYS,Flujo de caja libre,2026,279.45416606757726,USD
+,QLYS,Flujo de caja libre,2025,284.83500000000004,USD
+,QLYS,Flujo de caja libre por accion,2029,10.18699838469951,USD
+,QLYS,Flujo de caja libre por accion,2028,9.241378142235318,USD
+,QLYS,Flujo de caja libre por accion,2027,7.840524327740934,USD
+,QLYS,Flujo de caja libre por accion,2026,7.849836125493743,USD
+,QLYS,Flujo de caja libre por accion,2025,7.825137362637364,USD
+,QLYS,ROE ( net income / equity ),2029,0.4638417476383266,
+,QLYS,ROE ( net income / equity ),2028,0.46384174763832664,
+,QLYS,ROE ( net income / equity ),2027,0.4638417476383265,
+,QLYS,ROE ( net income / equity ),2026,0.479112999947397,
+,QLYS,ROE ( net income / equity ),2025,0.49061831789023524,
+,QLYS,ROCE con goodwill( EBIT / Capital empleado),2029,1.0420509291121816,
+,QLYS,ROCE con goodwill( EBIT / Capital empleado),2028,1.0420509291121818,
+,QLYS,ROCE con goodwill( EBIT / Capital empleado),2027,1.0420509291121816,
+,QLYS,ROCE con goodwill( EBIT / Capital empleado),2026,1.1087069645644838,
+,QLYS,ROCE con goodwill( EBIT / Capital empleado),2025,0.9605077120822622,
+,QLYS,Deuda neta /EBITDA,2029,-1.5281104409994355,USD
+,QLYS,Deuda neta /EBITDA,2028,-1.0982020369315943,USD
+,QLYS,Deuda neta /EBITDA,2027,-1.2894704229393934,USD
+,QLYS,Deuda neta /EBITDA,2026,-0.8395432692307692,USD
+,QLYS,Deuda neta /EBITDA,2025,-0.7976771640981462,USD
+,QLYS,NTM P/E,2027,19.654829989592944,USD
+,QLYS,Free cashflow yield,2027,0.05020039729803506,
+,QLYS,TSR 12M en %,2027,12%,
+,QLYS,PEG ratio,2027,1.09,USD
+,QLYS,Stock price,2027,156.37,USD
+,QLYS,% of CAPEX/CFO,2027,1.61,USD
+,QLYS,% of CAPEX/CFO,2026,1.5,USD
+,QLYS,% of CAPEX/CFO,2025,1.73,USD
+,QLYS,3 YEARS CAGR  by PER,2027,0.17976255710287692,
+,QLYS,3 YEARS CAGR  by  P/FCF,2027,0.15691438759642073,
+,QLYS,3 YEARS CAGR by EV/EBITDA,2027,0.08695253315919116,
+,QLYS,3 YEARS CAGR  by EV/EBIT,2027,0.12577853822416785,
+
+
