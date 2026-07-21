@@ -115,3 +115,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,20.63440441371587,,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,SAP,    Y/Y Growth %,2028,0.09,
+,SAP,    Y/Y Growth %,2027,0.09,
+,SAP,    Y/Y Growth %,2026,0.11413043478260869,
+,SAP,    Y/Y Growth %,2025,0.07677902621722846,
+,SAP,    Y/Y Growth %,2024,0.09513891114173102,
+,SAP,Sales,2028,48712.1,EUR
+,SAP,Sales,2027,44690,EUR
+,SAP,Sales,2026,41000,EUR
+,SAP,Sales,2025,36800,EUR
+,SAP,Sales,2024,34176,EUR
+,SAP,EBITDA,2028,15487.734574498565,EUR
+,SAP,EBITDA,2027,14208.930802292263,EUR
+,SAP,EBITDA,2026,13245.716332378224,EUR
+,SAP,EBITDA,2025,11730,EUR
+,SAP,EBITDA,2024,9433,EUR
+,SAP,EBIT ,2028,14126.508999999998,EUR
+,SAP,EBIT ,2027,12960.099999999999,EUR
+,SAP,EBIT ,2026,12100,EUR
+,SAP,EBIT ,2025,10419,EUR
+,SAP,EBIT ,2024,8153,EUR
+,SAP,    EBIT margin %,2028,0.29,
+,SAP,    EBIT margin %,2027,0.29,
+,SAP,    EBIT margin %,2026,0.2951219512195122,
+,SAP,    EBIT margin %,2025,0.283125,
+,SAP,    EBIT margin %,2024,0.23855922284644196,
+,SAP,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,-46.335899999999995,EUR
+,SAP,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,-42.51,EUR
+,SAP,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,-39,EUR
+,SAP,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,-534,EUR
+,SAP,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,-398,EUR
+,SAP,Net income per share ( EPS ),2028,8.458601831846181,EUR
+,SAP,Net income per share ( EPS ),2027,7.740302926698288,EUR
+,SAP,Net income per share ( EPS ),2026,7.592410999786826,EUR
+,SAP,Net income per share ( EPS ),2025,6.675744680851063,EUR
+,SAP,Net income per share ( EPS ),2024,5.856779661016949,EUR
+,SAP,Fully diluted shares  (millions),2028,1166.7483320758192,EUR
+,SAP,Fully diluted shares  (millions),2027,1169.7453169138644,EUR
+,SAP,Fully diluted shares  (millions),2026,1172.75,EUR
+,SAP,Fully diluted shares  (millions),2025,1175,EUR
+,SAP,Fully diluted shares  (millions),2024,1180,EUR
+,SAP,Flujo de caja libre,2028,10086.179797616212,EUR
+,SAP,Flujo de caja libre,2027,9253.375961115795,EUR
+,SAP,Flujo de caja libre,2026,9086.74574414293,EUR
+,SAP,Flujo de caja libre,2025,8227,EUR
+,SAP,Flujo de caja libre,2024,7184,EUR
+,SAP,Flujo de caja libre por accion,2028,8.644691850273652,EUR
+,SAP,Flujo de caja libre por accion,2027,7.910590303134488,EUR
+,SAP,Flujo de caja libre por accion,2026,7.7482376841977665,EUR
+,SAP,Flujo de caja libre por accion,2025,7.001702127659574,EUR
+,SAP,Flujo de caja libre por accion,2024,6.088135593220339,EUR
+,SAP,ROE ( net income / equity ),2028,0.1851669638876505,
+,SAP,ROE ( net income / equity ),2027,0.18516696388765047,
+,SAP,ROE ( net income / equity ),2026,0.19848417298261256,
+,SAP,ROE ( net income / equity ),2025,0.175929664020096,
+,SAP,ROE ( net income / equity ),2024,0.15209736344029226,
+,SAP,ROCE con goodwill( EBIT / Capital empleado),2028,0.28479041916167663,
+,SAP,ROCE con goodwill( EBIT / Capital empleado),2027,0.28479041916167663,
+,SAP,ROCE con goodwill( EBIT / Capital empleado),2026,0.2898203592814371,
+,SAP,ROCE con goodwill( EBIT / Capital empleado),2025,0.2437649150718263,
+,SAP,ROCE con goodwill( EBIT / Capital empleado),2024,0.17882523249692928,
+,SAP,Deuda neta /EBITDA,2028,-0.23857530500839116,EUR
+,SAP,Deuda neta /EBITDA,2027,-0.23857530500839108,EUR
+,SAP,Deuda neta /EBITDA,2026,-0.2347928886562234,EUR
+,SAP,Deuda neta /EBITDA,2025,-0.15720375106564366,EUR
+,SAP,Deuda neta /EBITDA,2024,0.016325665217852222,EUR
+,SAP,NTM P/E,2026,20.63440441371587,EUR
+,SAP,Free cashflow yield,2026,0.04893108736468435,
+,SAP,TSR 12M en %,2026,-48%,
+,SAP,PEG ratio,2026,1.02,EUR
+,SAP,Stock price,2026,158.35,EUR
+,SAP,% of CAPEX/CFO,2026,7.1,EUR
+,SAP,% of CAPEX/CFO,2025,6.99,EUR
+,SAP,% of CAPEX/CFO,2024,8.59,EUR
+,SAP,3 YEARS CAGR  by PER,2026,0.12296968271397023,
+,SAP,3 YEARS CAGR  by  P/FCF,2026,0.20163350606773178,
+,SAP,3 YEARS CAGR by EV/EBITDA,2026,0.12970486445449325,
+,SAP,3 YEARS CAGR  by EV/EBIT,2026,0.14026451897106818,
+
+
