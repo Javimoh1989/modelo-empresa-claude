@@ -257,3 +257,87 @@ PÁGINA: 4. VALORACIÓN
 ,*Mediana,,,,,,,,,,,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,DPM,    Y/Y Growth %,2027,0.17,
+,DPM,    Y/Y Growth %,2026,0.17,
+,DPM,    Y/Y Growth %,2025,0.5661558741143516,
+,DPM,    Y/Y Growth %,2024,0.16711538461538458,
+,DPM,    Y/Y Growth %,2023,-0.08739908739908733,
+,DPM,Sales,2027,1521,CAD
+,DPM,Sales,2026,1300,CAD
+,DPM,Sales,2025,950.5,CAD
+,DPM,Sales,2024,606.9,CAD
+,DPM,Sales,2023,520,CAD
+,DPM,EBITDA,2027,899.6155,CAD
+,DPM,EBITDA,2026,826.68835,CAD
+,DPM,EBITDA,2025,585.6,CAD
+,DPM,EBITDA,2024,326.93,CAD
+,DPM,EBITDA,2023,287,CAD
+,DPM,EBIT ,2027,763.68373,CAD
+,DPM,EBIT ,2026,710.50735,CAD
+,DPM,EBIT ,2025,486.3,CAD
+,DPM,EBIT ,2024,237.73000000000002,CAD
+,DPM,EBIT ,2023,198,CAD
+,DPM,    EBIT margin %,2027,0.5020931821170282,
+,DPM,    EBIT margin %,2026,0.5465441153846153,
+,DPM,    EBIT margin %,2025,0.5116254602840611,
+,DPM,    EBIT margin %,2024,0.3917119789092108,
+,DPM,    EBIT margin %,2023,0.38076923076923075,
+,DPM,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,1.5,CAD
+,DPM,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,0,CAD
+,DPM,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,-22.3,CAD
+,DPM,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,-33.1,CAD
+,DPM,Interest expense/ Income (introducir en negativo si es un ingreso) ,2023,-21.3,CAD
+,DPM,Net income per share ( EPS ),2027,3.6118561249326873,CAD
+,DPM,Net income per share ( EPS ),2026,3.3669707485191167,CAD
+,DPM,Net income per share ( EPS ),2025,2.4549434571890147,CAD
+,DPM,Net income per share ( EPS ),2024,1.3194567627494458,CAD
+,DPM,Net income per share ( EPS ),2023,1.054363067630245,CAD
+,DPM,Fully diluted shares  (millions),2027,185.7,CAD
+,DPM,Fully diluted shares  (millions),2026,185.7,CAD
+,DPM,Fully diluted shares  (millions),2025,185.7,CAD
+,DPM,Fully diluted shares  (millions),2024,180.4,CAD
+,DPM,Fully diluted shares  (millions),2023,185.42,CAD
+,DPM,Flujo de caja libre,2027,711.6604824,CAD
+,DPM,Flujo de caja libre,2026,637.2864679999999,CAD
+,DPM,Flujo de caja libre,2025,459.583,CAD
+,DPM,Flujo de caja libre,2024,281.90000000000003,CAD
+,DPM,Flujo de caja libre,2023,229.17000000000002,CAD
+,DPM,Flujo de caja libre por accion,2027,3.832312775444265,CAD
+,DPM,Flujo de caja libre por accion,2026,3.431806505115778,CAD
+,DPM,Flujo de caja libre por accion,2025,2.4748680667743677,CAD
+,DPM,Flujo de caja libre por accion,2024,1.562638580931264,CAD
+,DPM,Flujo de caja libre por accion,2023,1.2359508143673823,CAD
+,DPM,(+) Realizable assets,2027,388.22004000000004,
+,DPM,(+) Realizable assets,2026,331.812,
+,DPM,(+) Realizable assets,2025,283.6,
+,DPM,(+) Realizable assets,2024,366.1,
+,DPM,(+) Realizable assets,2023,221.51999999999998,
+,DPM,(+) Current Liabilities,2027,343.5939,
+,DPM,(+) Current Liabilities,2026,293.67,
+,DPM,(+) Current Liabilities,2025,251,
+,DPM,(+) Current Liabilities,2024,83.4,
+,DPM,(+) Current Liabilities,2023,121.87,
+,DPM,Deuda neta /EBITDA,2027,-1.2749147978652755,CAD
+,DPM,Deuda neta /EBITDA,2026,-1.1482881886505354,CAD
+,DPM,Deuda neta /EBITDA,2025,-0.8350239071038251,CAD
+,DPM,Deuda neta /EBITDA,2024,-1.9143853424280426,CAD
+,DPM,Deuda neta /EBITDA,2023,-2.0413240418118463,CAD
+,DPM,NTM P/E,2025,13.40016410754908,CAD
+,DPM,Free cashflow yield,2025,0.05273530932824137,
+,DPM,TSR 12M en %,2025,103%,
+,DPM,PEG ratio,2025,1.79,CAD
+,DPM,Stock price,2025,46.93,CAD
+,DPM,% of CAPEX/CFO,2025,16.12,CAD
+,DPM,% of CAPEX/CFO,2024,12.52,CAD
+,DPM,% of CAPEX/CFO,2023,18.59,CAD
+,DPM,3 YEARS CAGR  by PER,2025,0.1150276413780359,
+,DPM,3 YEARS CAGR  by  P/FCF,2025,0.1838693820825691,
+,DPM,3 YEARS CAGR by EV/EBITDA,2025,0.074702458357223,
+,DPM,3 YEARS CAGR  by EV/EBIT,2025,0.047968648815477015,
+
+
