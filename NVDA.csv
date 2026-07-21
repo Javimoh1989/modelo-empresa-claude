@@ -203,3 +203,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,,22.272466060728007,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,NVDA,    Y/Y Growth %,2028,0.3,
+,NVDA,    Y/Y Growth %,2027,0.7162673267326735,
+,NVDA,    Y/Y Growth %,2026,0,
+,NVDA,    Y/Y Growth %,2025,0.654735357900948,
+,NVDA,    Y/Y Growth %,2024,1.1420340763599357,
+,NVDA,Sales,2028,481789.53,USD
+,NVDA,Sales,2027,370607.33400000003,USD
+,NVDA,Sales,2026,215938,USD
+,NVDA,Sales,2025,215938,USD
+,NVDA,Sales,2024,130497,USD
+,NVDA,EBITDA,2028,309558.19590770215,USD
+,NVDA,EBITDA,2027,262939.06873977085,USD
+,NVDA,EBITDA,2026,140143,USD
+,NVDA,EBITDA,2025,83317,USD
+,NVDA,EBITDA,2024,34480,USD
+,NVDA,EBIT ,2028,303527.40654600004,USD
+,NVDA,EBIT ,2027,258300,USD
+,NVDA,EBIT ,2026,137300,USD
+,NVDA,EBIT ,2025,81453,USD
+,NVDA,EBIT ,2024,32972,USD
+,NVDA,    EBIT margin %,2028,0.63,
+,NVDA,    EBIT margin %,2027,0.69696408112636,
+,NVDA,    EBIT margin %,2026,0.635830655095444,
+,NVDA,    EBIT margin %,2025,0.37720549416962273,
+,NVDA,    EBIT margin %,2024,0.2526648122179054,
+,NVDA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,-2571.11814159292,USD
+,NVDA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,-1977.7831858407078,USD
+,NVDA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,-2041,USD
+,NVDA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,-1539,USD
+,NVDA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,-609,USD
+,NVDA,Net income per share ( EPS ),2028,10.697160973094167,USD
+,NVDA,Net income per share ( EPS ),2027,9.031109146235936,USD
+,NVDA,Net income per share ( EPS ),2026,4.811862609121318,USD
+,NVDA,Net income per share ( EPS ),2025,2.896548943718755,USD
+,NVDA,Net income per share ( EPS ),2024,1.1837610264635123,USD
+,NVDA,Fully diluted shares  (millions),2028,24322.691472894196,USD
+,NVDA,Fully diluted shares  (millions),2027,24391,USD
+,NVDA,Fully diluted shares  (millions),2026,24514,USD
+,NVDA,Fully diluted shares  (millions),2025,24804,USD
+,NVDA,Fully diluted shares  (millions),2024,24940,USD
+,NVDA,Flujo de caja libre,2028,254967.1578400437,USD
+,NVDA,Flujo de caja libre,2027,216265.0230747558,USD
+,NVDA,Flujo de caja libre,2026,114759,USD
+,NVDA,Flujo de caja libre,2025,70474,USD
+,NVDA,Flujo de caja libre,2024,29962,USD
+,NVDA,Flujo de caja libre por accion,2028,10.482686840976681,USD
+,NVDA,Flujo de caja libre por accion,2027,8.866591081741454,USD
+,NVDA,Flujo de caja libre por accion,2026,4.681365750183568,USD
+,NVDA,Flujo de caja libre por accion,2025,2.841235284631511,USD
+,NVDA,Flujo de caja libre por accion,2024,1.2013632718524458,USD
+,NVDA,ROE ( net income / equity ),2028,1.0238770530350054,
+,NVDA,ROE ( net income / equity ),2027,1.126890446738905,
+,NVDA,ROE ( net income / equity ),2026,0.7499252986464751,
+,NVDA,ROE ( net income / equity ),2025,0.9056941520541556,
+,NVDA,ROE ( net income / equity ),2024,0.6869328493647913,
+,NVDA,ROCE con goodwill( EBIT / Capital empleado),2028,1.8550455557906156,
+,NVDA,ROCE con goodwill( EBIT / Capital empleado),2027,2.052222414665308,
+,NVDA,ROCE con goodwill( EBIT / Capital empleado),2026,1.3303490107164313,
+,NVDA,ROCE con goodwill( EBIT / Capital empleado),2025,1.8271197846567968,
+,NVDA,ROCE con goodwill( EBIT / Capital empleado),2024,1.234767629105344,
+,NVDA,Deuda neta /EBITDA,2028,-0.3230410350040158,USD
+,NVDA,Deuda neta /EBITDA,2027,-0.26473984867444805,USD
+,NVDA,Deuda neta /EBITDA,2026,-0.3859415026080503,USD
+,NVDA,Deuda neta /EBITDA,2025,-0.4170457409652292,USD
+,NVDA,Deuda neta /EBITDA,2024,-0.4720127610208817,USD
+,NVDA,NTM P/E,2026,22.272466060728007,USD
+,NVDA,Free cashflow yield,2026,0.04361762633678401,
+,NVDA,TSR 12M en %,2026,19%,
+,NVDA,PEG ratio,2026,0.71,USD
+,NVDA,Stock price,2026,203.28,USD
+,NVDA,% of CAPEX/CFO,2026,5,USD
+,NVDA,% of CAPEX/CFO,2025,4.39,USD
+,NVDA,% of CAPEX/CFO,2024,3.44,USD
+,NVDA,3 YEARS CAGR  by PER,2026,0.3154943746991421,
+,NVDA,3 YEARS CAGR  by  P/FCF,2026,0.3068024414650763,
+,NVDA,3 YEARS CAGR by EV/EBITDA,2026,0.27288150149882817,
+,NVDA,3 YEARS CAGR  by EV/EBIT,2026,0.3067955034708403,
+
+
