@@ -125,3 +125,87 @@ PÁGINA: 4. VALORACIÓN
 ,,,,,,NTM P/E,,,4.473001695649975,,,,,,,,,,
 
 
+==================================================
+PÁGINA: 5.BDD
+==================================================
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,ALWEC,    Y/Y Growth %,2028,0.1,
+,ALWEC,    Y/Y Growth %,2027,0.1,
+,ALWEC,    Y/Y Growth %,2026,0.3989865609165015,
+,ALWEC,    Y/Y Growth %,2025,0.5129999999999999,
+,ALWEC,    Y/Y Growth %,2024,0.13636363636363635,
+,ALWEC,Sales,2028,768.35,EUR
+,ALWEC,Sales,2027,698.5,EUR
+,ALWEC,Sales,2026,635,EUR
+,ALWEC,Sales,2025,453.9,EUR
+,ALWEC,Sales,2024,300,EUR
+,ALWEC,EBITDA,2028,32.549,EUR
+,ALWEC,EBITDA,2027,29.59,EUR
+,ALWEC,EBITDA,2026,20.3,EUR
+,ALWEC,EBITDA,2025,13.6,EUR
+,ALWEC,EBITDA,2024,13.161,EUR
+,ALWEC,EBIT ,2028,30.734,EUR
+,ALWEC,EBIT ,2027,27.94,EUR
+,ALWEC,EBIT ,2026,18.8,EUR
+,ALWEC,EBIT ,2025,12.7,EUR
+,ALWEC,EBIT ,2024,12.5,EUR
+,ALWEC,    EBIT margin %,2028,0.04,
+,ALWEC,    EBIT margin %,2027,0.04,
+,ALWEC,    EBIT margin %,2026,0.029606299212598428,
+,ALWEC,    EBIT margin %,2025,0.02797973121833003,
+,ALWEC,    EBIT margin %,2024,0.041666666666666664,
+,ALWEC,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,2.6620000000000004,EUR
+,ALWEC,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,2.4200000000000004,EUR
+,ALWEC,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,2.2,EUR
+,ALWEC,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,0.72,EUR
+,ALWEC,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,0.866,EUR
+,ALWEC,Net income per share ( EPS ),2028,7.798259491818832,EUR
+,ALWEC,Net income per share ( EPS ),2027,7.20164040064876,EUR
+,ALWEC,Net income per share ( EPS ),2026,4.000000000000001,EUR
+,ALWEC,Net income per share ( EPS ),2025,3.020408163265306,EUR
+,ALWEC,Net income per share ( EPS ),2024,3.3911864406779664,EUR
+,ALWEC,Fully diluted shares  (millions),2028,3.095808753905578,EUR
+,ALWEC,Fully diluted shares  (millions),2027,3.0475278935092183,EUR
+,ALWEC,Fully diluted shares  (millions),2026,3,EUR
+,ALWEC,Fully diluted shares  (millions),2025,2.94,EUR
+,ALWEC,Fully diluted shares  (millions),2024,2.95,EUR
+,ALWEC,Flujo de caja libre,2028,22.32692,EUR
+,ALWEC,Flujo de caja libre,2027,20.297199999999997,EUR
+,ALWEC,Flujo de caja libre,2026,10.500000000000002,EUR
+,ALWEC,Flujo de caja libre,2025,7.51,EUR
+,ALWEC,Flujo de caja libre,2024,11.715,EUR
+,ALWEC,Flujo de caja libre por accion,2028,7.211982966271105,EUR
+,ALWEC,Flujo de caja libre por accion,2027,6.660217956734709,EUR
+,ALWEC,Flujo de caja libre por accion,2026,3.5000000000000004,EUR
+,ALWEC,Flujo de caja libre por accion,2025,2.554421768707483,EUR
+,ALWEC,Flujo de caja libre por accion,2024,3.971186440677966,EUR
+,ALWEC,ROE ( net income / equity ),2028,0.1813818181818182,
+,ALWEC,ROE ( net income / equity ),2027,0.18138181818181817,
+,ALWEC,ROE ( net income / equity ),2026,0.10909090909090911,
+,ALWEC,ROE ( net income / equity ),2025,0.09154639175257731,
+,ALWEC,ROE ( net income / equity ),2024,0.16400000000000003,
+,ALWEC,ROCE con goodwill( EBIT / Capital empleado),2028,0.20650406504065041,
+,ALWEC,ROCE con goodwill( EBIT / Capital empleado),2027,0.2065040650406504,
+,ALWEC,ROCE con goodwill( EBIT / Capital empleado),2026,0.15284552845528457,
+,ALWEC,ROCE con goodwill( EBIT / Capital empleado),2025,0.17326057298772168,
+,ALWEC,ROCE con goodwill( EBIT / Capital empleado),2024,0.23719165085388993,
+,ALWEC,Deuda neta /EBITDA,2028,0.483271375464684,EUR
+,ALWEC,Deuda neta /EBITDA,2027,0.4832713754646839,EUR
+,ALWEC,Deuda neta /EBITDA,2026,0.6403940886699507,EUR
+,ALWEC,Deuda neta /EBITDA,2025,-1.7426470588235297,EUR
+,ALWEC,Deuda neta /EBITDA,2024,-0.6306511663247474,EUR
+,ALWEC,NTM P/E,2026,4.473001695649975,EUR
+,ALWEC,Free cashflow yield,2026,0.1356589147286822,
+,ALWEC,TSR 12M en %,2026,"28,%",
+,ALWEC,PEG ratio,2026,0.15,EUR
+,ALWEC,Stock price,2026,25.8,EUR
+,ALWEC,% of CAPEX/CFO,2026,22.22,EUR
+,ALWEC,% of CAPEX/CFO,2025,23.21,EUR
+,ALWEC,% of CAPEX/CFO,2024,-9.85,EUR
+,ALWEC,3 YEARS CAGR  by PER,2026,0.2364725279015216,
+,ALWEC,3 YEARS CAGR  by  P/FCF,2026,0.16812827837978325,
+,ALWEC,3 YEARS CAGR by EV/EBITDA,2026,0.29858476406827306,
+,ALWEC,3 YEARS CAGR  by EV/EBIT,2026,0.28586185167528955,
+
+
