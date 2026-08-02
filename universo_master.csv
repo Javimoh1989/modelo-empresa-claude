@@ -648,33 +648,33 @@ TICKER: AMZN | PÁGINA: 5.BDD
 ,AMZN,    EBIT margin %,2026,0.12399822754491019,
 ,AMZN,    EBIT margin %,2025,0.11155296795755199,
 ,AMZN,    EBIT margin %,2024,0.1075194487420038,
-,AMZN,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,-2430.5182919999997,USD
-,AMZN,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,-2158.542,USD
+,AMZN,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,0,USD
+,AMZN,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,0,USD
 ,AMZN,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,-1917,USD
 ,AMZN,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,-2107,USD
 ,AMZN,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,-2271,USD
-,AMZN,Net income per share ( EPS ),2028,10.59016278591947,USD
-,AMZN,Net income per share ( EPS ),2027,9.508043875394918,USD
+,AMZN,Net income per share ( EPS ),2028,10.858319095786628,USD
+,AMZN,Net income per share ( EPS ),2027,9.546834728977588,USD
 ,AMZN,Net income per share ( EPS ),2026,7.479455782312925,USD
 ,AMZN,Net income per share ( EPS ),2025,5.818324558972938,USD
 ,AMZN,Net income per share ( EPS ),2024,5.745639399309766,USD
-,AMZN,Fully diluted shares  (millions),2028,11117.391970032677,USD
-,AMZN,Fully diluted shares  (millions),2027,10997.044596163802,USD
+,AMZN,Fully diluted shares  (millions),2028,10661.5278,USD
+,AMZN,Fully diluted shares  (millions),2027,10769.22,USD
 ,AMZN,Fully diluted shares  (millions),2026,10878,USD
 ,AMZN,Fully diluted shares  (millions),2025,10827,USD
 ,AMZN,Fully diluted shares  (millions),2024,10721,USD
-,AMZN,Flujo de caja libre,2028,-26210.949951427243,USD
-,AMZN,Flujo de caja libre,2027,-69253.0639000242,USD
+,AMZN,Flujo de caja libre,2028,-28179.669767947245,USD
+,AMZN,Flujo de caja libre,2027,-71001.4829200242,USD
 ,AMZN,Flujo de caja libre,2026,-46991.451953840326,USD
 ,AMZN,Flujo de caja libre,2025,-3068,USD
 ,AMZN,Flujo de caja libre,2024,31395,USD
-,AMZN,Flujo de caja libre por accion,2028,-2.3576527680304684,USD
-,AMZN,Flujo de caja libre por accion,2027,-6.297425030374285,USD
+,AMZN,Flujo de caja libre por accion,2028,-2.643117412116793,USD
+,AMZN,Flujo de caja libre por accion,2027,-6.593001435575111,USD
 ,AMZN,Flujo de caja libre por accion,2026,-4.31986136733226,USD
 ,AMZN,Flujo de caja libre por accion,2025,-0.28336565992426344,USD
 ,AMZN,Flujo de caja libre por accion,2024,2.9283648913347635,USD
-,AMZN,ROE ( net income / equity ),2028,0.21013142828695172,
-,AMZN,ROE ( net income / equity ),2027,0.2101314282869518,
+,AMZN,ROE ( net income / equity ),2028,0.20661769031983596,
+,AMZN,ROE ( net income / equity ),2027,0.206617690319836,
 ,AMZN,ROE ( net income / equity ),2026,0.18411165973469953,
 ,AMZN,ROE ( net income / equity ),2025,0.15324826973836256,
 ,AMZN,ROE ( net income / equity ),2024,0.21540371367625974,
@@ -688,18 +688,18 @@ TICKER: AMZN | PÁGINA: 5.BDD
 ,AMZN,Deuda neta /EBITDA,2026,-0.07638996782377962,USD
 ,AMZN,Deuda neta /EBITDA,2025,-0.3157873067501081,USD
 ,AMZN,Deuda neta /EBITDA,2024,-0.296561439351501,USD
-,AMZN,NTM P/E,2026,31.336705133214835,USD
+,AMZN,NTM P/E,2026,31.25484349496452,USD
 ,AMZN,Free cashflow yield,2026,-0.015906404622329555,
 ,AMZN,TSR 12M en %,2026,"28,%",
-,AMZN,PEG ratio,2026,1.96,USD
+,AMZN,PEG ratio,2026,3.23,USD
 ,AMZN,Stock price,2026,271.58,USD
 ,AMZN,% of CAPEX/CFO,2026,128.48,USD
 ,AMZN,% of CAPEX/CFO,2025,102.38,USD
 ,AMZN,% of CAPEX/CFO,2024,72.56,USD
-,AMZN,3 YEARS CAGR  by PER,2026,0.09222602832362448,
-,AMZN,3 YEARS CAGR  by  P/FCF,2026,-0.3574899840751089,
-,AMZN,3 YEARS CAGR by EV/EBITDA,2026,0.15999020528303465,
-,AMZN,3 YEARS CAGR  by EV/EBIT,2026,0.09628162305738841,
+,AMZN,3 YEARS CAGR  by PER,2026,0.10908054959162694,
+,AMZN,3 YEARS CAGR  by  P/FCF,2026,-0.3623782170674983,
+,AMZN,3 YEARS CAGR by EV/EBITDA,2026,0.0968850222776747,
+,AMZN,3 YEARS CAGR  by EV/EBIT,2026,0.11947363864021132,
 
 
 ==================================================
