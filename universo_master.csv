@@ -975,83 +975,83 @@ TICKER: MA | PÁGINA: 5.BDD
 --------------------------------------------------
 ,,,,,
 ,TICKER,Indicador,Año,Valor,Divisa
-,MA,    Y/Y Growth %,2028,0.11,
-,MA,    Y/Y Growth %,2027,0.11,
+,MA,    Y/Y Growth %,2028,0.13,
+,MA,    Y/Y Growth %,2027,0.125,
 ,MA,    Y/Y Growth %,2026,0.11311030465676558,
 ,MA,    Y/Y Growth %,2025,0.16416373770724607,
 ,MA,    Y/Y Growth %,2024,0.12228065981353096,
-,MA,Sales,2028,44971.65,EUR
-,MA,Sales,2027,40515,EUR
-,MA,Sales,2026,36500,EUR
-,MA,Sales,2025,32791,EUR
-,MA,Sales,2024,28167,EUR
-,MA,EBITDA,2028,29518.651800000003,EUR
-,MA,EBITDA,2027,26593.379999999997,EUR
-,MA,EBITDA,2026,23386.23,EUR
-,MA,EBITDA,2025,20544,EUR
-,MA,EBITDA,2024,17349,EUR
-,MA,EBIT ,2028,27882.423000000003,EUR
-,MA,EBIT ,2027,25119.3,EUR
-,MA,EBIT ,2026,22280,EUR
-,MA,EBIT ,2025,19240,EUR
-,MA,EBIT ,2024,16307,EUR
-,MA,    EBIT margin %,2028,0.62,
-,MA,    EBIT margin %,2027,0.62,
+,MA,Sales,2028,46195.31,USD
+,MA,Sales,2027,41062.5,USD
+,MA,Sales,2026,36500,USD
+,MA,Sales,2025,32791,USD
+,MA,Sales,2024,28167,USD
+,MA,EBITDA,2028,29859.890625,USD
+,MA,EBITDA,2027,26542.125,USD
+,MA,EBITDA,2026,23386.23,USD
+,MA,EBITDA,2025,20544,USD
+,MA,EBITDA,2024,17349,USD
+,MA,EBIT ,2028,28179.140625,USD
+,MA,EBIT ,2027,25048.125,USD
+,MA,EBIT ,2026,22280,USD
+,MA,EBIT ,2025,19240,USD
+,MA,EBIT ,2024,16307,USD
+,MA,    EBIT margin %,2028,0.61,
+,MA,    EBIT margin %,2027,0.61,
 ,MA,    EBIT margin %,2026,0.6104109589041096,
 ,MA,    EBIT margin %,2025,0.586746363331402,
 ,MA,    EBIT margin %,2024,0.5789398942024355,
-,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,731.8674000000001,EUR
-,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,659.34,EUR
-,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,594,EUR
-,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,397,EUR
-,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,319,EUR
-,MA,Net income per share ( EPS ),2028,25.462154618863757,EUR
-,MA,Net income per share ( EPS ),2027,22.48290720479745,EUR
-,MA,Net income per share ( EPS ),2026,19.74774774774775,EUR
-,MA,Net income per share ( EPS ),2025,16.81346578366446,EUR
-,MA,Net income per share ( EPS ),2024,14.679611650485437,EUR
-,MA,Fully diluted shares  (millions),2028,853.0481730681311,EUR
-,MA,Fully diluted shares  (millions),2027,870.3486529457608,EUR
-,MA,Fully diluted shares  (millions),2026,888,EUR
-,MA,Fully diluted shares  (millions),2025,906,EUR
-,MA,Fully diluted shares  (millions),2024,927,EUR
-,MA,Flujo de caja libre,2028,22451.079780000004,EUR
-,MA,Flujo de caja libre,2027,20226.197999999997,EUR
-,MA,Flujo de caja libre,2026,17907.23,EUR
-,MA,Flujo de caja libre,2025,16048,EUR
-,MA,Flujo de caja libre,2024,14176,EUR
-,MA,Flujo de caja libre por accion,2028,26.31865407934809,EUR
-,MA,Flujo de caja libre por accion,2027,23.239190330843737,EUR
-,MA,Flujo de caja libre por accion,2026,20.16579954954955,EUR
-,MA,Flujo de caja libre por accion,2025,17.713024282560706,EUR
-,MA,Flujo de caja libre por accion,2024,15.292340884573894,EUR
-,MA,ROE ( net income / equity ),2028,3.141828551060417,
-,MA,ROE ( net income / equity ),2027,3.141828551060417,
+,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,751.78125,USD
+,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,668.25,USD
+,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,594,USD
+,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,397,USD
+,MA,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,319,USD
+,MA,Net income per share ( EPS ),2028,25.72174490577984,USD
+,MA,Net income per share ( EPS ),2027,22.409295325485456,USD
+,MA,Net income per share ( EPS ),2026,19.74774774774775,USD
+,MA,Net income per share ( EPS ),2025,16.81346578366446,USD
+,MA,Net income per share ( EPS ),2024,14.679611650485437,USD
+,MA,Fully diluted shares  (millions),2028,853.0481730681311,USD
+,MA,Fully diluted shares  (millions),2027,870.3486529457608,USD
+,MA,Fully diluted shares  (millions),2026,888,USD
+,MA,Fully diluted shares  (millions),2025,906,USD
+,MA,Fully diluted shares  (millions),2024,927,USD
+,MA,Flujo de caja libre,2028,22692.403125,USD
+,MA,Flujo de caja libre,2027,20171.025,USD
+,MA,Flujo de caja libre,2026,17907.23,USD
+,MA,Flujo de caja libre,2025,16048,USD
+,MA,Flujo de caja libre,2024,14176,USD
+,MA,Flujo de caja libre por accion,2028,26.60154941002096,USD
+,MA,Flujo de caja libre por accion,2027,23.175798493775616,USD
+,MA,Flujo de caja libre por accion,2026,20.16579954954955,USD
+,MA,Flujo de caja libre por accion,2025,17.713024282560706,USD
+,MA,Flujo de caja libre por accion,2024,15.292340884573894,USD
+,MA,ROE ( net income / equity ),2028,3.089787916592408,
+,MA,ROE ( net income / equity ),2027,3.089787916592408,
 ,MA,ROE ( net income / equity ),2026,3.1252896096952414,
 ,MA,ROE ( net income / equity ),2025,1.9688509758304251,
 ,MA,ROE ( net income / equity ),2024,2.0983808789514264,
-,MA,ROCE con goodwill( EBIT / Capital empleado),2028,1.1933765754363763,
-,MA,ROCE con goodwill( EBIT / Capital empleado),2027,1.193376575436376,
+,MA,ROCE con goodwill( EBIT / Capital empleado),2028,1.1741285661551442,
+,MA,ROCE con goodwill( EBIT / Capital empleado),2027,1.1741285661551442,
 ,MA,ROCE con goodwill( EBIT / Capital empleado),2026,1.1749195802351948,
 ,MA,ROCE con goodwill( EBIT / Capital empleado),2025,1.189784181559582,
 ,MA,ROCE con goodwill( EBIT / Capital empleado),2024,1.0023357305304568,
-,MA,Deuda neta /EBITDA,2028,0.05759070609044549,EUR
-,MA,Deuda neta /EBITDA,2027,0.5020798409228162,EUR
-,MA,Deuda neta /EBITDA,2026,0.5709342634533228,EUR
-,MA,Deuda neta /EBITDA,2025,0.4105334890965732,EUR
-,MA,Deuda neta /EBITDA,2024,0.5639518127845985,EUR
-,MA,NTM P/E,2026,26.8452705414362,EUR
+,MA,Deuda neta /EBITDA,2028,0.056932559511007924,USD
+,MA,Deuda neta /EBITDA,2027,0.5030493978910883,USD
+,MA,Deuda neta /EBITDA,2026,0.5709342634533228,USD
+,MA,Deuda neta /EBITDA,2025,0.4105334890965732,USD
+,MA,Deuda neta /EBITDA,2024,0.5639518127845985,USD
+,MA,NTM P/E,2026,26.899546619949632,USD
 ,MA,Free cashflow yield,2026,0.035187226573982815,
 ,MA,TSR 12M en %,2026,1%,
-,MA,PEG ratio,2026,2.01,EUR
-,MA,Stock price,2026,573.1,EUR
-,MA,% of CAPEX/CFO,2026,3.94,EUR
-,MA,% of CAPEX/CFO,2025,2.96,EUR
-,MA,% of CAPEX/CFO,2024,3.24,EUR
-,MA,3 YEARS CAGR  by PER,2026,0.15412187111488607,
-,MA,3 YEARS CAGR  by  P/FCF,2026,0.13368595739898026,
-,MA,3 YEARS CAGR by EV/EBITDA,2026,0.11604748154548761,
-,MA,3 YEARS CAGR  by EV/EBIT,2026,0.0951104166024005,
+,MA,PEG ratio,2026,3.16,USD
+,MA,Stock price,2026,573.1,USD
+,MA,% of CAPEX/CFO,2026,3.94,USD
+,MA,% of CAPEX/CFO,2025,2.96,USD
+,MA,% of CAPEX/CFO,2024,3.24,USD
+,MA,3 YEARS CAGR  by PER,2026,0.10931368135782626,
+,MA,3 YEARS CAGR  by  P/FCF,2026,0.09239212009828457,
+,MA,3 YEARS CAGR by EV/EBITDA,2026,0.08662653651069008,
+,MA,3 YEARS CAGR  by EV/EBIT,2026,0.08523195142913986,
 
 
 ==================================================
