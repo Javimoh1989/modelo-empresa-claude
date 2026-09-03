@@ -1,109 +1,866 @@
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="utf-8"><title>Scoring v4.9 — CIERRE (universo completo 45)</title>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sistema Scoring V4.9 — Tabla 1 (CIERRE 2026-09-03)</title>
 <style>
 *{box-sizing:border-box}
-:root{--bd:#d8d8d4;--alto:#e6f4ea;--base:#F5F5F3;--veto:#fce8e6;--cash:#eef2f7}
-body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;margin:0;padding:12px;background:#fafaf8;color:#1a1a1a}
-h2{margin:0 0 4px;font-size:17px} .meta{font-size:12px;color:#555;margin-bottom:8px}
-#buscador{margin:0 0 12px;padding:6px 10px;width:280px;max-width:90%;border:1px solid var(--bd);border-radius:6px;font-size:13px}
-button.tog{margin:0 8px 12px 0;padding:6px 10px;border:1px solid var(--bd);background:#fff;border-radius:6px;cursor:pointer;font-size:12px}
-.wrap{overflow:auto;max-height:78vh;border:1px solid var(--bd);border-radius:8px}
-table{width:max-content;min-width:100%;border-collapse:separate;border-spacing:0;font-size:12px}
-th,td{padding:4px 8px;border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap;vertical-align:top}
-thead th{position:sticky;top:0;z-index:3;background:#eceae5;cursor:pointer;font-weight:600}
-.c1,.c2,.c3{position:sticky;z-index:2;background:var(--base)}
-thead .c1,thead .c2,thead .c3{z-index:4;background:#eceae5}
-.c1{left:0;    width:42px; min-width:42px; max-width:42px}
-.c2{left:42px; width:210px;min-width:210px;max-width:210px;white-space:normal}
-.c3{left:252px;width:78px; min-width:78px; max-width:78px}
+:root{--bd:#d7d7d2;--alto:#e6f4ea;--base:#F5F5F3;--capa0:#fef7e0;--veto:#fce8e6;--cash:#eef2f7;
+--pill80:#C0DD97;--pill70:#FAC775;--pill60:#EF9F27;--pill0:#F7C1C1;--g:#e6f4ea;--y:#fef7e0;--r:#fce8e6;--bk:#f2c6c4;--bl:#dbe9f5;}
+body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#111;margin:0;padding:14px;background:#fff;font-size:12px}
+h2{font-size:15px;margin:0 0 4px}.sub{color:#555;font-size:11px;margin:0 0 10px}
+#bar{display:flex;gap:8px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+#buscador{padding:6px 9px;border:1px solid var(--bd);border-radius:6px;font-size:12px;min-width:200px}
+button{padding:6px 10px;border:1px solid var(--bd);background:#fafafa;border-radius:6px;cursor:pointer;font-size:12px}button:hover{background:#f0f0ee}
+#wrap{overflow:auto;max-height:80vh;border:1px solid var(--bd);border-radius:8px}
+table{width:max-content;min-width:100%;border-collapse:separate;border-spacing:0}
+th,td{padding:4px 8px;border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);text-align:left;vertical-align:top;white-space:nowrap}
+thead th{position:sticky;top:0;z-index:3;background:#efefec;font-weight:600;cursor:pointer;font-size:11px}
+td.num,th.num{text-align:right}
+.c1{left:0;width:42px;min-width:42px;max-width:42px}
+.c2{left:42px;width:210px;min-width:210px;max-width:210px;white-space:normal}
+.c3{left:252px;width:78px;min-width:78px;max-width:78px} /* 252=42+210 */
+.c1,.c2,.c3{position:sticky;z-index:2}
+thead .c1,thead .c2,thead .c3{z-index:4}
 tbody .ra .c1,tbody .ra .c2,tbody .ra .c3{background:var(--alto)}
 tbody .rb .c1,tbody .rb .c2,tbody .rb .c3{background:var(--base)}
+tbody .rc .c1,tbody .rc .c2,tbody .rc .c3{background:var(--capa0)}
 tbody .rv .c1,tbody .rv .c2,tbody .rv .c3{background:var(--veto)}
 tbody .rk .c1,tbody .rk .c2,tbody .rk .c3{background:var(--cash)}
-tr.ra td{background:var(--alto)} tr.rb td{background:var(--base)}
-tr.rv td{background:var(--veto)} tr.rk td{background:var(--cash)}
-.emp{font-size:10px;opacity:.75} .tag{font-size:9px;color:#666}
-.dash{color:#999}
-.pill{padding:1px 8px;border-radius:10px;font-weight:700;color:#000}
-.pill.prov{background:#eee;color:#555;border:1px dashed #aaa;font-weight:600}
-.ver{white-space:normal;max-width:220px} .al{font-size:11px;color:#333;white-space:normal;max-width:180px}
+tr.ra td{background:var(--alto)}tr.rb td{background:var(--base)}tr.rc td{background:var(--capa0)}tr.rv td{background:var(--veto)}tr.rk td{background:var(--cash)}
+.tk{font-weight:700}.cart{color:#000;border-left:3px solid #000}.wl{color:#0D2137;border-left:3px solid transparent}
+.emp{font-size:10px;font-weight:400;opacity:.75;display:block}
+.pill{display:inline-block;padding:2px 8px;border-radius:10px;font-weight:700;color:#000}
+.p80{background:var(--pill80)}.p70{background:var(--pill70)}.p60{background:var(--pill60)}.p0{background:var(--pill0)}
+.pos{font-weight:700;color:#000}.pos small{display:block;font-weight:600;font-size:10px}.obj{font-weight:700;color:#000}
+.sg{background:var(--g)}.sy{background:var(--y)}.sr{background:var(--r)}.sk{background:var(--bk)}.sb{background:var(--bl)}.sc{background:var(--cash)}
+.crit small{display:block;font-size:10px;opacity:.7}.tag{font-size:9px;opacity:.6}
+.al{white-space:normal;max-width:260px;font-size:10px}.ver{white-space:normal;max-width:190px;font-size:11px}
 .col-score.collapsed{display:none}
-details{margin-top:14px;font-size:12px} summary{cursor:pointer;font-weight:600;padding:6px}
 </style></head><body>
-<h2>Sistema de Scoring v4.9 — TABLA DEFINITIVA · universo completo (45 + CASH)</h2>
-<div class="meta">③ soberano limpio · TOP-12 por W_raw · colchón §9.12 (M̄ 1.235 → CASH 5.72%) · <b>Score firme</b> = ①–⑨ completo; <b>NN†/prov</b> = quant parcial o ④⑦ pendiente · 2026-08-15</div>
-<input id="buscador" placeholder="Filtrar por ticker, sector, alerta…" onkeyup="filt()">
-<button class="tog" onclick="tsv()">Copiar TSV</button>
-<button class="tog" id="colb" onclick="colsc()">Colapsar ①–⑨</button>
-<div class="wrap"><table id="t">
-<thead><tr><th class="c1">#</th><th class="c2">Ticker · Empresa</th><th class="c3">Score</th><th>Posición</th><th>Peso Obj.</th><th>P/E NTM</th><th>PEG</th><th>Val.</th><th class="col-score">①</th><th class="col-score">②</th><th class="col-score">③</th><th class="col-score">④</th><th class="col-score">⑤</th><th class="col-score">⑥</th><th class="col-score">⑦</th><th class="col-score">⑧</th><th class="col-score">⑨</th><th>Veredicto</th><th>CAGR 3Y</th><th>Capex/CFO</th><th>Sector</th><th>Alertas</th></tr></thead>
-<tbody>
-<tr class="ra"><td class="c1 rac">1</td><td class="c2 rac" style="border-left:3px solid transparent"><b style="color:#0D2137">NVDA</b><br><span class="emp">NVIDIA</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">94</span></td><td><div style="background:#dbe9f5;padding:2px 4px;border-radius:3px"><b>0.00%</b><br><span style="font-size:10px">🔵</span></div></td><td><b>10.00%</b></td><td>22.35</td><td>0.72</td><td>🟡</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="ver">Líder IA · CUDA</td><td>30.02%</td><td>4.28%</td><td>Semis</td><td class="al">SPOTLIGHT · abrir</td></tr>
-<tr class="ra"><td class="c1 rac">2</td><td class="c2 rac" style="border-left:3px solid #000000"><b style="color:#000000">GOOG</b><br><span class="emp">Alphabet</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">94</span></td><td><div style="background:#f2c6c4;padding:2px 4px;border-radius:3px"><b>1.07%</b><br><span style="font-size:10px">⚫</span></div></td><td><b>—</b></td><td>26.36</td><td>3.29</td><td>🔴</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="ver">Calidad cara</td><td>10.44%</td><td>66.65%</td><td>Medios</td><td class="al">FUERA·top12 · FCFc</td></tr>
-<tr class="ra"><td class="c1 rac">3</td><td class="c2 rac" style="border-left:3px solid transparent"><b style="color:#0D2137">V</b><br><span class="emp">Visa</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">90</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>26.87</td><td>3.69</td><td>🔴</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="ver">Red asset-light cara</td><td>13.44%</td><td>35.65%</td><td>Financiero</td><td class="al">FUERA·top12</td></tr>
-<tr class="ra"><td class="c1 rac">3</td><td class="c2 rac" style="border-left:3px solid transparent"><b style="color:#0D2137">AMZN</b><br><span class="emp">Amazon</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">90</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>31.25</td><td>3.23</td><td>🔴</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="ver">Compounder caro (exento F-C)</td><td>11.95%</td><td>101.14%</td><td>Consumo</td><td class="al">FUERA·top12</td></tr>
-<tr class="ra"><td class="c1 rac">5</td><td class="c2 rac" style="border-left:3px solid transparent"><b style="color:#0D2137">MSFT</b><br><span class="emp">Microsoft</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">89</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>24.06</td><td>2.26</td><td>🟡</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">③ Narrowing</td><td>10.63%</td><td>53.36%</td><td>Software</td><td class="al">FUERA·top12</td></tr>
-<tr class="ra"><td class="c1 rac">5</td><td class="c2 rac" style="border-left:3px solid #000000"><b style="color:#000000">KSPI</b><br><span class="emp">Kaspi.kz</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">89</span></td><td><div style="background:#fef7e0;padding:2px 4px;border-radius:3px"><b>6.40%</b><br><span style="font-size:10px">🟡</span></div></td><td><b>10.00%</b></td><td>18.57</td><td>0.50</td><td>🟢</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="ver">Super-app barata</td><td>37.44%</td><td>39.81%</td><td>Fintech</td><td class="al">INFRA · COB_FIN</td></tr>
-<tr class="ra"><td class="c1 rac">5</td><td class="c2 rac" style="border-left:3px solid #000000"><b style="color:#000000">HY9H</b><br><span class="emp">SK Hynix</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">89</span></td><td><div style="background:#fef7e0;padding:2px 4px;border-radius:3px"><b>7.10%</b><br><span style="font-size:10px">🟡</span></div></td><td><b>10.00%</b></td><td>8.00</td><td>0.50</td><td>🟢</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="ver">HBM · caja neta</td><td>25.00%</td><td>40.88%</td><td>Semis</td><td class="al">INFRA · [ONL]</td></tr>
-<tr class="ra"><td class="c1 rac">8</td><td class="c2 rac" style="border-left:3px solid #000000"><b style="color:#000000">JEN</b><br><span class="emp">Jensen-Group</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">88</span></td><td><div style="background:#e6f4ea;padding:2px 4px;border-radius:3px"><b>11.26%</b><br><span style="font-size:10px">🟢</span></div></td><td><b>10.00%</b></td><td>10.98</td><td>0.48</td><td>🟢</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="ver">Nicho · ROCE 31%</td><td>22.97%</td><td>14.73%</td><td>Industrial</td><td class="al">ALINEADO</td></tr>
-<tr class="ra"><td class="c1 rac">8</td><td class="c2 rac" style="border-left:3px solid transparent"><b style="color:#0D2137">ISRG</b><br><span class="emp">Intuitive Surgical</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">88</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>29.23</td><td>13.26</td><td>🔴</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">Calidad cara</td><td>3.87%</td><td>17.76%</td><td>Salud</td><td class="al">FUERA·top12</td></tr>
-<tr class="ra"><td class="c1 rac">8</td><td class="c2 rac" style="border-left:3px solid #000000"><b style="color:#000000">META</b><br><span class="emp">Meta Platforms</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">88</span></td><td><div style="background:#fef7e0;padding:2px 4px;border-radius:3px"><b>0.86%</b><br><span style="font-size:10px">🟡</span></div></td><td><b>10.00%</b></td><td>14.83</td><td>0.82</td><td>🟢</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">Barata · capex FCFc⚠️</td><td>12.81%</td><td>83.94%</td><td>Medios</td><td class="al">INFRA · construir</td></tr>
-<tr class="ra"><td class="c1 rac">11</td><td class="c2 rac" style="border-left:3px solid transparent"><b style="color:#0D2137">SNT</b><br><span class="emp">Synektik</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">86</span></td><td><div style="background:#dbe9f5;padding:2px 4px;border-radius:3px"><b>0.00%</b><br><span style="font-size:10px">🔵</span></div></td><td><b>5.60%</b></td><td>15.37</td><td>1.56</td><td>🟡</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="ver">da Vinci CEE</td><td>10.19%</td><td>15.54%</td><td>Salud</td><td class="al">SPOTLIGHT · [ONL·EST]</td></tr>
-<tr class="ra"><td class="c1 rac">12</td><td class="c2 rac" style="border-left:3px solid transparent"><b style="color:#0D2137">CSU</b><br><span class="emp">Constellation Sw</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">84</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>47.24</td><td>3.57</td><td>🔴</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">Compounder caro</td><td>13.82%</td><td>2.97%</td><td>Software</td><td class="al">FUERA·top12 · Nivel2</td></tr>
-<tr class="ra"><td class="c1 rac">12</td><td class="c2 rac" style="border-left:3px solid transparent"><b style="color:#0D2137">ADBE</b><br><span class="emp">Adobe</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">84</span></td><td><div style="background:#dbe9f5;padding:2px 4px;border-radius:3px"><b>0.00%</b><br><span style="font-size:10px">🔵</span></div></td><td><b>9.08%</b></td><td>11.55</td><td>0.23</td><td>🟢</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">Barata · transición CEO</td><td>50.23%</td><td>1.59%</td><td>Software</td><td class="al">SPOTLIGHT · abrir</td></tr>
-<tr class="ra"><td class="c1 rac">14</td><td class="c2 rac" style="border-left:3px solid #000000"><b style="color:#000000">SAP</b><br><span class="emp">SAP SE</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">82</span></td><td><div style="background:#e6f4ea;padding:2px 4px;border-radius:3px"><b>7.18%</b><br><span style="font-size:10px">🟢</span></div></td><td><b>5.22%</b></td><td>20.53</td><td>1.01</td><td>🟡</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">ERP lock-in</td><td>20.33%</td><td>7.56%</td><td>Software</td><td class="al">ALINEADO</td></tr>
-<tr class="ra"><td class="c1 rac">15</td><td class="c2 rac" style="border-left:3px solid transparent"><b style="color:#0D2137">UBER</b><br><span class="emp">Uber</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">81</span></td><td><div style="background:#dbe9f5;padding:2px 4px;border-radius:3px"><b>0.00%</b><br><span style="font-size:10px">🔵</span></div></td><td><b>6.93%</b></td><td>16.74</td><td>0.64</td><td>🟢</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">Red liquidez · FCF</td><td>23.85%</td><td>12.43%</td><td>Consumo</td><td class="al">SPOTLIGHT · abrir</td></tr>
-<tr class="ra"><td class="c1 rac">15</td><td class="c2 rac" style="border-left:3px solid transparent"><b style="color:#0D2137">MA</b><br><span class="emp">Mastercard</span></td><td class="c3 rac"><span class="pill" style="background:#C0DD97">81</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>26.90</td><td>3.16</td><td>🔴</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="ver">Red cara</td><td>10.93%</td><td>3.38%</td><td>Financiero</td><td class="al">FUERA·top12</td></tr>
-<tr class="rb"><td class="c1 rbc">17</td><td class="c2 rbc" style="border-left:3px solid #000000"><b style="color:#000000">JNEO</b><br><span class="emp">Journeo</span></td><td class="c3 rbc"><span class="pill" style="background:#FAC775">80</span></td><td><div style="background:#e6f4ea;padding:2px 4px;border-radius:3px"><b>4.11%</b><br><span style="font-size:10px">🟢</span></div></td><td><b>4.46%</b></td><td>16.52</td><td>1.03</td><td>🟢</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="ver">ITS · M&A con caja</td><td>15.97%</td><td>5.50%</td><td>Industrial</td><td class="al">ALINEADO</td></tr>
-<tr class="rb"><td class="c1 rbc">18</td><td class="c2 rbc" style="border-left:3px solid #000000"><b style="color:#000000">VHI</b><br><span class="emp">VitalHub</span></td><td class="c3 rbc"><span class="pill" style="background:#FAC775">79</span></td><td><div style="background:#e6f4ea;padding:2px 4px;border-radius:3px"><b>6.32%</b><br><span style="font-size:10px">🟢</span></div></td><td><b>7.29%</b></td><td>16.88</td><td>0.47</td><td>🟢</td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">Software clínico</td><td>35.84%</td><td>2.20%</td><td>Salud</td><td class="al">ALINEADO</td></tr>
-<tr class="rb"><td class="c1 rbc">19</td><td class="c2 rbc" style="border-left:3px solid #000000"><b style="color:#000000">ELIX</b><br><span class="emp">Elixirr</span></td><td class="c3 rbc"><span class="pill" style="background:#FAC775">75</span></td><td><div style="background:#fce8e6;padding:2px 4px;border-radius:3px"><b>9.61%</b><br><span style="font-size:10px">🔴</span></div></td><td><b>5.70%</b></td><td>9.67</td><td>0.25</td><td>🟢</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">Consultora barata</td><td>35.37%</td><td>1.38%</td><td>ServEmpresa</td><td class="al">SOBRE · recortar</td></tr>
-<tr class="rb"><td class="c1 rbc">20</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">PEP</b><br><span class="emp">PepsiCo</span></td><td class="c3 rbc"><span class="pill" style="background:#FAC775">71</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>16.01</td><td>0.93</td><td>🟢</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="ver">Dividend king, payout tenso</td><td>17.27%</td><td>27.26%</td><td>Consumo</td><td class="al"><cut TOP-12</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">MCD</b><br><span class="emp">McDonald's</span></td><td class="c3 rbc"><span class="pill prov">68†</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>20.64</td><td>2.12</td><td>🟡</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">Prov · falta ④⑦</td><td>9.73%</td><td>26.17%</td><td>Consumo</td><td class="al">QUAL·pend</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">AZO</b><br><span class="emp">AutoZone</span></td><td class="c3 rbc"><span class="pill prov">66†</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>18.16</td><td>-5.34</td><td>🟡</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">Prov · falta ④⑦</td><td>19.20%</td><td>40.18%</td><td>Consumo</td><td class="al">QUAL·pend · PEG neg</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">JET2</b><br><span class="emp">Jet2 plc</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>5.93</td><td>0.61</td><td>🟢</td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">Prov · ②⑥④⑦ pend</td><td>13.56%</td><td>63.27%</td><td>Consumo</td><td class="al">KB·pend · PROXY_EQ_NEG</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">MC</b><br><span class="emp">LVMH</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>17.69</td><td>1.15</td><td>🟢</td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="ver">Prov · ②⑥④⑦ pend (N=2027)</td><td>15.39%</td><td>27.67%</td><td>Consumo</td><td class="al">KB·pend</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">MCO</b><br><span class="emp">Moody's</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>2.39</td><td>🟡</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">Prov · ①⑤⑥⑧④⑦ pend</td><td>13.25%</td><td>9.78%</td><td>Financiero</td><td class="al">KB·pend · P/E [Cd·LTM]</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">RMS</b><br><span class="emp">Hermès</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>41.39</td><td>N/A ⚠️</td><td>🔴</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="ver">Prov · muchos pend (N=2025)</td><td>—</td><td>—</td><td>Consumo</td><td class="al">KB·pend</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">TJX</b><br><span class="emp">TJX Cos</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="ver">Prov · valoración+④⑦ pend</td><td>—</td><td>—</td><td>Consumo</td><td class="al">KB·pend</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">QLYS</b><br><span class="emp">Qualys</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="ver">Prov · valoración+④⑦ pend (N=2027)</td><td>—</td><td>—</td><td>Software</td><td class="al">KB·pend</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">NFLX</b><br><span class="emp">Netflix</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="ver">Prov · ①⑤+valoración pend</td><td>—</td><td>—</td><td>Medios</td><td class="al">KB·pend · cw BAJA</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">DPZ</b><br><span class="emp">Domino's Pizza</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score dash">·</td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="ver">Prov · F-D exento (N=2025)</td><td>—</td><td>—</td><td>Consumo</td><td class="al">KB·pend</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">CTRE</b><br><span class="emp">CareTrust REIT</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>25.83</td><td>-6.55</td><td>🟡</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="ver">Prov · AFFO · ④⑦ pend (N=2025)</td><td>-3.94%</td><td>4.87%</td><td>REIT</td><td class="al">KB·pend · PEG neg</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">ETC</b><br><span class="emp">Energy Solar Tech</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="ver">Prov · valoración pend (N=2025)</td><td>—</td><td>—</td><td>Energía</td><td class="al">KB·pend</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">UD</b><br><span class="emp">Unidata</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="ver">Prov · valoración+④⑦ pend</td><td>—</td><td>—</td><td>Telecom</td><td class="al">KB·pend</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">TEQ</b><br><span class="emp">Teqnion</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>37.89</td><td>2.13</td><td>🔴</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="ver">Prov · ①②⑥④⑦ pend</td><td>—</td><td>7.84%</td><td>Industrial</td><td class="al">KB·pend</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">AER</b><br><span class="emp">AerCap</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="ver">Prov · ROE proxy · pend</td><td>—</td><td>—</td><td>Leasing</td><td class="al">KB·pend · F-C ×0.80</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">MLUAV</b><br><span class="emp">Embention</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>39.79</td><td>-9.14</td><td>🔴</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="ver">Prov · ⑧⑨④⑦ pend</td><td>0.29%</td><td>36.36%</td><td>Industrial</td><td class="al">KB·pend · PEG neg</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">ALWEC</b><br><span class="emp">Alwec</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="ver">Prov · casi todo pend</td><td>—</td><td>—</td><td>Industrial</td><td class="al">KB·pend</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid #000000"><b style="color:#000000">BKNG</b><br><span class="emp">Booking</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:#f2c6c4;padding:2px 4px;border-radius:3px"><b>7.72%</b><br><span style="font-size:10px">⚫</span></div></td><td><b>—</b></td><td>19.11</td><td>1.52</td><td>🟡</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">Prov · ②⑥ pend · fuera tesis</td><td>12.58%</td><td>5.18%</td><td>Consumo</td><td class="al">KB·pend · reducir</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid #000000"><b style="color:#000000">PLX</b><br><span class="emp">Pluxee</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:#f2c6c4;padding:2px 4px;border-radius:3px"><b>9.02%</b><br><span style="font-size:10px">⚫</span></div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score dash">·</td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score">⭐⭐⭐⭐<br><span class="tag">4</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="ver">Prov · ①⑤⑧⑨+val pend · fuera tesis</td><td>—</td><td>—</td><td>ServEmpresa</td><td class="al">KB·pend · reducir</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">AAPL</b><br><span class="emp">Apple</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="ver">Sin bloque A · §5.6 online</td><td>—</td><td>—</td><td>Hardware</td><td class="al">ONL·pend</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">ORCL</b><br><span class="emp">Oracle</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="ver">Sin bloque A · ③ No evaluado</td><td>—</td><td>174.06%</td><td>Software</td><td class="al">ONL·pend · F-C ×0.65</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">TOA.WA</b><br><span class="emp">Toya SA</span></td><td class="c3 rbc"><span class="dash">—</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="ver">Sin bloque A · sin backbone</td><td>—</td><td>—</td><td>Industrial</td><td class="al">ONL·pend</td></tr>
-<tr class="rb"><td class="c1 rbc">—</td><td class="c2 rbc" style="border-left:3px solid transparent"><b style="color:#0D2137">SAVE</b><br><span class="emp">Savencia</span></td><td class="c3 rbc"><span class="pill prov">37†</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>N/D ⚠️</td><td>N/A ⚠️</td><td>🟡</td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="col-score dash">·</td><td class="ver">Prov · Score bajo (N=2025)</td><td>—</td><td>66.92%</td><td>Consumo</td><td class="al">KB·pend · F-C ×0.80</td></tr>
-<tr class="rv"><td class="c1 rvc">—</td><td class="c2 rvc" style="border-left:3px solid #000000"><b style="color:#000000">NWL</b><br><span class="emp">NewPrinces</span></td><td class="c3 rvc"><span class="pill" style="background:#F7C1C1">37</span></td><td><div style="background:#f2c6c4;padding:2px 4px;border-radius:3px"><b>15.37%</b><br><span style="font-size:10px">⚫</span></div></td><td><b>—</b></td><td>-38.56</td><td>-0.88</td><td>⚫</td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐<br><span class="tag">3</span></td><td class="col-score">⭐⭐<br><span class="tag">2</span></td><td class="col-score dash">·</td><td class="col-score">⭐⭐⭐⭐⭐<br><span class="tag">5</span></td><td class="col-score">⭐<br><span class="tag">1</span></td><td class="ver">VETADA por salida</td><td>—</td><td>—</td><td>Consumo</td><td class="al">EXCL·salida · LIQUIDAR</td></tr>
-<tr class="rv"><td class="c1 rvc">—</td><td class="c2 rvc" style="border-left:3px solid transparent"><b style="color:#0D2137">DPM</b><br><span class="emp">DPM (veto)</span></td><td class="c3 rvc"><span class="pill" style="background:#F7C1C1">0</span></td><td><div style="background:transparent;padding:2px 4px;border-radius:3px">—</div></td><td><b>—</b></td><td>—</td><td>—</td><td>—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="ver">VETADA F-A price-taker</td><td>—</td><td>—</td><td>Commodity</td><td class="al">EXCL·veto</td></tr>
-<tr class="rk"><td class="c1 rkc">—</td><td class="c2 rkc" style="border-left:3px solid transparent"><b style="color:#0D2137">CASH</b><br><span class="emp">Efectivo</span></td><td class="c3 rkc"><span class="dash">—</span></td><td><div style="background:#eef2f7;padding:2px 4px;border-radius:3px"><b>14.00%</b><br><span style="font-size:10px">💵</span></div></td><td><b>5.72%</b></td><td>—</td><td>—</td><td>💵</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="col-score dash">—</td><td class="ver">Colchón de opcionalidad</td><td>—</td><td>—</td><td>Liquidez</td><td class="al">M̄ 1.235 → CASH 5.72%</td></tr>
+<h2>Sistema Scoring V4.9 — Tabla 1 · <span style="color:#0a7d33">CIERRE 2026-09-03</span></h2>
+<p class="sub">Foso soberano · ④⑦ resueltos Fase B · Σ posiciones 94.24% + CASH 5.76% = 100.00% · M̄ 1.23 · N=12 · NAV 57.131,18 €</p>
+<div id="bar"><input id="buscador" placeholder="Filtrar…" oninput="filt()"><button onclick="tsv()">Copiar TSV</button><button id="colbtn" onclick="col()">Colapsar ①–⑨</button></div>
+<div id="wrap"><table id="t"><thead><tr>
+<th class="c1 num" onclick="srt(0)">#</th>
+<th class="c2" onclick="srt(1)">Ticker + Empresa</th>
+<th class="c3" onclick="srt(2)">Score</th>
+<th onclick="srt(3)">Posición</th>
+<th onclick="srt(4)">Peso Obj.</th>
+<th onclick="srt(5)">P/E NTM</th>
+<th onclick="srt(6)">PEG</th>
+<th onclick="srt(7)">Val.</th>
+<th class="col-score" onclick="srt(8)">①</th>
+<th class="col-score" onclick="srt(9)">②</th>
+<th class="col-score" onclick="srt(10)">③</th>
+<th class="col-score" onclick="srt(11)">④</th>
+<th class="col-score" onclick="srt(12)">⑤</th>
+<th class="col-score" onclick="srt(13)">⑥</th>
+<th class="col-score" onclick="srt(14)">⑦</th>
+<th class="col-score" onclick="srt(15)">⑧</th>
+<th class="col-score" onclick="srt(16)">⑨</th>
+<th onclick="srt(17)">Veredicto</th>
+<th onclick="srt(18)">CAGR 3Y</th>
+<th onclick="srt(19)">Capex/CFO</th>
+<th onclick="srt(20)">Sector</th>
+<th onclick="srt(21)">Alertas</th>
+</tr></thead><tbody>
+<tr class="ra">
+<td class="c1 num">1</td>
+<td class="c2 tk cart">GOOG<span class="emp">Alphabet</span></td>
+<td class="c3"><span class="pill p80">94</span></td>
+<td class="pos sk">1.05%<small>⚫ </small></td>
+<td>—</td>
+<td class="num">26.36</td><td class="num">3.29</td>
+<td class="sr" style="text-align:center">🔴</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>47.38% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>20.83% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−0.30x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>40.14% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>−0.04% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>82.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">94 pero 🔴 caro → obj 0</td><td class="num">10.44%</td>
+<td class="num" style="font-size:10px">66.65%*<small style="opacity:.6">38.91/60.13/100.92</small></td>
+<td>Medios</td><td class="al">[SUG·fuera-top12] real&gt;0 ⚫</td></tr>
+<tr class="ra">
+<td class="c1 num">2</td>
+<td class="c2 tk wl">NVDA<span class="emp">NVIDIA</span></td>
+<td class="c3"><span class="pill p80">94</span></td>
+<td class="pos sb">0.00%<small>🔵 </small></td>
+<td class="obj">10.00%</td>
+<td class="num">22.35</td><td class="num">0.72</td>
+<td class="sy" style="text-align:center">🟡</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>133.03% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>65.47% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−0.39x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>63.58% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4.34% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>12.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Compounder élite; ABRIR</td><td class="num">30.88%</td>
+<td class="num" style="font-size:10px">5.00%<small style="opacity:.6">3.44/4.39/5.00</small></td>
+<td>Semis</td><td class="al">② [DUP_CSV]</td></tr>
+<tr class="ra">
+<td class="c1 num">3</td>
+<td class="c2 tk wl">AMZN<span class="emp">Amazon</span></td>
+<td class="c3"><span class="pill p80">90</span></td>
+<td>—</td>
+<td>—</td>
+<td class="num">31.25</td><td class="num">3.23</td>
+<td class="sr" style="text-align:center">🔴</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>24.21% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>16.47% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−0.08x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>12.40% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>−1.59% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>28.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">🔴 caro → fuera-top12</td><td class="num">10.91%</td>
+<td class="num" style="font-size:10px">—<small style="opacity:.6">72.56/102.38/128.48</small></td>
+<td>Consumo</td><td class="al">FCF_COMPOUNDER</td></tr>
+<tr class="ra">
+<td class="c1 num">4</td>
+<td class="c2 tk wl">V<span class="emp">Visa</span></td>
+<td class="c3"><span class="pill p80">90</span></td>
+<td>—</td>
+<td>—</td>
+<td class="num">26.87</td><td class="num">3.69</td>
+<td class="sr" style="text-align:center">🔴</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>61.08% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>15.84% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>0.39x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>63.02% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>1.85% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>7.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">🔴 caro → fuera-top12</td><td class="num">13.44%</td>
+<td class="num" style="font-size:10px">—<small style="opacity:.6">5.91/51.98/49.05</small></td>
+<td>Financiero</td><td class="al">—</td></tr>
+<tr class="ra">
+<td class="c1 num">5</td>
+<td class="c2 tk cart">HY9H<span class="emp">SK hynix (GDR)</span></td>
+<td class="c3"><span class="pill p80">89</span></td>
+<td class="pos sy">7.25%<small>🟡 -2.75pp</small></td>
+<td class="obj">10.00%</td>
+<td class="num">~7*</td><td class="num"><0.5</td>
+<td class="sg" style="text-align:center">🟢</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>~30% <span class="tag">[ONL·approx]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>+47% <span class="tag">[ONL·approx]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>3 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>caja <span class="tag">[ONL·approx]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>48.6% <span class="tag">[ONL·approx]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>~3.5% <span class="tag">[ONL·approx]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>+alto <span class="tag">[ONL·approx]</span></small></td>
+<td class="ver">Líder HBM barata; ampliar</td><td class="num">20.0%*</td>
+<td class="num" style="font-size:10px">~70%<small style="opacity:.6">§5.6 ONL</small></td>
+<td>Semis</td><td class="al">§5.6 [ONL]; FCF_COMPOUNDER; P/E approx</td></tr>
+<tr class="ra">
+<td class="c1 num">6</td>
+<td class="c2 tk cart">KSPI<span class="emp">Kaspi.kz</span></td>
+<td class="c3"><span class="pill p80">89</span></td>
+<td class="pos sy">7.23%<small>🟡 -2.77pp</small></td>
+<td class="obj">10.00%</td>
+<td class="num">18.57</td><td class="num">0.50</td>
+<td class="sg" style="text-align:center">🟢</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>72.13% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>31.49% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−0.30x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>31.01% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>2.26% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐<small>2.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Ampliar al techo</td><td class="num">37.44%</td>
+<td class="num" style="font-size:10px">50.93%<small style="opacity:.6">21.57/46.92/50.93</small></td>
+<td>Fintech</td><td class="al">COB_FIN (⑤ caja neta)</td></tr>
+<tr class="ra">
+<td class="c1 num">7</td>
+<td class="c2 tk wl">MSFT<span class="emp">Microsoft</span></td>
+<td class="c3"><span class="pill p80">89</span></td>
+<td>—</td>
+<td>—</td>
+<td class="num">24.06</td><td class="num">2.26</td>
+<td class="sy" style="text-align:center">🟡</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>31.10% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>17.77% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−0.19x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>41.80% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>1.31% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−13.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Sale del TOP-12 (W_raw #15)</td><td class="num">10.63%</td>
+<td class="num" style="font-size:10px">71.82%<small style="opacity:.6">40.43/47.82/71.82</small></td>
+<td>Software</td><td class="al">③=4; techo 7.5%; Δ FaseA→Cierre: dentro→fuera</td></tr>
+<tr class="ra">
+<td class="c1 num">8</td>
+<td class="c2 tk wl">ISRG<span class="emp">Intuitive Surgical</span></td>
+<td class="c3"><span class="pill p80">88</span></td>
+<td>—</td>
+<td>—</td>
+<td class="num">29.23</td><td class="num">13.26</td>
+<td class="sr" style="text-align:center">🔴</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>35.43% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>15.25% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−0.98x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>39.57% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>3.55% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−27.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">🔴 (PEG 13.26) → fuera</td><td class="num">3.87%</td>
+<td class="num" style="font-size:10px">—<small style="opacity:.6">31.85/12.55/8.88</small></td>
+<td>Salud</td><td class="al">—</td></tr>
+<tr class="ra">
+<td class="c1 num">9</td>
+<td class="c2 tk cart">JEN<span class="emp">Jensen-Group</span></td>
+<td class="c3"><span class="pill p80">88</span></td>
+<td class="pos sg">12.14%<small>🟢 +2.24pp</small></td>
+<td class="obj">9.90%</td>
+<td class="num">10.98</td><td class="num">0.48</td>
+<td class="sg" style="text-align:center">🟢</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>30.93% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>22.67% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−0.36x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>13.70% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>8.95% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>48.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Núcleo; alineada</td><td class="num">22.97%</td>
+<td class="num" style="font-size:10px">9.87%<small style="opacity:.6">22.75/11.57/9.87</small></td>
+<td>Industrial</td><td class="al">DIVISA EUR</td></tr>
+<tr class="ra">
+<td class="c1 num">10</td>
+<td class="c2 tk cart">META<span class="emp">Meta Platforms</span></td>
+<td class="c3"><span class="pill p80">88</span></td>
+<td class="pos sy">0.87%<small>🟡 -9.13pp</small></td>
+<td class="obj">10.00%</td>
+<td class="num">14.83</td><td class="num">0.82</td>
+<td class="sg" style="text-align:center">🟢</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>54.64% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>33.08% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−0.31x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>41.30% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>3 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>1.65% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−28.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Máxima calidad y barata; infra 9pp</td><td class="num">12.81%</td>
+<td class="num" style="font-size:10px">—<small style="opacity:.6">47.85/88.99/114.97</small></td>
+<td>Medios</td><td class="al">FCF_COMPOUNDER</td></tr>
+<tr class="ra">
+<td class="c1 num">11</td>
+<td class="c2 tk wl">SNT<span class="emp">Synektik</span></td>
+<td class="c3"><span class="pill p80">86</span></td>
+<td class="pos sb">0.00%<small>🔵 </small></td>
+<td class="obj">7.23%</td>
+<td class="num">15.37</td><td class="num">1.56</td>
+<td class="sy" style="text-align:center">🟡</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>~23.6% <span class="tag">[ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>34.51% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>0.03x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>~23.7% <span class="tag">[ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>5.15% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>76.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Compounder salud; ABRIR</td><td class="num">10.19%</td>
+<td class="num" style="font-size:10px">12.16%<small style="opacity:.6">29.54/4.93/12.16</small></td>
+<td>Salud</td><td class="al">①⑥ [ONL]; FCF_COMPOUNDER</td></tr>
+<tr class="ra">
+<td class="c1 num">12</td>
+<td class="c2 tk wl">ADBE<span class="emp">Adobe</span></td>
+<td class="c3"><span class="pill p80">84</span></td>
+<td class="pos sb">0.00%<small>🔵 </small></td>
+<td class="obj">7.50%</td>
+<td class="num">11.55</td><td class="num">0.23</td>
+<td class="sg" style="text-align:center">🟢</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>106.63% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>12.33% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>3 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−0.02x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>45.01% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>10.40% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−26.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Muy barata; ABRIR</td><td class="num">45.85%</td>
+<td class="num" style="font-size:10px">1.52%<small style="opacity:.6">1.96/1.28/1.52</small></td>
+<td>Software</td><td class="al">③=4 rica; techo 7.5%</td></tr>
+<tr class="ra">
+<td class="c1 num">13</td>
+<td class="c2 tk cart">SAP<span class="emp">SAP</span></td>
+<td class="c3"><span class="pill p80">82</span></td>
+<td class="pos sr">8.37%<small>🔴 +3.46pp</small></td>
+<td class="obj">4.91%</td>
+<td class="num">20.53</td><td class="num">1.01</td>
+<td class="sy" style="text-align:center">🟡</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>28.98% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>11.41% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−0.23x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>29.51% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>4.91% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−36.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Sobre +3.46pp; reducir</td><td class="num">20.33%</td>
+<td class="num" style="font-size:10px">7.10%<small style="opacity:.6">8.59/6.99/7.10</small></td>
+<td>Software</td><td class="al">DIVISA EUR</td></tr>
+<tr class="ra">
+<td class="c1 num">14</td>
+<td class="c2 tk wl">AAPL<span class="emp">Apple</span></td>
+<td class="c3"><span class="pill p80">81</span></td>
+<td>—</td>
+<td>—</td>
+<td class="num">34.91</td><td class="num">3.31</td>
+<td class="sr" style="text-align:center">🔴</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>~101% <span class="tag">[ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>~6% <span class="tag">[ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>~0.3x <span class="tag">[ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>33.17% <span class="tag">[ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>3.00% <span class="tag">[ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>35.42% <span class="tag">[ONL]</span></small></td>
+<td class="ver">🔴 caro → fuera</td><td class="num">~10%</td>
+<td class="num" style="font-size:10px">~11%<small style="opacity:.6">§5.6 ONL</small></td>
+<td>Hardware</td><td class="al">§5.6 [ONL]</td></tr>
+<tr class="ra">
+<td class="c1 num">15</td>
+<td class="c2 tk wl">UBER<span class="emp">Uber</span></td>
+<td class="c3"><span class="pill p80">81</span></td>
+<td class="pos sb">0.00%<small>🔵 </small></td>
+<td class="obj">6.53%</td>
+<td class="num">16.74</td><td class="num">0.64</td>
+<td class="sg" style="text-align:center">🟢</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>35.82% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>14.48% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>0.39x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>17.55% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>5.13% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−20.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Red Wide barata; ABRIR</td><td class="num">23.85%</td>
+<td class="num" style="font-size:10px">4.19%<small style="opacity:.6">25.88/7.23/4.19</small></td>
+<td>Consumo</td><td class="al">—</td></tr>
+<tr class="rb">
+<td class="c1 num">16</td>
+<td class="c2 tk cart">JNEO<span class="emp">Journeo</span></td>
+<td class="c3"><span class="pill p70">80</span></td>
+<td class="pos sk">4.13%<small>⚫ </small></td>
+<td>—</td>
+<td class="num">16.52</td><td class="num">1.03</td>
+<td class="sg" style="text-align:center">🟢</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>37.26% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>10.91% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>3 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−1.60x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>10.16% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>5.64% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>17.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Sale del TOP-12 (W_raw #14); real&gt;0 ⚫</td><td class="num">15.97%</td>
+<td class="num" style="font-size:10px">6.93%<small style="opacity:.6">3.49/5.43/6.93</small></td>
+<td>Industrial</td><td class="al">Δ FaseA→Cierre: dentro→fuera; [SUG·fuera-top12]</td></tr>
+<tr class="rb">
+<td class="c1 num">17</td>
+<td class="c2 tk wl">MCO<span class="emp">Moody’s</span></td>
+<td class="c3"><span class="pill p70">80</span></td>
+<td>—</td>
+<td>—</td>
+<td class="num">27.08</td><td class="num">N/A</td>
+<td class="sy" style="text-align:center">🟡</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>45.50% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>8.89% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>1.11x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>51.08% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>3.77% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>~+12% <span class="tag">[ONL·approx]</span></small></td>
+<td class="ver">Sólida pero fuera-top12</td><td class="num">[KB·pend]</td>
+<td class="num" style="font-size:10px">—<small style="opacity:.6">§ pend</small></td>
+<td>Financiero</td><td class="al">P/E [Cd·LTM]; ⑨ approx; CAGR [KB·pend]</td></tr>
+<tr class="rb">
+<td class="c1 num">18</td>
+<td class="c2 tk cart">PLX<span class="emp">PLX</span></td>
+<td class="c3"><span class="pill p70">79</span></td>
+<td class="pos sr">9.88%<small>🔴 +4.57pp</small></td>
+<td class="obj">5.31%</td>
+<td class="num">10.17</td><td class="num">0.49</td>
+<td class="sg" style="text-align:center">🟢</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>106.58% <span class="tag">[PROXY·EQ_NEG]</span></small></td>
+<td class="col-score crit">⭐⭐<small>3.15% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−0.15x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>25.61% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>11.51% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−18.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Sobre +4.57pp; reducir (sesión: fuera-tesis)</td><td class="num">21.97%</td>
+<td class="num" style="font-size:10px">30.55%<small style="opacity:.6">23.76/31.56/30.55</small></td>
+<td>ServEmpresa</td><td class="al">① [PROXY·EQ_NEG]</td></tr>
+<tr class="rb">
+<td class="c1 num">19</td>
+<td class="c2 tk wl">QLYS<span class="emp">Qualys</span></td>
+<td class="c3"><span class="pill p70">79</span></td>
+<td>—</td>
+<td>—</td>
+<td class="num">18.16</td><td class="num">0.86</td>
+<td class="sg" style="text-align:center">🟢</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>104.21% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>7.75% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>3 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−0.84x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>44.69% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>5.42% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>7.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">#13 W_raw, al filo del corte</td><td class="num">21.05%</td>
+<td class="num" style="font-size:10px">~1.6%<small style="opacity:.6">§ KB</small></td>
+<td>Software</td><td class="al">—</td></tr>
+<tr class="rb">
+<td class="c1 num">20</td>
+<td class="c2 tk cart">VHI<span class="emp">Vitalhub</span></td>
+<td class="c3"><span class="pill p70">79</span></td>
+<td class="pos sg">7.49%<small>🟢 +0.63pp</small></td>
+<td class="obj">6.86%</td>
+<td class="num">16.88</td><td class="num">0.47</td>
+<td class="sg" style="text-align:center">🟢</td>
+<td class="col-score crit">⭐⭐⭐⭐<small>18.03% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>20.03% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>3 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−3.49x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>19.28% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>7.98% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−14.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Alineada</td><td class="num">35.84%</td>
+<td class="num" style="font-size:10px">1.15%<small style="opacity:.6">3.95/1.50/1.15</small></td>
+<td>Salud</td><td class="al">—</td></tr>
+<tr class="rb">
+<td class="c1 num">21</td>
+<td class="c2 tk wl">CSU<span class="emp">Constellation</span></td>
+<td class="c3"><span class="pill p70">78</span></td>
+<td>—</td>
+<td>—</td>
+<td class="num">47.24</td><td class="num">3.57</td>
+<td class="sr" style="text-align:center">🔴</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>27.16% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>19.86% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>0.78x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>14.82% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>4.40% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−37.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">🔴 caro → fuera</td><td class="num">13.82%</td>
+<td class="num" style="font-size:10px">2.98%<small style="opacity:.6">3.19/2.75/2.98</small></td>
+<td>Software</td><td class="al">Δ −6 vs 84†</td></tr>
+<tr class="rb">
+<td class="c1 num">22</td>
+<td class="c2 tk wl">RMS<span class="emp">Hermès</span></td>
+<td class="c3"><span class="pill p70">78</span></td>
+<td>—</td>
+<td>—</td>
+<td class="num">37.52</td><td class="num">4.64</td>
+<td class="sr" style="text-align:center">🔴</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>72.37% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>5.48% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>−1.34x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>41.05% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>3 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>2.13% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−27.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">🔴 caro → fuera</td><td class="num">8.08%</td>
+<td class="num" style="font-size:10px">25.30%<small style="opacity:.6">18.83/22.76/25.30</small></td>
+<td>Consumo</td><td class="al">⑦=3 (acumula caja)</td></tr>
+<tr class="rb">
+<td class="c1 num">23</td>
+<td class="c2 tk cart">ELIX<span class="emp">Elixirr</span></td>
+<td class="c3"><span class="pill p70">75</span></td>
+<td class="pos sr">8.70%<small>🔴 +2.71pp</small></td>
+<td class="obj">5.99%</td>
+<td class="num">9.67</td><td class="num">0.25</td>
+<td class="sg" style="text-align:center">🟢</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>23.75% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>12.30% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐<small>2 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>0.60x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>26.49% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>11.72% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−13.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Sobre +2.71pp; reducir</td><td class="num">38.94%</td>
+<td class="num" style="font-size:10px">0.26%<small style="opacity:.6">3.68/0.21/0.26</small></td>
+<td>ServEmpresa</td><td class="al">③=2 None</td></tr>
+<tr class="rb">
+<td class="c1 num">24</td>
+<td class="c2 tk wl">MCD<span class="emp">McDonald’s</span></td>
+<td class="c3"><span class="pill p70">70</span></td>
+<td>—</td>
+<td>—</td>
+<td class="num">20.64</td><td class="num">2.12</td>
+<td class="sy" style="text-align:center">🟡</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>33.79% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐<small>3.72% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐<small>2.69x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>46.10% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>3.84% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−11.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Fuera-top12</td><td class="num">9.73%</td>
+<td class="num" style="font-size:10px">30.30%<small style="opacity:.6">22.15/26.06/30.30</small></td>
+<td>Consumo</td><td class="al">Δ +2 vs 68†</td></tr>
+<tr class="rb">
+<td class="c1 num">25</td>
+<td class="c2 tk cart">BKNG<span class="emp">Booking</span></td>
+<td class="c3"><span class="pill p60">66</span></td>
+<td class="pos sk">7.77%<small>⚫ </small></td>
+<td>—</td>
+<td class="num">19.11</td><td class="num">1.52</td>
+<td class="sy" style="text-align:center">🟡</td>
+<td class="col-score crit">⭐<small>−2.34 <span class="tag">[PROXY·EQ_NEG]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>9.39% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>0.04x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>34.07% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[QUAL·mf]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>5.20% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−12.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">&lt;70 congelar; real&gt;0 obj=0 ⚫</td><td class="num">12.58%</td>
+<td class="num" style="font-size:10px">4.73%<small style="opacity:.6">6.39/4.41/4.73</small></td>
+<td>Consumo</td><td class="al">[CONGELADA][SUG·fuera-top12]</td></tr>
+<tr class="rb">
+<td class="c1 num">26</td>
+<td class="c2 tk wl">DPZ<span class="emp">Domino’s</span></td>
+<td class="c3"><span class="pill p60">65</span></td>
+<td>—</td>
+<td>—</td>
+<td class="num">17.31</td><td class="num">1.16</td>
+<td class="sg" style="text-align:center">🟢</td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>~40% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐<small>~3% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>5 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐<small>4.50x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>~18% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐<small>4 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>3.50% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>~-5% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">Fuera-top12</td><td class="num">14.87%</td>
+<td class="num" style="font-size:10px">~28%<small style="opacity:.6">§ KB</small></td>
+<td>Consumo</td><td class="al">F-D exento (DN 4.50x)</td></tr>
+<tr class="rb">
+<td class="c1 num">27</td>
+<td class="c2 tk wl">MC<span class="emp">LVMH</span></td>
+<td class="c3">68†</td><td>—</td><td>—</td>
+<td class="num">17.69</td><td class="num">1.15</td><td class="sg" style="text-align:center">🟢</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">③=4 [Nivel2]; ①⑥ [KB·pend]→[ONL·approx] · N2027</td></tr>
+<tr class="rb">
+<td class="c1 num">28</td>
+<td class="c2 tk wl">AZO<span class="emp">AutoZone</span></td>
+<td class="c3">67†</td><td>—</td><td>—</td>
+<td class="num">18.16</td><td class="num">−5.34</td><td class="sy" style="text-align:center">🟡</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">③=4 [Nivel2]; ②⑥ [KB·pend]→[ONL·approx]; ④5|⑦5</td></tr>
+<tr class="rb">
+<td class="c1 num">29</td>
+<td class="c2 tk wl">UD<span class="emp">Unidata</span></td>
+<td class="c3">68†</td><td>—</td><td>—</td>
+<td class="num">6.52</td><td class="num">N/A</td><td class="sy" style="text-align:center">🟡</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">③=3; PEG [KB·pend]; ④3|⑦3</td></tr>
+<tr class="rb">
+<td class="c1 num">30</td>
+<td class="c2 tk wl">TOA.WA<span class="emp">TOYA</span></td>
+<td class="c3">67†</td><td>—</td><td>—</td>
+<td class="num">~8</td><td class="num">~1.0</td><td class="sg" style="text-align:center">🟢</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">§5.6 [ONL·approx]; ③=2 §3.7d; micro-cap [LIQ inferido]</td></tr>
+<tr class="rb">
+<td class="c1 num">31</td>
+<td class="c2 tk wl">ETC<span class="emp">Energy Solar Tech</span></td>
+<td class="c3">66†</td><td>—</td><td>—</td>
+<td class="num">7.38</td><td class="num">0.14</td><td class="sg" style="text-align:center">🟢</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">③=2; ①⑧ [KB·pend]; micro-cap [LIQ]</td></tr>
+<tr class="rb">
+<td class="c1 num">32</td>
+<td class="c2 tk wl">SAVE<span class="emp">Savencia</span></td>
+<td class="c3">37†</td><td>—</td><td>—</td>
+<td class="num">N/A</td><td class="num">0.00</td><td class="sy" style="text-align:center">🟡</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">③=2; ⑧⑨ [KB·pend] (Stock price roto); ④2|⑦2</td></tr>
+<tr class="rb">
+<td class="c1 num">33</td>
+<td class="c2 tk wl">TJX<span class="emp">TJX</span></td>
+<td class="c3">pend</td><td>—</td><td>—</td>
+<td class="num">N/A</td><td class="num">37.55</td><td class="sr" style="text-align:center">🔴</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">[KB·pend] ①⑤⑥⑧ P/E; ④5|⑦5; ③=4 [Nivel2]</td></tr>
+<tr class="rb">
+<td class="c1 num">34</td>
+<td class="c2 tk wl">NFLX<span class="emp">Netflix</span></td>
+<td class="c3">pend</td><td>—</td><td>—</td>
+<td class="num">N/A</td><td class="num">N/A</td><td class="sy" style="text-align:center">🟡</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">[KB·pend] ① ⑤ ⑧ P/E CAGR; ④4|⑦4; ③=4</td></tr>
+<tr class="rb">
+<td class="c1 num">35</td>
+<td class="c2 tk wl">AER<span class="emp">AerCap</span></td>
+<td class="c3">pend</td><td>—</td><td>—</td>
+<td class="num">N/A</td><td class="num">N/A</td><td class="sy" style="text-align:center">🟡</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">[KB·pend] ①⑧ P/E; ④4|⑦4; ③=2; F-C ×0.80</td></tr>
+<tr class="rb">
+<td class="c1 num">36</td>
+<td class="c2 tk wl">CTRE<span class="emp">CareTrust REIT</span></td>
+<td class="c3">pend</td><td>—</td><td>—</td>
+<td class="num">25.83</td><td class="num">−6.55</td><td class="sy" style="text-align:center">🟡</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">[KB·pend] ②⑥⑧; ④4|⑦3; ③=2 techo 5%</td></tr>
+<tr class="rb">
+<td class="c1 num">37</td>
+<td class="c2 tk wl">MLUAV<span class="emp">Embention</span></td>
+<td class="c3">pend</td><td>—</td><td>—</td>
+<td class="num">39.79</td><td class="num">−9.14</td><td class="sr" style="text-align:center">🔴</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">[KB·pend] ⑨; ④3|⑦3; ③=3; FCF_COMPOUNDER</td></tr>
+<tr class="rb">
+<td class="c1 num">38</td>
+<td class="c2 tk wl">ALWEC<span class="emp">Alwec</span></td>
+<td class="c3">pend</td><td>—</td><td>—</td>
+<td class="num">4.34</td><td class="num">0.14</td><td class="sg" style="text-align:center">🟢</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">[KB·pend] ①⑥; ④3|⑦3; ③=2</td></tr>
+<tr class="rb">
+<td class="c1 num">39</td>
+<td class="c2 tk wl">TEQ<span class="emp">Teqnion</span></td>
+<td class="c3">pend</td><td>—</td><td>—</td>
+<td class="num">37.89</td><td class="num">2.13</td><td class="sr" style="text-align:center">🔴</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">[KB·pend] ⑥ ROCE; ④3|⑦3; ③=1 techo 5%</td></tr>
+<tr class="rb">
+<td class="c1 num">40</td>
+<td class="c2 tk wl">ORCL<span class="emp">Oracle</span></td>
+<td class="c3">40</td><td>—</td><td>—</td>
+<td class="num">N/A</td><td class="num">~1.7</td><td class="sr" style="text-align:center">🔴</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Pend / aprox</td><td class="num">—</td><td class="num">—</td>
+<td>—</td><td class="al">[EXCL·score] F-C×0.65 (174%); ⑦=2 empire-builder; ③=3 §3.7d</td></tr>
+<tr class="rc">
+<td class="c1 num">41</td><td class="c2 tk cart">NWL<span class="emp">NewPrinces</span></td>
+<td class="c3"><span class="pill p0">37</span></td>
+<td class="pos sk">14.30%<small>⚫ −14.30pp</small></td><td>—</td>
+<td class="num">−38.56</td><td class="num">−0.88</td><td class="sk" style="text-align:center">⚫</td>
+<td class="col-score crit">⭐<small>4.57% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>129.73% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐<small>2 <span class="tag">[MOAT_KB]</span></small></td>
+<td class="col-score crit">⭐⭐<small>2 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐<small>0.70x <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>0.69% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐⭐<small>2 <span class="tag">[QUAL·ONL]</span></small></td>
+<td class="col-score crit">⭐⭐⭐⭐⭐<small>23.30% <span class="tag">[CSV_KB]</span></small></td>
+<td class="col-score crit">⭐<small>−31.00% <span class="tag">[CSV_KB]</span></small></td>
+<td class="ver">LIQUIDAR (§9.9)</td><td class="num">46.54%</td><td class="num" style="font-size:10px">20.70%</td><td>Consumo</td>
+<td class="al">[EXCL·salida][EXCL·pe-neg][STRUCT_BREAK ②]</td></tr>
+<tr class="rk"><td class="c1 num">—</td><td class="c2 tk wl">CASH<span class="emp">Efectivo</span></td><td class="c3">—</td>
+<td class="pos sc">10.82%<small>💵 +5.06pp</small></td><td class="obj">5.76%</td><td class="num">—</td><td class="num">—</td><td class="sc" style="text-align:center">💵</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">Colchón de opcionalidad</td><td class="num">—</td><td class="num">—</td><td>Liquidez</td><td class="al">M̄ 1.23 → CASH 5.76% (banda 5–15)</td></tr>
+<tr class="rv"><td class="c1 num">43</td><td class="c2 tk wl">DPM<span class="emp">Dundee Precious</span></td><td class="c3"><span class="pill p0">0</span></td>
+<td>—</td><td>—</td><td class="num">—</td><td class="num">—</td><td style="text-align:center">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="col-score">—</td>
+<td class="ver">VETADA</td><td class="num">—</td><td class="num">—</td><td>Commodity</td><td class="al">[EXCL·veto] F-A (§6.A)</td></tr>
 </tbody></table></div>
-<details><summary>Leyenda · estados de fila</summary>
-<p><b>Score firme</b>: ①–⑨ completos (①-⑨ + ④⑦ resueltos). <b>NN†</b>: Score provisional con quant parcial. <b>—</b>: sin Score (valoración/§5.6 pendientes). <b>·</b> en un criterio: dato pendiente de extraer, no penaliza.</p>
-<p><b>Alertas</b>: FUERA·top12 (Score alto pero valoración cara → peso 0) · QUAL·pend (falta ④/⑦ online) · KB·pend (falta fila cuant.) · ONL·pend (sin bloque A, §5.6) · EXCL·salida/veto · SPOTLIGHT/INFRA/SOBRE/ALINEADO (semáforo de posición).</p>
-<p><b>Semáforo Posición</b>: 🟢 alineado · 🟡 infra · 🔴 sobre · ⚫ fuera de tesis · 🔵 sin posición pero debería · 💵 colchón.</p>
-</details>
+<details style="margin-top:12px"><summary style="cursor:pointer;font-weight:600">Leyenda y reglas de cálculo</summary>
+<div style="font-size:11px;line-height:1.5;margin-top:8px">
+<b>Las 22 columnas.</b> #=orden por Score (1=mejor) · Ticker+Empresa=borde negro Cartera/azul Watchlist · Score=Σ ponderada ①–⑨ (pill verde&gt;80, ámbar 70-80, naranja 60-70, rojo&lt;60) · Posición=peso real hoy + semáforo §9.8 · Peso Obj.=única cifra ejecutable (Σ+CASH=100%) · P/E NTM=precio/beneficio 12m · PEG=P/E÷crecimiento (&lt;1 barato, &gt;2.5 caro, &lt;0 crec. negativo) · Val.=semáforo de precio · ①ROIC ②Crecimiento ③Foso(moatdatabase) ④Dirección ⑤Balance ⑥Margen ⑦Capital ⑧FCFY ⑨Momento · Veredicto=lectura humana · CAGR 3Y=múltiplo anclado §9.2 · Capex/CFO=&gt;70% ×0.65, 50-70% ×0.80 · Sector=cap 30% · Alertas.<br>
+<b>Semáforo valoración §8.6:</b> 🟢 P/E≤20 y 0&lt;PEG≤1.5 (M1.30) · 🟡 resto (M1.00) · 🔴 P/E&gt;30 o PEG&gt;2.5 (M0.40) · ⚫ P/E&lt;0 (M0.60). M alimenta peso y colchón §9.12.<br>
+<b>Semáforo posición §9.8:</b> 🟢 alineado (|Δ|≤2.5pp o |Δ%|≤25%) · 🟡 infra · 🔴 sobre · ⚫ fuera de tesis (real&gt;0,obj=0) · 🔵 spotlight (real=0,obj≥5%) · 💵 colchón.<br>
+<b>Flags:</b> EXCL·veto/score/salida/pe-neg · SUG·fuera-top12 · CONGELADA(&lt;70) · SUELO·out(&lt;4%) · +FCF_COMPOUNDER/+COB_FIN/+Nivel2/+PROXY·EQ_NEG · [KB·pend]/[ONL]/[QUAL·mf].<br>
+<b>Tags origen ①–⑨:</b> CSV_KB=maestro literal · MOAT_KB=moatdatabase · QUAL·mf=caché ④⑦ · QUAL·ONL=resuelto online · ONL/ONL·approx=online · PROXY·EQ_NEG=equity negativa.
+</div></details>
 <script>
-function filt(){var q=document.getElementById('buscador').value.toLowerCase();
- document.querySelectorAll('#t tbody tr').forEach(function(r){r.style.display=r.innerText.toLowerCase().includes(q)?'':'none';});}
-function colsc(){document.querySelectorAll('.col-score').forEach(function(c){c.classList.toggle('collapsed');});
- var b=document.getElementById('colb');b.textContent=b.textContent.indexOf('Colapsar')>-1?'Desplegar ①–⑨':'Colapsar ①–⑨';}
-function tsv(){var out=[];document.querySelectorAll('#t tr').forEach(function(r){
- if(r.style.display==='none')return;var c=[];r.querySelectorAll('th,td').forEach(function(td){c.push(td.innerText.replace(/\n/g,' ').trim());});out.push(c.join('\t'));});
- navigator.clipboard.writeText(out.join('\n'));var b=event.target;b.textContent='✓ Copiado';setTimeout(function(){b.textContent='Copiar TSV';},1500);}
-document.querySelectorAll('#t thead th').forEach(function(th,i){th.addEventListener('click',function(){sortby(i,th);});});
-function sortby(i,th){var tb=document.querySelector('#t tbody');var rows=[].slice.call(tb.rows);
- var asc=th.dataset.asc!=='1';th.dataset.asc=asc?'1':'0';
- rows.sort(function(a,b){var x=a.cells[i].innerText,y=b.cells[i].innerText;
-  var nx=parseFloat(x.replace(/[%x⭐]/g,''));if(isNaN(nx))nx=(x.match(/⭐/g)||[]).length;
-  var ny=parseFloat(y.replace(/[%x⭐]/g,''));if(isNaN(ny))ny=(y.match(/⭐/g)||[]).length;
-  if(!isNaN(nx)&&!isNaN(ny)&&(nx||ny))return asc?nx-ny:ny-nx;return asc?x.localeCompare(y):y.localeCompare(x);});
- rows.forEach(function(r){tb.appendChild(r);});}
+function filt(){var q=document.getElementById('buscador').value.toLowerCase();document.querySelectorAll('#t tbody tr').forEach(function(r){var t=r.cells[1].innerText.toLowerCase()+' '+r.cells[r.cells.length-2].innerText.toLowerCase();r.style.display=t.indexOf(q)>=0?'':'none';});}
+function col(){document.querySelectorAll('.col-score').forEach(function(e){e.classList.toggle('collapsed');});var b=document.getElementById('colbtn');b.textContent=b.textContent.indexOf('Colapsar')>=0?'Desplegar ①–⑨':'Colapsar ①–⑨';}
+var dir={};function srt(i){var tb=document.querySelector('#t tbody');var rs=Array.from(tb.rows);dir[i]=!dir[i];var d=dir[i]?1:-1;
+function val(r){var c=r.cells[i].innerText;var s=(c.match(/⭐/g)||[]).length;if(s)return s;var m=c.replace(/[%x,]/g,'').replace('−','-').match(/-?\d+\.?\d*/);if(m&&!isNaN(parseFloat(m[0])))return parseFloat(m[0]);return c.toLowerCase();}
+rs.sort(function(a,b){var x=val(a),y=val(b);if(typeof x=='number'&&typeof y=='number')return (x-y)*d;return (''+x<''+y?-1:1)*d;});rs.forEach(function(r){tb.appendChild(r);});}
+function tsv(){var o=[];var h=[];document.querySelectorAll('#t thead th').forEach(x=>h.push(x.innerText));o.push(h.join('\t'));document.querySelectorAll('#t tbody tr').forEach(function(r){if(r.style.display=='none')return;var c=[];for(var k=0;k<r.cells.length;k++)c.push(r.cells[k].innerText.replace(/\n/g,' ').replace(/\t/g,' '));o.push(c.join('\t'));});navigator.clipboard.writeText(o.join('\n'));var b=event.target;var t=b.textContent;b.textContent='✓ Copiado';setTimeout(function(){b.textContent=t;},1500);}
 </script></body></html>
