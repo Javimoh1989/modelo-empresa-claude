@@ -2110,7 +2110,93 @@ TICKER: PEP | PÁGINA: 5.BDD
 ,PEP,3 YEARS CAGR  by EV/EBIT,2026,0.22479550460147163,
 
 
-⚠️ ERROR: No se pudieron extraer datos de PLX
+==================================================
+EMPRESA: PLX
+==================================================
+
+--------------------------------------------------
+TICKER: PLX | PÁGINA: 5.BDD
+--------------------------------------------------
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,PLX,    Y/Y Growth %,2028,0.06,
+,PLX,    Y/Y Growth %,2027,0.020000000000000018,
+,PLX,    Y/Y Growth %,2026,0.010101010101010102,
+,PLX,    Y/Y Growth %,2025,0.06363636363636363,
+,PLX,    Y/Y Growth %,2024,0.15019011406844107,
+,PLX,Sales,2028,1405,EUR
+,PLX,Sales,2027,1326,EUR
+,PLX,Sales,2026,1300,EUR
+,PLX,Sales,2025,1287,EUR
+,PLX,Sales,2024,1210,EUR
+,PLX,EBITDA,2028,541.5821863842086,EUR
+,PLX,EBITDA,2027,497.4100266873611,EUR
+,PLX,EBITDA,2026,500.14814814814815,EUR
+,PLX,EBITDA,2025,471,EUR
+,PLX,EBITDA,2024,430,EUR
+,PLX,EBIT ,2028,365.3,EUR
+,PLX,EBIT ,2027,331.5,EUR
+,PLX,EBIT ,2026,344,EUR
+,PLX,EBIT ,2025,335,EUR
+,PLX,EBIT ,2024,250,EUR
+,PLX,    EBIT margin %,2028,0.26,
+,PLX,    EBIT margin %,2027,0.25,
+,PLX,    EBIT margin %,2026,0.26461538461538464,
+,PLX,    EBIT margin %,2025,0.2602952602952603,
+,PLX,    EBIT margin %,2024,0.2066115702479339,
+,PLX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,19.19201222731304,EUR
+,PLX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,18.062785163543346,EUR
+,PLX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,17,EUR
+,PLX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,17,EUR
+,PLX,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,20,EUR
+,PLX,Net income per share ( EPS ),2028,1.4718927990003319,EUR
+,PLX,Net income per share ( EPS ),2027,1.319098369366176,EUR
+,PLX,Net income per share ( EPS ),2026,1.3981481481481481,EUR
+,PLX,Net income per share ( EPS ),2025,1.3586206896551725,EUR
+,PLX,Net income per share ( EPS ),2024,0.9047619047619048,EUR
+,PLX,Fully diluted shares  (millions),2028,142.5636,EUR
+,PLX,Fully diluted shares  (millions),2027,143.28,EUR
+,PLX,Fully diluted shares  (millions),2026,144,EUR
+,PLX,Fully diluted shares  (millions),2025,145,EUR
+,PLX,Fully diluted shares  (millions),2024,147,EUR
+,PLX,Flujo de caja libre,2028,252.3234050053157,EUR
+,PLX,Flujo de caja libre,2027,228.98573016422228,EUR
+,PLX,Flujo de caja libre,2026,238.96597760551248,EUR
+,PLX,Flujo de caja libre,2025,219,EUR
+,PLX,Flujo de caja libre,2024,231,EUR
+,PLX,Flujo de caja libre por accion,2028,1.7699006268452513,EUR
+,PLX,Flujo de caja libre por accion,2027,1.5981695293427016,EUR
+,PLX,Flujo de caja libre por accion,2026,1.6594859555938366,EUR
+,PLX,Flujo de caja libre por accion,2025,1.5103448275862068,EUR
+,PLX,Flujo de caja libre por accion,2024,1.5714285714285714,EUR
+,PLX,ROE ( net income / equity ),2028,0.4729559500726639,
+,PLX,ROE ( net income / equity ),2027,0.4526206988097811,
+,PLX,ROE ( net income / equity ),2026,0.5122985581000848,
+,PLX,ROE ( net income / equity ),2025,0.5338753387533876,
+,PLX,ROE ( net income / equity ),2024,0.5155038759689923,
+,PLX,ROCE con goodwill( EBIT / Capital empleado),2028,-0.36316198221380236,
+,PLX,ROCE con goodwill( EBIT / Capital empleado),2027,-0.3501628219374269,
+,PLX,ROCE con goodwill( EBIT / Capital empleado),2026,-0.38608305274971944,
+,PLX,ROCE con goodwill( EBIT / Capital empleado),2025,-0.4224464060529634,
+,PLX,ROCE con goodwill( EBIT / Capital empleado),2024,-0.3117206982543641,
+,PLX,Deuda neta /EBITDA,2028,-2.6765307843446142,EUR
+,PLX,Deuda neta /EBITDA,2027,-2.7427503770288415,EUR
+,PLX,Deuda neta /EBITDA,2026,-2.567239336492891,EUR
+,PLX,Deuda neta /EBITDA,2025,-2.4670912951167727,EUR
+,PLX,Deuda neta /EBITDA,2024,-2.4651162790697674,EUR
+,PLX,NTM P/E,2026,11.175850376212168,EUR
+,PLX,Free cashflow yield,2026,0.1107062011737049,
+,PLX,TSR 12M en %,2026,-9%,
+,PLX,PEG ratio,2026,0.65,EUR
+,PLX,Stock price,2026,14.99,EUR
+,PLX,% of CAPEX/CFO,2026,30.19,EUR
+,PLX,% of CAPEX/CFO,2025,31.56,EUR
+,PLX,% of CAPEX/CFO,2024,23.76,EUR
+,PLX,3 YEARS CAGR  by PER,2026,0.17189900649668474,
+,PLX,3 YEARS CAGR  by  P/FCF,2026,0.1828653323977469,
+,PLX,3 YEARS CAGR by EV/EBITDA,2026,0.17568093146235772,
+,PLX,3 YEARS CAGR  by EV/EBIT,2026,0.16934599158984162,
+
 
 ==================================================
 EMPRESA: MCD
