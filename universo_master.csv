@@ -2821,7 +2821,86 @@ EMPRESA: AZO
 --------------------------------------------------
 TICKER: AZO | PÁGINA: 5.BDD
 --------------------------------------------------
-⚠️ ERROR: No se pudieron extraer datos de AZO
+,,,,,
+,TICKER,Indicador,Año,Valor,Divisa
+,AZO,    Y/Y Growth %,2028,0.05,
+,AZO,    Y/Y Growth %,2027,0.05,
+,AZO,    Y/Y Growth %,2026,0.08331766877592574,
+,AZO,    Y/Y Growth %,2025,0.024253296463491378,
+,AZO,    Y/Y Growth %,2024,0.05917669547424825,
+,AZO,Sales,2028,22619.61,USD
+,AZO,Sales,2027,21542.482500000002,USD
+,AZO,Sales,2026,20516.65,USD
+,AZO,Sales,2025,18938.72,USD
+,AZO,Sales,2024,18490.27,USD
+,AZO,EBITDA,2028,4783.6780425,USD
+,AZO,EBITDA,2027,4555.88385,USD
+,AZO,EBITDA,2026,4334.42,USD
+,AZO,EBITDA,2025,4223.36,USD
+,AZO,EBITDA,2024,4338.46,USD
+,AZO,EBIT ,2028,4071.5291925,USD
+,AZO,EBIT ,2027,3877.64685,USD
+,AZO,EBIT ,2026,3688.48,USD
+,AZO,EBIT ,2025,3610.16,USD
+,AZO,EBIT ,2024,3788.7,USD
+,AZO,    EBIT margin %,2028,0.18,
+,AZO,    EBIT margin %,2027,0.18,
+,AZO,    EBIT margin %,2026,0.1797798373516144,
+,AZO,    EBIT margin %,2025,0.19062323113705676,
+,AZO,    EBIT margin %,2024,0.20490236216128807,
+,AZO,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,521.3171249999999,USD
+,AZO,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,496.49249999999995,USD
+,AZO,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,472.84999999999997,USD
+,AZO,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,475.83,USD
+,AZO,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,451.58,USD
+,AZO,Net income per share ( EPS ),2028,186.03975149233293,USD
+,AZO,Net income per share ( EPS ),2027,167.3634859173642,USD
+,AZO,Net income per share ( EPS ),2026,151.29456458211573,USD
+,AZO,Net income per share ( EPS ),2025,144.8255072463768,USD
+,AZO,Net income per share ( EPS ),2024,149.57415730337078,USD
+,AZO,Fully diluted shares  (millions),2028,15.266466608439055,USD
+,AZO,Fully diluted shares  (millions),2027,16.16196905300812,USD
+,AZO,Fully diluted shares  (millions),2026,17.11,USD
+,AZO,Fully diluted shares  (millions),2025,17.25,USD
+,AZO,Fully diluted shares  (millions),2024,17.8,USD
+,AZO,Flujo de caja libre,2028,1965.2697539999997,USD
+,AZO,Flujo de caja libre,2027,1871.6854800000003,USD
+,AZO,Flujo de caja libre,2026,1795.0900000000001,USD
+,AZO,Flujo de caja libre,2025,1784.1799999999994,USD
+,AZO,Flujo de caja libre,2024,2139.4800000000005,USD
+,AZO,Flujo de caja libre por accion,2028,128.7311467942183,USD
+,AZO,Flujo de caja libre por accion,2027,115.80801038915712,USD
+,AZO,Flujo de caja libre por accion,2026,104.9146697837522,USD
+,AZO,Flujo de caja libre por accion,2025,103.43072463768112,USD
+,AZO,Flujo de caja libre por accion,2024,120.19550561797755,USD
+,AZO,ROE ( net income / equity ),2028,-0.8856381219553282,
+,AZO,ROE ( net income / equity ),2027,-0.8856381219553283,
+,AZO,ROE ( net income / equity ),2026,-0.8899466097353864,
+,AZO,ROE ( net income / equity ),2025,-0.7316968875116787,
+,AZO,ROE ( net income / equity ),2024,-0.5605554982409082,
+,AZO,ROCE con goodwill( EBIT / Capital empleado),2028,0.6464436816336677,
+,AZO,ROCE con goodwill( EBIT / Capital empleado),2027,0.6464436816336677,
+,AZO,ROCE con goodwill( EBIT / Capital empleado),2026,0.6456529996726644,
+,AZO,ROCE con goodwill( EBIT / Capital empleado),2025,0.7059822006504133,
+,AZO,ROCE con goodwill( EBIT / Capital empleado),2024,0.9527485791882514,
+,AZO,Deuda neta /EBITDA,2028,0.3553750868884902,USD
+,AZO,Deuda neta /EBITDA,2027,1.8924011857764984,USD
+,AZO,Deuda neta /EBITDA,2026,1.9890919661684838,USD
+,AZO,Deuda neta /EBITDA,2025,2.0192406046370666,USD
+,AZO,Deuda neta /EBITDA,2024,2.011361174241551,USD
+,AZO,NTM P/E,2026,18.92316692870358,USD
+,AZO,Free cashflow yield,2026,0.03240377356473585,
+,AZO,TSR 12M en %,2026,-15%,
+,AZO,PEG ratio,2026,-3.35,USD
+,AZO,Stock price,2026,3237.73,USD
+,AZO,% of CAPEX/CFO,2026,44.5,USD
+,AZO,% of CAPEX/CFO,2025,42.66,USD
+,AZO,% of CAPEX/CFO,2024,33.39,USD
+,AZO,3 YEARS CAGR  by PER,2026,0.03383703890976175,
+,AZO,3 YEARS CAGR  by  P/FCF,2026,-0.05656087550207145,
+,AZO,3 YEARS CAGR by EV/EBITDA,2026,0.16414886889394786,
+,AZO,3 YEARS CAGR  by EV/EBIT,2026,0.1725638170314494,
+
 
 ==================================================
 EMPRESA: ETC
@@ -3033,12 +3112,12 @@ TICKER: NWL | PÁGINA: 5.BDD
 ,NWL,    EBIT margin %,2026,0.0029023153220481637,
 ,NWL,    EBIT margin %,2025,0.03935810810810811,
 ,NWL,    EBIT margin %,2024,0.07008246479304543,
-,NWL,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,35.41356428741524,EUR
+,NWL,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,35.4136824398171,EUR
 ,NWL,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,30.689999999999998,EUR
 ,NWL,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,30.666666666666668,EUR
 ,NWL,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,20,EUR
 ,NWL,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,30.2,EUR
-,NWL,Net income per share ( EPS ),2028,3.0351288612249148,EUR
+,NWL,Net income per share ( EPS ),2028,3.035126680513303,EUR
 ,NWL,Net income per share ( EPS ),2027,1.4506673906510668,EUR
 ,NWL,Net income per share ( EPS ),2026,-0.39902606244093103,EUR
 ,NWL,Net income per share ( EPS ),2025,1.4160465116279068,EUR
@@ -3048,43 +3127,43 @@ TICKER: NWL | PÁGINA: 5.BDD
 ,NWL,Fully diluted shares  (millions),2026,41.618,EUR
 ,NWL,Fully diluted shares  (millions),2025,43,EUR
 ,NWL,Fully diluted shares  (millions),2024,43.88,EUR
-,NWL,Flujo de caja libre,2028,151.17504915516372,EUR
-,NWL,Flujo de caja libre,2027,64.39424597504721,EUR
-,NWL,Flujo de caja libre,2026,33.830774666666656,EUR
+,NWL,Flujo de caja libre,2028,151.1706809733467,EUR
+,NWL,Flujo de caja libre,2027,64.39030756165188,EUR
+,NWL,Flujo de caja libre,2026,33.827120906666664,EUR
 ,NWL,Flujo de caja libre,2025,-49.61,EUR
 ,NWL,Flujo de caja libre,2024,95.1,EUR
-,NWL,Flujo de caja libre por accion,2028,3.8221958786585604,EUR
-,NWL,Flujo de caja libre por accion,2027,1.586653634715459,EUR
-,NWL,Flujo de caja libre por accion,2026,0.8128880452368363,EUR
+,NWL,Flujo de caja libre por accion,2028,3.8220854368453674,EUR
+,NWL,Flujo de caja libre por accion,2027,1.586556593468464,EUR
+,NWL,Flujo de caja libre por accion,2026,0.8128002524548672,EUR
 ,NWL,Flujo de caja libre por accion,2025,-1.1537209302325582,EUR
 ,NWL,Flujo de caja libre por accion,2024,2.1672743846855056,EUR
-,NWL,ROE ( net income / equity ),2028,0.1316398628483692,
+,NWL,ROE ( net income / equity ),2028,0.13163978071711735,
 ,NWL,ROE ( net income / equity ),2027,0.07207373705273827,
 ,NWL,ROE ( net income / equity ),2026,-0.0212090251170711,
 ,NWL,ROE ( net income / equity ),2025,0.07575267479472506,
 ,NWL,ROE ( net income / equity ),2024,0.4691818181818182,
-,NWL,ROCE con goodwill( EBIT / Capital empleado),2028,0.13794414772924557,
-,NWL,ROCE con goodwill( EBIT / Capital empleado),2027,0.0898349616332129,
+,NWL,ROCE con goodwill( EBIT / Capital empleado),2028,0.13794341494356485,
+,NWL,ROCE con goodwill( EBIT / Capital empleado),2027,0.08983470656569914,
 ,NWL,ROCE con goodwill( EBIT / Capital empleado),2026,0.014823549229343888,
 ,NWL,ROCE con goodwill( EBIT / Capital empleado),2025,0.11583971363229592,
 ,NWL,ROCE con goodwill( EBIT / Capital empleado),2024,0.2829115764979639,
-,NWL,Deuda neta /EBITDA,2028,1.2259359192875625,EUR
-,NWL,Deuda neta /EBITDA,2027,1.2882176659365248,EUR
+,NWL,Deuda neta /EBITDA,2028,1.22595194293563,EUR
+,NWL,Deuda neta /EBITDA,2027,1.2882265632384327,EUR
 ,NWL,Deuda neta /EBITDA,2026,1.1520706686930091,EUR
 ,NWL,Deuda neta /EBITDA,2025,0.8412499999999999,EUR
 ,NWL,Deuda neta /EBITDA,2024,2.0135135135135136,EUR
 ,NWL,NTM P/E,2026,20.13863712342764,EUR
-,NWL,Free cashflow yield,2026,0.033590415092431256,
+,NWL,Free cashflow yield,2026,0.03358678729152344,
 ,NWL,TSR 12M en %,2026,26%,
 ,NWL,PEG ratio,2026,0.78,EUR
 ,NWL,Stock price,2026,24.2,EUR
-,NWL,% of CAPEX/CFO,2026,78.2,EUR
+,NWL,% of CAPEX/CFO,2026,78.21,EUR
 ,NWL,% of CAPEX/CFO,2025,134.12,EUR
 ,NWL,% of CAPEX/CFO,2024,19.48,EUR
-,NWL,3 YEARS CAGR  by PER,2026,0.19938117120798293,
-,NWL,3 YEARS CAGR  by  P/FCF,2026,0.257756692925448,
-,NWL,3 YEARS CAGR by EV/EBITDAaL,2026,0.38577592723137877,
-,NWL,3 YEARS CAGR  by EV/EBIT,2026,0.09185607386499894,
+,NWL,3 YEARS CAGR  by PER,2026,0.1993839949982814,
+,NWL,3 YEARS CAGR  by  P/FCF,2026,0.2577494178746558,
+,NWL,3 YEARS CAGR by EV/EBITDAaL,2026,0.38577560196302874,
+,NWL,3 YEARS CAGR  by EV/EBIT,2026,0.09184862046669107,
 
 
 ==================================================
