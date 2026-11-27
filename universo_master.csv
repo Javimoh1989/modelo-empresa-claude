@@ -3112,12 +3112,12 @@ TICKER: NWL | PÁGINA: 5.BDD
 ,NWL,    EBIT margin %,2026,0.0029023153220481637,
 ,NWL,    EBIT margin %,2025,0.03935810810810811,
 ,NWL,    EBIT margin %,2024,0.07008246479304543,
-,NWL,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,35.90306982089671,EUR
+,NWL,Interest expense/ Income (introducir en negativo si es un ingreso) ,2028,35.903135461119966,EUR
 ,NWL,Interest expense/ Income (introducir en negativo si es un ingreso) ,2027,30.689999999999998,EUR
 ,NWL,Interest expense/ Income (introducir en negativo si es un ingreso) ,2026,30.666666666666668,EUR
 ,NWL,Interest expense/ Income (introducir en negativo si es un ingreso) ,2025,20,EUR
 ,NWL,Interest expense/ Income (introducir en negativo si es un ingreso) ,2024,30.2,EUR
-,NWL,Net income per share ( EPS ),2028,3.159605209620859,EUR
+,NWL,Net income per share ( EPS ),2028,3.1596040017046225,EUR
 ,NWL,Net income per share ( EPS ),2027,1.4335932861655505,EUR
 ,NWL,Net income per share ( EPS ),2026,-0.39902606244093103,EUR
 ,NWL,Net income per share ( EPS ),2025,1.4160465116279068,EUR
@@ -3127,43 +3127,43 @@ TICKER: NWL | PÁGINA: 5.BDD
 ,NWL,Fully diluted shares  (millions),2026,41.618,EUR
 ,NWL,Fully diluted shares  (millions),2025,43,EUR
 ,NWL,Fully diluted shares  (millions),2024,43.88,EUR
-,NWL,Flujo de caja libre,2028,156.35445140214983,EUR
-,NWL,Flujo de caja libre,2027,63.8173948589983,EUR
-,NWL,Flujo de caja libre,2026,33.86030922666666,EUR
+,NWL,Flujo de caja libre,2028,156.35202463447365,EUR
+,NWL,Flujo de caja libre,2027,63.815206851556425,EUR
+,NWL,Flujo de caja libre,2026,33.85827935999998,EUR
 ,NWL,Flujo de caja libre,2025,-49.61,EUR
 ,NWL,Flujo de caja libre,2024,95.1,EUR
-,NWL,Flujo de caja libre por accion,2028,3.9414330977064322,EUR
-,NWL,Flujo de caja libre por accion,2027,1.5701661496894617,EUR
-,NWL,Flujo de caja libre por accion,2026,0.8135977035577552,EUR
+,NWL,Flujo de caja libre por accion,2028,3.9413719229694575,EUR
+,NWL,Flujo de caja libre por accion,2027,1.5701123158526515,EUR
+,NWL,Flujo de caja libre por accion,2026,0.8135489297899943,EUR
 ,NWL,Flujo de caja libre por accion,2025,-1.1537209302325582,EUR
 ,NWL,Flujo de caja libre por accion,2024,2.1672743846855056,EUR
-,NWL,ROE ( net income / equity ),2028,0.13674329949711272,
+,NWL,ROE ( net income / equity ),2028,0.13674325436870266,
 ,NWL,ROE ( net income / equity ),2027,0.07138178625077067,
 ,NWL,ROE ( net income / equity ),2026,-0.0212090251170711,
 ,NWL,ROE ( net income / equity ),2025,0.07575267479472506,
 ,NWL,ROE ( net income / equity ),2024,0.4691818181818182,
-,NWL,ROCE con goodwill( EBIT / Capital empleado),2028,0.14363136740856583,
-,NWL,ROCE con goodwill( EBIT / Capital empleado),2027,0.0887239092412666,
+,NWL,ROCE con goodwill( EBIT / Capital empleado),2028,0.1436309478108042,
+,NWL,ROCE con goodwill( EBIT / Capital empleado),2027,0.08872377085659194,
 ,NWL,ROCE con goodwill( EBIT / Capital empleado),2026,0.014823549229343888,
 ,NWL,ROCE con goodwill( EBIT / Capital empleado),2025,0.11583971363229592,
 ,NWL,ROCE con goodwill( EBIT / Capital empleado),2024,0.2829115764979639,
-,NWL,Deuda neta /EBITDA,2028,1.2213316731794719,EUR
-,NWL,Deuda neta /EBITDA,2027,1.3255207659267683,EUR
+,NWL,Deuda neta /EBITDA,2028,1.221340389028202,EUR
+,NWL,Deuda neta /EBITDA,2027,1.3255257105194553,EUR
 ,NWL,Deuda neta /EBITDA,2026,1.1520706686930091,EUR
 ,NWL,Deuda neta /EBITDA,2025,0.8412499999999999,EUR
 ,NWL,Deuda neta /EBITDA,2024,2.0135135135135136,EUR
 ,NWL,NTM P/E,2026,20.326128118599303,EUR
-,NWL,Free cashflow yield,2026,0.0317068473716974,
+,NWL,Free cashflow yield,2026,0.03170494660132479,
 ,NWL,TSR 12M en %,2026,46%,
 ,NWL,PEG ratio,2026,0.81,EUR
 ,NWL,Stock price,2026,25.66,EUR
 ,NWL,% of CAPEX/CFO,2026,78.19,EUR
 ,NWL,% of CAPEX/CFO,2025,134.12,EUR
 ,NWL,% of CAPEX/CFO,2024,19.48,EUR
-,NWL,3 YEARS CAGR  by PER,2026,0.19458906750826488,
-,NWL,3 YEARS CAGR  by  P/FCF,2026,0.2515240051047676,
-,NWL,3 YEARS CAGR by EV/EBITDAaL,2026,0.3857832362094282,
-,NWL,3 YEARS CAGR  by EV/EBIT,2026,0.10029289646557005,
+,NWL,3 YEARS CAGR  by PER,2026,0.19459069812273877,
+,NWL,3 YEARS CAGR  by  P/FCF,2026,0.2515202133093595,
+,NWL,3 YEARS CAGR by EV/EBITDAaL,2026,0.38578315957770526,
+,NWL,3 YEARS CAGR  by EV/EBIT,2026,0.10028907684689914,
 
 
 ==================================================
